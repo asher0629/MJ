@@ -3,6 +3,7 @@ html{
     scroll-behavior: smooth;
     background: #fbf3ef;
 }
+body { cursor:url(../images/cuser.cur), pointer; }
 
 .title{
 	margin: 0 auto;
@@ -362,22 +363,22 @@ html{
     transition: .5s;
 }
 /* btn2 */
-.gallery_btn2{
+.gallery_btn-2{
     display: none;
     margin: 0 auto;
     margin-top: 4rem;
     margin-bottom: 5rem;
 }
-.gallery_btn2 div{
+.gallery_btn-2 div{
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     overflow: hidden;
 }
-.gallery_btn2 img{
+.gallery_btn-2 img{
     width: 100%;
     margin: 0 auto;
 }
-.gallery_btn2 img:hover{
+.gallery_btn-2 img:hover{
     cursor: pointer;
     transform: scale(1.1,1.1);
     transition: .5s;
@@ -578,12 +579,12 @@ html{
     .gallery_btn{
         display: none;
     }
-    .gallery_btn2{
+    .gallery_btn-2{
         width: 74%;
         display: block;
         justify-content: space-between;
     }
-    .gallery_btn2 div{
+    .gallery_btn-2 div{
         width: 100%;
     }
     /* section05 */
