@@ -32,6 +32,11 @@ $(function(){
         $("body").css("overflow","hidden");
         $("#section05").css("display","none");
     });
+    $(".gallery_btn2").click(function(){
+      $(".menu").css("display","none");
+      $("body").css("overflow","hidden");
+      $("#section05").css("display","none");
+  });
     $(".close").click(function(){
         $(".menu").css("display","block");
         $("body").css("overflow","unset");
@@ -42,6 +47,11 @@ $(function(){
       $("body").css("overflow","unset");
       $("#section05").css("display","block");
   });
+    $(".close3").click(function(){
+    $(".menu").css("display","block");
+    $("body").css("overflow","unset");
+    $("#section05").css("display","block");
+});
 });
 // Gallery modal popup Start!*****
 // Gallery1

@@ -1,6 +1,7 @@
 @font-face { font-family: 'Cafe24Oneprettynight'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff') format('woff'); font-weight: normal; font-style: normal; }
 html{
     scroll-behavior: smooth;
+    background: #fbf3ef;
 }
 
 .title{
@@ -200,6 +201,7 @@ html{
 	width: 100%;
 	background: #fbf3ef;
 }
+/* about1 */
 .about{
 	width: 100%;
 	margin: 0 auto;
@@ -233,6 +235,7 @@ html{
 	padding-right: 6.1%;
 	padding-top: 8.5%;
 }
+/* about2 */
 .about2{
 	margin: 0 auto;
 	padding-top: 10%;
@@ -336,6 +339,7 @@ html{
 	background: #fbf3ef;
 	color:#44472a;	
 }
+/* btn1 */
 .gallery_btn{
     width: 61%;
     display: flex;
@@ -357,38 +361,67 @@ html{
     transform: scale(1.1,1.1);
     transition: .5s;
 }
+/* btn2 */
+.gallery_btn2{
+    display: none;
+    margin: 0 auto;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+}
+.gallery_btn2 div{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+}
+.gallery_btn2 img{
+    width: 100%;
+    margin: 0 auto;
+}
+.gallery_btn2 img:hover{
+    cursor: pointer;
+    transform: scale(1.1,1.1);
+    transition: .5s;
+}
 /* Section04 End */
 /* Section05 Start */
 #section05{
     width: 100%;
     background: #fbf3ef;
     color:#44472a;	
-    padding-bottom: 300px;
 }
+/* 오시는 길 */
+.gillwrap{
+    width: 100%;
+    height: 100%;
+}
+.gill{
+    margin: 0 auto;
+    top: 70%;
+    height: 16rem;
+    font-family: 'Cafe24Oneprettynight';
+    background-color: #44472a;
+    opacity: .7;
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 2.2rem;
+    position: relative;
+    z-index: 99;
+}
+.gill strong{
+    font-size: 1.8rem;
+    line-height: 3.5rem;
+}
+/* map */
 #map{
+    width: 60%;
+    height: 40rem;
     margin: 0 auto;
     margin-top: 4%;
     display: block;
     border: .25rem solid #44472abe;
     box-sizing: border-box;
-}
-.maps_wrap{
-    margin: auto;
-    margin-top: 4%;
-    width: 60%;
-    height: 300px;
-    background: white;
-    border-radius: .5rem;
-}
-.maps_about{
-    margin: 0 auto;
-    width: 97%;
-    height: 95%;
-    border: 1px solid #44472a;
-    border-radius: .5rem;
-    box-sizing: border-box;
-    display: block;
-   
+    margin-bottom: 100px;
 }
 /* kakaomap API */
 .customoverlay {
@@ -431,7 +464,9 @@ html{
     width:22px;
     height:12px;
     background:url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')}
-/********* media ********/
+
+    /********* media ********/
+
 @media (min-width: 576px){
     .main_page {
     max-width: 540px;
@@ -538,7 +573,25 @@ html{
            margin-top: 2.5%;
            padding: 2.5%;
            border-top: 2px solid #44472ab0;
-
+    }
+    /* section04 */
+    .gallery_btn{
+        display: none;
+    }
+    .gallery_btn2{
+        width: 74%;
+        display: block;
+        justify-content: space-between;
+    }
+    .gallery_btn2 div{
+        width: 100%;
+    }
+    /* section05 */
+    #map{
+        width: 75%;
+    }
+    .gill{
+        font-size: 1.2rem;
     }
 }
 
