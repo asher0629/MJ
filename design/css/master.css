@@ -1,0 +1,547 @@
+@font-face { font-family: 'Cafe24Oneprettynight'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff') format('woff'); font-weight: normal; font-style: normal; }
+html{
+    scroll-behavior: smooth;
+}
+
+.title{
+	margin: 0 auto;
+	padding-top: 10%;
+	font-family:'Cafe24Oneprettynight';
+	text-align: center;
+	font-weight: bold;
+	font-size: 2.5rem;
+}
+.line{
+	width: 60%;
+	margin: 0 auto;
+	border-bottom: 1px solid #c7c7c7;
+}
+/* Section01 Start */
+#section01{
+    width: 100%;
+    background: #fbf3ef;
+}
+.navi{
+    width: 100%;
+    background: rgba(255,255,255,0.95);
+    position: absolute;
+    z-index: 999;
+}
+.menu{
+    width: 40px;
+    height: 40px;
+    padding-left:1%;
+    padding-top: 8%;
+    position: absolute;
+    left: 90%;
+    display: fixed;
+    z-index: 9;
+}
+/* .menu-icon{
+    padding-top: 40px;
+    left: 90%;
+    
+} */
+
+.logo{
+    margin: 0 auto;
+    display: flex;
+    padding-top: 20px;
+}
+.logo img{
+    margin: 0 auto;
+    width: 150px;
+}
+.menu_box{
+    display: none;
+}
+.nav{
+    text-align: center;
+    padding-bottom: 300px;
+}
+.nav a{
+    line-height: 110px;
+    text-decoration: none;
+    color:#44472a;
+    font-family: 'Cafe24Oneprettynight';
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+/* menu 선택시 밑줄 */
+        .menu_box li a:hover{
+            border-bottom:3px solid #44472a;
+            padding-bottom:5px; 
+            color:#44472a;
+        }
+            
+        .menu_box li:nth-child(2) a:hover{
+            border-bottom:3px solid #44472a; 
+            padding-bottom:5px; 
+            color:#44472a;
+        }
+            
+        .menu_box li:nth-child(3) a:hover{
+            border-bottom:3px solid #44472a; 
+            padding-bottom:5px; 
+            color:#44472a;
+        }
+            
+        .menu_box li:nth-child(4) a:hover{
+            border-bottom:3px solid #44472a; 
+            padding-bottom:5px; 
+            color:#44472a;
+        }
+            
+        .menu_box li:nth-child(5) a:hover{
+            border-bottom:3px solid #44472a; 
+            padding-bottom:5px; 
+            color:#44472a;
+        }
+#logo{
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    padding-top: 20px;
+    width: 150px;
+}
+
+
+.main{
+    margin: 0 auto;
+    color:#44472a;
+    font-family: 'Cafe24Oneprettynight';
+	/* text-align: center; */
+	width: 100%;
+}
+.main-navi{
+    padding-top: 30px;
+    margin: 0 auto;
+	width: 67%;
+	display: flex;
+}
+.main-navi ul {
+	width: 100%;
+}
+.main-navi li {
+	margin: 0 auto;
+	display: inline-block;
+	text-align: center;
+	width: 19.5%;	
+
+}
+.main-navi a{
+    text-decoration:none;  
+    font-size:1.3rem;
+    color:#44472a;
+
+}
+                    
+    /**메뉴부분 마우스 오버시 색상 **/
+    .main-navi li a:hover{
+        border-bottom:3px solid #44472a;
+        padding-bottom:5px; 
+        color:#44472a;
+    }
+        
+    .main-navi li:nth-child(2) a:hover{
+        border-bottom:3px solid #44472a; 
+        padding-bottom:5px; 
+        color:#44472a;
+    }
+        
+    .main-navi li:nth-child(3) a:hover{
+        border-bottom:3px solid #44472a; 
+        padding-bottom:5px; 
+        color:#44472a;
+    }
+        
+    .main-navi li:nth-child(4) a:hover{
+        border-bottom:3px solid #44472a; 
+        padding-bottom:5px; 
+        color:#44472a;
+    }
+        
+    .main-navi li:nth-child(5) a:hover{
+        border-bottom:3px solid #44472a; 
+        padding-bottom:5px; 
+        color:#44472a;
+    }
+/* navi end */
+/* main img */
+.main{
+    margin: 0 auto;
+    color:#44472a;
+    font-family: 'Cafe24Oneprettynight';
+	width: 100%;
+}
+
+.main-img img{
+	margin: 0 auto;
+	padding-top: 20px;
+    padding-left: 20px;
+    width: 730px;
+    display: flex;
+}
+.main-txt{
+	text-align: center;
+    padding-top: 18px;
+    font-size: 1.3rem;
+}
+#main-txt-bold{
+	margin: 0 auto;
+	padding-bottom: 150px;
+    font-weight: bold;
+    font-size: 7rem;
+}
+
+/* Section01 End */
+/* Section02 Start */
+ #section02{
+	width: 100%;
+	background: #fbf3ef;
+}
+.about{
+	width: 100%;
+	margin: 0 auto;
+	padding-bottom: 150px;
+	font-family: 'Cafe24Oneprettynight';
+	color:#44472a;
+	}
+.about1{
+	margin: 0 auto;
+	padding-top: 8%;
+	width: 68%;
+	height: 50%;
+	display: flex;
+	align-items: center;
+}
+.about1-img{
+	width: 25%;
+	margin: 0 auto;
+}
+.about1-img img{
+	width:100%;
+}
+.about1-txt{
+	width: 55%;
+	padding-right: 6.1%;
+	font-size: 1.7rem;
+	
+}
+.txtline{
+	width: 100%;
+	padding-right: 6.1%;
+	padding-top: 8.5%;
+}
+.about2{
+	margin: 0 auto;
+	padding-top: 10%;
+	width: 65%;
+	height: 50%;
+	display: flex;
+	align-items: center;
+}
+.about2-img{
+	width: 25%;
+	margin: 0 auto;
+	
+	
+}
+.about2-img img{
+	width:100%;
+}
+.about2-txt{
+	margin: 0 auto;
+	width: 55%;
+	font-size: 1.7rem;
+}
+.txtline2{
+	width: 100%;
+	margin: 0 auto;
+	padding-right: 6.1%;
+	padding-top: 5%;
+}
+/* section02 End */
+/* section03 Start */
+#section03{
+	width: 100%;
+	background: #fbf3ef;
+	color:#44472a;	
+}
+
+.container-fluid {
+	position: relative;
+	width: 50%;
+   }
+   
+   .service_image {
+	display: block;
+	width: 100%;
+	height: auto;
+   }
+   
+   .service_overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: white;
+	opacity: 0.88;
+	overflow: hidden;
+	width: 100%;
+	height: 0;
+	transition: .5s ease;
+   }
+   
+   .container-fluid:hover .service_overlay {
+	height: 30%;
+   }
+   
+   .service_text {
+    margin: 0 auto;
+    margin-top: 6%;
+	color: #44472a;
+    font-size: 1.6rem;
+    font-family: 'Cafe24Oneprettynight';
+	/* position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%); */
+	text-align: center;
+   }
+   .service_text_style{
+       margin: 0 auto;
+       margin-top: 6%;
+       padding: 6%;
+       width: 72%;
+       font-size: 1.2rem;
+       line-height: 1.2rem;
+       border-top: 4px solid #44472ab0;
+
+   }
+   .service_wrap{
+	  width: 60%;
+	  margin: 0 auto;
+	  display: flex;
+	  padding-top: 8%;
+	  padding-bottom: 8%;
+   }
+ 
+/* Section03 End */
+/* Section04 Start */
+#section04{
+	width: 100%;
+	background: #fbf3ef;
+	color:#44472a;	
+}
+.gallery_btn{
+    width: 61%;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 8%;
+    padding-bottom: 8%;
+}
+.gallery_btn div{
+    margin: 0 auto;
+    width: 30%;
+    overflow: hidden;
+}
+.gallery_btn img{
+    width: 100%;
+    margin: 0 auto;
+}
+.gallery_btn img:hover{
+    cursor: pointer;
+    transform: scale(1.1,1.1);
+    transition: .5s;
+}
+/* Section04 End */
+/* Section05 Start */
+#section05{
+    width: 100%;
+    background: #fbf3ef;
+    color:#44472a;	
+    padding-bottom: 300px;
+}
+#map{
+    margin: 0 auto;
+    margin-top: 4%;
+    display: block;
+    border: .25rem solid #44472abe;
+    box-sizing: border-box;
+}
+.maps_wrap{
+    margin: auto;
+    margin-top: 4%;
+    width: 60%;
+    height: 300px;
+    background: white;
+    border-radius: .5rem;
+}
+.maps_about{
+    margin: 0 auto;
+    width: 97%;
+    height: 95%;
+    border: 1px solid #44472a;
+    border-radius: .5rem;
+    box-sizing: border-box;
+    display: block;
+   
+}
+/* kakaomap API */
+.customoverlay {
+    position:relative;
+    bottom:85px;
+    border-radius:6px;
+    border: 1px solid #ccc;
+    border-bottom:2px solid #ddd;
+    float:left;
+}
+.customoverlay:nth-of-type(n) {
+    border:0; 
+    box-shadow:0px 1px 2px #888;
+}
+.customoverlay a {
+    display:block;
+    text-decoration:none;
+    color:#000;
+    text-align:center;
+    border-radius:.3rem;
+    font-size:1rem;
+    font-weight:bold;
+    overflow:hidden;
+    background: #44472a;
+    background: #44472a url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/arrow_white.png) no-repeat right 14px center;}
+.customoverlay .title {
+    display:block;
+    text-align:center;
+    background:#fff;
+    margin-right:35px;
+    padding:10px 15px;
+    font-size:14px;
+    font-weight:bold;}
+.customoverlay:after {
+    content:'';
+    position:absolute;
+    margin-left:-12px;
+    left:55%;
+    bottom:-12px;
+    width:22px;
+    height:12px;
+    background:url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')}
+/********* media ********/
+@media (min-width: 576px){
+    .main_page {
+    max-width: 540px;
+    margin:0 auto;
+    }
+}
+@media (min-width: 768px){
+.main_page {
+    max-width: 720px;
+    margin: 0 auto;
+    }
+    .navi{
+        background: none !important;
+    }
+
+    .nav{
+        display: none !important;
+    }
+    .menu{
+        display: none !important;
+    }
+}
+@media (min-width: 992px){
+.main_page {
+    max-width: 960px;
+    margin: 0 auto;
+	}
+}
+
+@media (min-width: 1200px){
+.main_page {
+    max-width: 1140px;
+    margin: 0 auto;
+	}
+}
+
+@media (max-width:767px){
+    /* Section01 */
+    .menu{
+        display: block;
+    }
+    .main-navi{
+        display: none;
+    }
+
+    .main-img img{
+        margin: 0 auto;
+        width: 380px;
+    }
+    .main-txt{
+        font-size: .7rem;
+    }
+    #main-txt-bold{
+        font-size: 3.8rem;
+    }
+    /* Section02 */
+	.about1{
+		margin: 0 auto;
+		display: inherit;
+		align-items: center;
+	}
+	.about1-img{
+		width: 50%;
+	}
+	.about1-txt{
+		margin: 0 auto;
+		padding-top: 20%;
+		width: 100%;
+		font-size: 1.3rem;
+	}
+	.about2{
+		margin: 0 auto;
+		padding-top: 20%;
+		display: flex;
+		align-items: center;
+		flex-direction: column-reverse;
+	}
+	.about2-img{
+		width: 50%;
+	}
+	.about2-txt{
+		margin: 0 auto;
+		padding-top: 20%;
+		width: 100%;
+		font-size: 1.3rem;
+    }
+    /* section03 */
+    .service_wrap{
+        width: 75%;
+        display: flex;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+     }
+     .container-fluid {
+        position: relative;
+        width: 50%;
+       }
+       .service_text {
+           font-size: 24px;
+       }
+       .service_text_style{
+           font-size: 14px;
+           line-height: 16px;
+           margin-top: 2.5%;
+           padding: 2.5%;
+           border-top: 2px solid #44472ab0;
+
+    }
+}
+
+.fix{position:fixed;_position:absolute;width:100%;top:0;z-index:100;}
+/* 메뉴 따라다니게하기↑ */
+
