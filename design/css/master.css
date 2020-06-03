@@ -62,7 +62,6 @@ html{
     scroll-behavior: smooth;
     background: #fbf3ef;
 }
-
 .title{
 	margin: 0 auto;
 	padding-top: 10%;
@@ -523,6 +522,8 @@ html{
     width:22px;
     height:12px;
     background:url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')}
+/* ↑↑↑↑↑↑↑↑↑지도 */
+/* ↓↓↓↓↓↓↓↓↓스크롤탑btn */
 
     /********* media ********/
 
