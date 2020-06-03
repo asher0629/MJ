@@ -1,9 +1,67 @@
 @font-face { font-family: 'Cafe24Oneprettynight'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff') format('woff'); font-weight: normal; font-style: normal; }
+/* scrollbar custom */
+
+/* width */
+::-webkit-scrollbar {
+    width: .5rem;
+  }
+::-ms-scrollbar {
+    width: .5rem;
+  }
+::-moz-scrollbar {
+    width: .5rem;
+  }
+ ::-o-scrollbar {
+    width: .5rem;
+  } 
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #44472a67;
+  }
+  ::-ms-scrollbar-track {
+    background: #44472a67;
+  }
+  ::-moz-scrollbar-track {
+    background: #44472a67;
+  }
+  ::-o-scrollbar-track {
+    background: #44472a67;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #fbf3ef; 
+  }
+  ::-ms-scrollbar-thumb {
+    background: #fbf3ef; 
+  }
+  ::-moz-scrollbar-thumb {
+    background: #fbf3ef; 
+  }
+  ::-o-scrollbar-thumb {
+    background: #fbf3ef; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #fff; 
+  }
+  ::-ms-scrollbar-thumb:hover {
+    background: #fff; 
+  }
+  ::-moz-scrollbar-thumb:hover {
+    background: #fff; 
+  }
+  ::-o-scrollbar-thumb:hover {
+    background: #fff; 
+  }
+
+
 html{
     scroll-behavior: smooth;
     background: #fbf3ef;
 }
-body { cursor:url(../images/cuser.cur), pointer; }
 
 .title{
 	margin: 0 auto;
@@ -593,7 +651,25 @@ body { cursor:url(../images/cuser.cur), pointer; }
     }
     .gill{
         font-size: 1rem;
+        line-height: 2.3rem;
     }
+    .gill strong{
+        font-size: 1.5rem;
+      
+    }
+    /* scroll */
+    ::-webkit-scrollbar {
+        display: none;
+      }
+    ::-ms-scrollbar {
+        display: none;
+      }
+    ::-moz-scrollbar {
+        display: none;
+      }
+     ::-o-scrollbar {
+        display: none;
+      } 
 }
 
 .fix{position:fixed;_position:absolute;width:100%;top:0;z-index:100;}
