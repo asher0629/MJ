@@ -23,7 +23,7 @@
     <link rel="icon" href="images/logo.ico">
     <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="css/menu.css">
-    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
 </head>
 
 <body>
@@ -159,159 +159,15 @@
    <!-- section03 End -->
    <div id="section04">
        <h1 class="title">Gallery</h1>
-       <!-- gallery_btn -->
-      <div class="gallery_btn">
-          <div class="gallery_btn1"><img src="images/gallery-1.jpg" alt="gallery_img_btn" onclick="openModal1();currentSlide(1)"></div>
-          <div class="gallery_btn2"><img src="images/gallery-2.jpg" alt="gallery_img_btn" onclick="openModal2();currentSlide2()"></div>
-          <div class="gallery_btn3"><img src="images/gallery-3.jpg" alt="gallery_img_btn" onclick="openModal3();currentSlide3()"></div>
-      </div>
-      <div class="gallery_btn-2">
-          <div class="gallery_btn1"><img src="images/gallerymini-1.jpg" alt="gallery_img_btn" onclick="openModal1();currentSlide(1)"></div>
-          <div class="gallery_btn2"><img src="images/gallerymini-2.jpg" alt="gallery_img_btn" onclick="openModal2();currentSlide2()"></div>
-          <div class="gallery_btn3"><img src="images/gallerymini-3.jpg" alt="gallery_img_btn" onclick="openModal3();currentSlide3()"></div>
-        </div>
-      <!-- gallery_images -->
-      <!-- ***gallery01*** -->
-      <div id="myModal1" class="modal">
-        <span class="close cursor" onclick="closeModal()">&times;</span>
-        <div class="modal-content">
-            <div class="frame">
-                <img class="frame_bg" src="images/bg.png" alt="">
-                <img class="frame-img1" src="images/galleryframe-1.png" alt="">
-                <img class="frame-img2" src="images/galleryframe-2.png" alt="">
-            </div>
-          <div class="mySlides1">
-            <img src="images/1.jpg" style="width:70%">
-          </div>
-      
-          <div class="mySlides1">
-            <img src="images/2.jpg" style="width:70%">
-          </div>
-      
-          <div class="mySlides1">
-            <img src="images/3.jpg" style="width:70%">
-          </div>
-      
-          <div class="mySlides1">
-            <img src="images/4.jpg" style="width:70%">
-          </div>
-      
-          <!-- Next/previous controls -->
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      
-          <!-- Thumbnail image controls -->
-              <div class="thumbnail">
-                <div class="column">
-                  <img class="demo1" src="images/1.jpg" onclick="currentSlide(1)" alt="Nature">
-                </div>
-                <div class="column">
-                  <img class="demo1" src="images/2.jpg" onclick="currentSlide(2)" alt="Snow">
-                </div>
-                <div class="column">
-                  <img class="demo1" src="images/3.jpg" onclick="currentSlide(3)" alt="Mountains">
-                </div>
-                <div class="column">
-                  <img class="demo1" src="images/4.jpg" onclick="currentSlide(4)" alt="Lights">
-                </div>
-              </div>
-          </div>
-      </div>
-      <!-- ***gallery01*** -->
-      <!-- ***gallery02*** -->
-      <div id="myModal2" class="modal2">
-        <span class="close2 cursor2" onclick="closeModal2()">&times;</span>
-        <div class="modal-content2">
-            <div class="frame2">
-                <img class="frame2_bg" src="images/bg.png" alt="">
-                <img class="frame2-img1" src="images/galleryframe-1.png" alt="">
-                <img class="frame2-img2" src="images/galleryframe-2.png" alt="">
-            </div>
-          <div class="mySlides2" onplay="showSlides2()">
-            <img src="images/1.jpg" style="width:70%">
-          </div>
-      
-          <div class="mySlides2">
-            <img src="images/2.jpg" style="width:70%">
-          </div>
-      
-          <div class="mySlides2">
-            <img src="images/3.jpg" style="width:70%">
-          </div>
-      
-          <div class="mySlides2">
-            <img src="images/4.jpg" style="width:70%">
-          </div>
-      
-          <!-- Next/previous controls -->
-          <a class="prev2" onclick="plusSlides2(-1)">&#10094;</a>
-          <a class="next2" onclick="plusSlides2(1)">&#10095;</a>
-      
-          <!-- Thumbnail image controls -->
-              <div class="thumbnail2">
-                <div class="column2">
-                  <img class="demo2" src="images/1.jpg" onclick="currentSlide2()" alt="Nature">
-                </div>
-                <div class="column2">
-                  <img class="demo2" src="images/2.jpg" onclick="currentSlide2()" alt="Snow">
-                </div>
-                <div class="column2">
-                  <img class="demo2" src="images/3.jpg" onclick="currentSlide2()" alt="Mountains">
-                </div>
-                <div class="column2">
-                  <img class="demo2" src="images/4.jpg" onclick="currentSlide2()" alt="Lights">
-                </div>
-              </div>
-          </div>
-      </div>
-      <!-- ***gallery02*** -->
-      <!-- ***gallery03*** -->
-      <div id="myModal3" class="modal3">
-        <span class="close3 cursor3" onclick="closeModal3()">&times;</span>
-        <div class="modal-content3">
-            <div class="frame3">
-                <img class="frame3_bg" src="images/bg.png" alt="">
-                <img class="frame3-img1" src="images/galleryframe-1.png" alt="">
-                <img class="frame3-img2" src="images/galleryframe-2.png" alt="">
-            </div>
-          <div class="mySlides3">
-            <img src="images/1.jpg" style="width:70%">
-          </div>
-      
-          <div class="mySlides3">
-            <img src="images/2.jpg" style="width:70%">
-          </div>
-      
-          <div class="mySlides3">
-            <img src="images/3.jpg" style="width:70%">
-          </div>
-      
-          <div class="mySlides3">
-            <img src="images/4.jpg" style="width:70%">
-          </div>
-      
-          <!-- Next/previous controls -->
-          <a class="prev3" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next3" onclick="plusSlides(1)">&#10095;</a>
-      
-          <!-- Thumbnail image controls -->
-              <div class="thumbnail3">
-                <div class="column3">
-                  <img class="demo3" src="images/1.jpg" alt="Nature">
-                </div>
-                <div class="column3">
-                  <img class="demo3" src="images/2.jpg" alt="Snow">
-                </div>
-                <div class="column3">
-                  <img class="demo3" src="images/3.jpg" alt="Mountains">
-                </div>
-                <div class="column3">
-                  <img class="demo3" src="images/4.jpg" alt="Lights">
-                </div>
-              </div>
-          </div>
-      </div>
-      <!-- ***gallery03*** -->
+       <div class="gallery">
+          <div class="gallery_1"><a href="./images/1.jpg" class="img_btn"></a></div>
+          <div class="gallery_2"></div>
+          <div class="gallery_3"></div>
+          <div class="gallery_4"></div>
+          <div class="gallery_5"></div>
+          <div class="gallery_6"></div>
+          <div class="gallery_7"></div>
+       </div>
       <div class="line"></div>
    </div>
    <!-- section04 End -->
@@ -331,7 +187,12 @@
     </div> 
    </div>
    <!-- section05 End -->
+   <div class="scroll">
+    <img src="images/scroll-top.png" alt="탑 버튼" id="scroll_btn">
+  </div>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=15f1676d01152dd0b84e69d0af43b2c1"></script>
    <script src="js/map.js"></script> 
+   <script src="js/jquery.magnific-popup.min.js"></script>
   </body>
    </html>

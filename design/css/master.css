@@ -397,49 +397,72 @@ html{
 	background: #fbf3ef;
 	color:#44472a;	
 }
-/* btn1 */
-.gallery_btn{
-    width: 61%;
+.gallery{
+    margin: 8rem auto;
+    width: 60%;
+    height: 60rem;
     display: flex;
-    margin: 0 auto;
-    margin-top: 8%;
-    padding-bottom: 8%;
+    flex-wrap: wrap;
+    position: relative;
+    cursor: pointer;
 }
-.gallery_btn div{
-    margin: 0 auto;
+.gallery_1{
     width: 30%;
-    overflow: hidden;
+    height: 70%;
+    background: url(../images/1.jpg);
+    background-size: cover;
+    background-position: center;
 }
-.gallery_btn img{
-    width: 100%;
-    margin: 0 auto;
+.gallery_2{
+    width: 70%;
+    height: 35%;
+    background: url(../images/2.jpg);
+    background-position: center;
+    background-size: cover;
 }
-.gallery_btn img:hover{
-    cursor: pointer;
-    transform: scale(1.1,1.1);
-    transition: .5s;
+.gallery_3{
+    width: 35%;
+    height: 35%;
+    background: url(../images/3.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 35%;
+    left: 30%;
 }
-/* btn2 */
-.gallery_btn-2{
-    display: none;
-    margin: 0 auto;
-    margin-top: 4rem;
-    margin-bottom: 5rem;
+.gallery_4{
+    width: 35%;
+    height: 35%;
+    background: url(../images/4.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 35%;
+    left: 65%;
 }
-.gallery_btn-2 div{
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    overflow: hidden;
+.gallery_5{
+    width: 33%;
+    height: 30%;
+    background: url(../images/1.jpg);
+    background-position: center;
+    background-size: cover;
 }
-.gallery_btn-2 img{
-    width: 100%;
-    margin: 0 auto;
+.gallery_6{
+    width: 33%;
+    height: 30%;
+    background: url(../images/2.jpg);
+    background-position: center;
+    background-size: cover;
 }
-.gallery_btn-2 img:hover{
-    cursor: pointer;
-    transform: scale(1.1,1.1);
-    transition: .5s;
+.gallery_7{
+    width: 34%;
+    height: 30%;
+    background: url(../images/3.jpg);
+    background-position: center;
+    background-size: cover;
 }
+
+
 /* Section04 End */
 /* Section05 Start */
 #section05{
@@ -523,8 +546,12 @@ html{
     height:12px;
     background:url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')}
 /* ↑↑↑↑↑↑↑↑↑지도 */
-/* ↓↓↓↓↓↓↓↓↓스크롤탑btn */
-
+/* ↓↓↓↓↓↓↓↓↓탑버튼 */
+.scroll img{
+    margin-bottom: 1rem;
+    left: 81%;
+    cursor: pointer;
+    }
     /********* media ********/
 
 @media (min-width: 576px){
@@ -635,17 +662,10 @@ html{
            border-top: 2px solid #44472ab0;
     }
     /* section04 */
-    .gallery_btn{
-        display: none;
-    }
-    .gallery_btn-2{
-        width: 74%;
-        display: block;
-        justify-content: space-between;
-    }
-    .gallery_btn-2 div{
-        width: 100%;
-    }
+   .gallery{
+       width: 75%;
+       height: 30rem;
+   }
     /* section05 */
     #map{
         width: 75%;
@@ -657,6 +677,10 @@ html{
     .gill strong{
         font-size: 1.5rem;
       
+    }
+    /* 탑버튼 */
+    .scroll{
+        display: none;
     }
     /* scroll */
     ::-webkit-scrollbar {
@@ -672,7 +696,7 @@ html{
         display: none;
       } 
 }
-
+#scroll_btn{position:fixed;_position:absolute;width:3.2%;bottom: 0;z-index:50;}
 .fix{position:fixed;_position:absolute;width:100%;top:0;z-index:100;}
 /* 메뉴 따라다니게하기↑ */
 
