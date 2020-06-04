@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #fff;
+    color: #222328;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.form{
+    margin: 0 auto;
+    padding-top: 50px;
+    width: 1200px;
+    height: 700px;
+    display: block;
+}
+nav{
+    width: 1200px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    line-height: 100px;
+}
+.logo{
+    margin-top: 10px;
+    margin-left: 50px;
+}
+.menu{
+    display: block;
+    width: auto;
+}
+.main_menu{
+    display: flex;
+}
+.sub_menu{
+    display: none;
+}
+.section02{
+    width: 1200px;
+    height: 300px;
+    overflow: hidden;
+}
+.section03{
+    width: 1200px;
+    height: 200px;
+    display: flex;
+    background-color: lemonchiffon;
+}
+.tab{
+    width: 400px;
+    height: 200px;
+    display: block;
+}
+.tab_2{
+    display: none;
+}
+.title{
+    display: flex;
+}
+.title h3{
+    width: 100px;
+    height: 40px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 15px;
+}
+footer{
+    position: relative;
+}
+.section04{
+    clear: both;
+    width: 1200px;
+    height: 100px;
+    line-height: 100px;
+    background-color: #232323;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.logo2{
+    width: 400px;
+    display: block;
+}
+.logo2 img{
+    margin-top: 25px;
+    margin-left: 50px;
+    display: block;
+}
+.copyright{
+    width: 400px;
+    display: block;
+    color: white;
+    text-align: center;
+}
+.familysite{
+    width: 400px;
+    display: flex;
+    margin: 25px;
+}
+.familysite img{
+    margin-right: 15px;
+    width: 50px;
+    height: 50px;
+}
