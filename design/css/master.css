@@ -716,6 +716,9 @@ html{
     width: 33%;
     height: 150px;
 }
+.clear{
+    clear: both;
+}
     /* section05 */
     #map{
         width: 75%;

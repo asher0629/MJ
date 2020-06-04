@@ -283,11 +283,11 @@ img.mfp-img {
 .mfp-gallery .mfp-image-holder .mfp-figure {
   cursor: pointer; }
 
-@media screen and (max-width: 800px) and (orientation: landscape), screen and (max-height: 300px) {
+/* @media screen and (max-width: 800px) and (orientation: landscape), screen and (max-height: 300px) { */
   /**
        * Remove all paddings around the image on small screen
        */
-  .mfp-img-mobile .mfp-image-holder {
+  /* .mfp-img-mobile .mfp-image-holder {
     padding-left: 0;
     padding-right: 0; }
   .mfp-img-mobile img.mfp-img {
@@ -334,4 +334,4 @@ img.mfp-img {
     transform-origin: 100%; }
   .mfp-container {
     padding-left: 6px;
-    padding-right: 6px; } }
+    padding-right: 6px; } } */
