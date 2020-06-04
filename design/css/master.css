@@ -397,36 +397,70 @@ html{
 	background: #fbf3ef;
 	color:#44472a;	
 }
+
 .gallery{
-    margin: auto;
+    margin: 8rem auto;
     width: 60%;
-    height: 30rem;
+    height: 60rem;
     display: flex;
     flex-wrap: wrap;
+    position: relative;
+    cursor: pointer;
 }
 .gallery_1{
     width: 30%;
-    height: 10%;
+    height: 70%;
+    background: url(../images/1.jpg);
+    background-size: cover;
+    background-position: center;
 }
 .gallery_2{
-    width: 10%;
+    width: 70%;
     height: 35%;
+    background: url(../images/2.jpg);
+    background-position: center;
+    background-size: cover;
 }
 .gallery_3{
-    width: 10%;
+    width: 35%;
     height: 35%;
+    background: url(../images/3.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 35%;
+    left: 30%;
 }
 .gallery_4{
-    display: none;
+    width: 35%;
+    height: 35%;
+    background: url(../images/4.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 35%;
+    left: 65%;
 }
 .gallery_5{
-    display: none;
+    width: 33%;
+    height: 30%;
+    background: url(../images/1.jpg);
+    background-position: center;
+    background-size: cover;
 }
 .gallery_6{
-    display: none;
+    width: 33%;
+    height: 30%;
+    background: url(../images/2.jpg);
+    background-position: center;
+    background-size: cover;
 }
 .gallery_7{
-    display: none;
+    width: 34%;
+    height: 30%;
+    background: url(../images/3.jpg);
+    background-position: center;
+    background-size: cover;
 }
 /* Section04 End */
 /* Section05 Start */

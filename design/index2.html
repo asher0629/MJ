@@ -5,16 +5,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/magnific-popup.css">
+    <style>
+        p { text-align: center; }
+.img-list {
+width: 1280px;
+margin: 50px auto 0;
+overflow: hidden;
+}
+.img-list li {
+float: left;
+margin: 10px;
+}
+.myImg {
+border-radius: 5px;
+cursor: pointer;
+transition: 0.3s;
+}
+.myImg:hover { opacity: 0.7; }
+/* The Modal (background) */
+.modal {
+display: none;
+/* Hidden by default */
+position: fixed;
+/* Stay in place */
+z-index: 1;
+/* Sit on top */
+padding-top: 100px;
+/* Location of the box */
+left: 0;
+top: 0;
+width: 100%;
+/* Full width */
+height: 100%;
+/* Full height */
+overflow: auto;
+/* Enable scroll if needed */
+background-color: rgb(0, 0, 0);
+/* Fallback color */
+
+background-color: rgba(0, 0, 0, 0.9);
+
+/* Black w/ opacity */
+
+}
+
+/* Modal Content (image) */
+
+
+
+.modal-content {
+
+margin: auto;
+
+display: block;
+
+width: 80%;
+
+max-width: 700px;
+
+}
+
+/* Caption of Modal Image */
+
+
+
+.caption {
+
+margin: auto;
+
+display: block;
+
+width: 80%;
+
+max-width: 700px;
+
+text-align: center;
+
+color: #ccc;
+
+padding: 10px 0;
+
+height: 150px;
+}
+    </style>
 </head>
 <body>
-    <div class="popup-gallery">
-        <a href="http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_b.jpg" title="The Cleaner"><img src="http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_s.jpg" width="75" height="75"></a>
-        <a href="http://farm9.staticflickr.com/8382/8558295631_0f56c1284f_b.jpg" title="Winter Dance"><img src="http://farm9.staticflickr.com/8382/8558295631_0f56c1284f_s.jpg" width="75" height="75"></a>
-        <a href="http://farm9.staticflickr.com/8225/8558295635_b1c5ce2794_b.jpg" title="The Uninvited Guest"><img src="http://farm9.staticflickr.com/8225/8558295635_b1c5ce2794_s.jpg" width="75" height="75"></a>
-        <a href="http://farm9.staticflickr.com/8383/8563475581_df05e9906d_b.jpg" title="Oh no, not again!"><img src="http://farm9.staticflickr.com/8383/8563475581_df05e9906d_s.jpg" width="75" height="75"></a>
-        <a href="http://farm9.staticflickr.com/8235/8559402846_8b7f82e05d_b.jpg" title="Swan Lake"><img src="http://farm9.staticflickr.com/8235/8559402846_8b7f82e05d_s.jpg" width="75" height="75"></a>
-        <a href="http://farm9.staticflickr.com/8235/8558295467_e89e95e05a_b.jpg" title="The Shake"><img src="http://farm9.staticflickr.com/8235/8558295467_e89e95e05a_s.jpg" width="75" height="75"></a>
-        <a href="http://farm9.staticflickr.com/8378/8559402848_9fcd90d20b_b.jpg" title="Who's that, mommy?"><img src="http://farm9.staticflickr.com/8378/8559402848_9fcd90d20b_s.jpg" width="75" height="75"></a>
+
+    <h2>이미지 모달 팝업</h2>
+    <p>이미지를 클릭 후 모달팝업 효과 예제</p>
+    <ul class="img-list">
+    <li>
+    <a href="#myModal"><img class="myImg" src="images/img_fjords.jpg" alt="텍스트 예제 1" width="300" height="200"></a>
+    </li>
+    <li>
+    <a href="#myModal"><img class="myImg" src="images/images.jpg" alt="텍스트 예제 2" width="300" height="200"></a>
+    </li>
+    </ul>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content">
+    <div class="caption"></div>
     </div>
 </body>
 </html>
