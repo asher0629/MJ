@@ -398,69 +398,51 @@ html{
 	color:#44472a;	
 }
 
-.gallery{
-    margin: 8rem auto;
+.popup-wrap{
     width: 60%;
-    height: 60rem;
-    display: flex;
-    flex-wrap: wrap;
+    height: 1000px;
+    margin: 0 auto;
+    margin-top: 6rem;
+    background: beige;
     position: relative;
-    cursor: pointer;
 }
-.gallery_1{
-    width: 30%;
-    height: 70%;
-    background: url(../images/1.jpg);
-    background-size: cover;
-    background-position: center;
+.popup-gallery{
+    float: left;
 }
-.gallery_2{
-    width: 70%;
-    height: 35%;
-    background: url(../images/2.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.gallery_3{
+.img1{
+    float: left;
     width: 35%;
-    height: 35%;
-    background: url(../images/3.jpg);
-    background-position: center;
-    background-size: cover;
-    position: absolute;
-    top: 35%;
-    left: 30%;
+    height: 700px;
 }
-.gallery_4{
-    width: 35%;
-    height: 35%;
-    background: url(../images/4.jpg);
-    background-position: center;
-    background-size: cover;
-    position: absolute;
-    top: 35%;
-    left: 65%;
+.img2{
+    float: right;
+    width: 65%;
+    height: 350px;
 }
-.gallery_5{
+.img3{
+    float: left;
+    width: 32.5%;
+    height: 350px;
+}
+.img4{  
+    float: left;
+    width: 32.5%;
+    height: 350px;
+}
+.img5{
+    float: left;
     width: 33%;
-    height: 30%;
-    background: url(../images/1.jpg);
-    background-position: center;
-    background-size: cover;
+    height: 300px;
 }
-.gallery_6{
-    width: 33%;
-    height: 30%;
-    background: url(../images/2.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.gallery_7{
+.img6{
+    float: left;
     width: 34%;
-    height: 30%;
-    background: url(../images/3.jpg);
-    background-position: center;
-    background-size: cover;
+    height: 300px;
+}
+.img7{
+    float: left;
+    width: 33%;
+    height: 300px;
 }
 /* Section04 End */
 /* Section05 Start */
@@ -661,10 +643,79 @@ html{
            border-top: 2px solid #44472ab0;
     }
     /* section04 */
-   .gallery{
-       width: 75%;
-       height: 30rem;
-   }
+   .popup-wrap{
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    transition: all .5s ease;
+    width: 400px;
+    height: 50%;
+}
+.img1{
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    width: 30%;
+    height: 350px;
+}
+.img2{
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    width: 70%;
+    height: 175px;
+}
+.img3{
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    width: 35%;
+    height: 175px;
+}
+.img4{
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    width: 35%;
+    height: 175px;
+}
+.img5{
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    width: 33%;
+    height: 150px;
+}
+.img6{
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    width: 34%;
+    height: 150px;
+}
+.img7{
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    width: 33%;
+    height: 150px;
+}
     /* section05 */
     #map{
         width: 75%;

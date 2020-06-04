@@ -7,8 +7,8 @@
   z-index: 1042;
   overflow: hidden;
   position: fixed;
-  background: #0b0b0b;
-  opacity: 0.8; }
+  background: #fbf3ef;
+  opacity: 1; }
 
 .mfp-wrap {
   top: 0;
@@ -127,15 +127,14 @@ button::-moz-focus-inner {
   height: 44px;
   line-height: 44px;
   position: absolute;
-  right: 0;
   top: 0;
   text-decoration: none;
   text-align: center;
-  opacity: 0.65;
+  opacity: .5;
   padding: 0 0 18px 10px;
-  color: #FFF;
+  color: #44472a;
   font-style: normal;
-  font-size: 28px;
+  font-size: 4.5rem;
   font-family: Arial, Baskerville, monospace; }
   .mfp-close:hover,
   .mfp-close:focus {
@@ -148,7 +147,7 @@ button::-moz-focus-inner {
 
 .mfp-image-holder .mfp-close,
 .mfp-iframe-holder .mfp-close {
-  color: #FFF;
+  color: #44472a;
   right: -6px;
   text-align: right;
   padding-right: 6px;
@@ -202,20 +201,17 @@ button::-moz-focus-inner {
 .mfp-arrow-left {
   left: 0; }
   .mfp-arrow-left:after {
-    border-right: 17px solid #FFF;
+    border-right: 17px solid #44472a;
     margin-left: 31px; }
   .mfp-arrow-left:before {
     margin-left: 25px;
-    border-right: 27px solid #3F3F3F; }
+   }
 
 .mfp-arrow-right {
   right: 0; }
   .mfp-arrow-right:after {
-    border-left: 17px solid #FFF;
+    border-left: 17px solid #44472a;
     margin-left: 39px; }
-  .mfp-arrow-right:before {
-    border-left: 27px solid #3F3F3F; }
-
 .mfp-iframe-holder {
   padding-top: 40px;
   padding-bottom: 40px; }
@@ -231,16 +227,6 @@ button::-moz-focus-inner {
   height: 0;
   overflow: hidden;
   padding-top: 56.25%; }
-  .mfp-iframe-scaler iframe {
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
-    background: #000; }
-
 /* Main image in popup */
 img.mfp-img {
   width: auto;
@@ -266,8 +252,7 @@ img.mfp-img {
     width: auto;
     height: auto;
     z-index: -1;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
-    background: #444; }
+    }
   .mfp-figure small {
     color: #BDBDBD;
     display: block;
@@ -285,6 +270,7 @@ img.mfp-img {
   cursor: auto; }
 
 .mfp-title {
+  display: none;
   text-align: left;
   line-height: 18px;
   color: #F3F3F3;
