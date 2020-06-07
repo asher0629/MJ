@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+header{
+    margin: 0 auto;
+    width: 1200px;
+    height: 100px;
+    display: block;
+}
+nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    margin-left: 30px;
+}
+.menu{
+    margin-right: 30px;
+    width: 400px;
+    display: block;
+}
+.main_menu ul{
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+}
+.main_menu li{
+    width: 100px;
+    height: 30px;
+    background-color: whitesmoke ;
+    border: 1px solid rgb(37, 26, 100);
+    box-sizing: border-box;
+    text-align: center;
+}
+.sub_menu{
+    display: none;
+}
+
+section{
+    margin: 0 auto;
+    width: 1200px;
+    height: 500px;
+}
+
+.slide{
+    width: 1200px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.section03{
+    width: 1200px;
+    height: 200px;
+    display: flex;
+}
+.tab{
+    width: 400px;
+    height: 200px;
+    background-color: rgb(37, 26, 100);
+}
+
+.tab_2{
+    display: none;
+}
+.banner{
+    width: 400px;
+    height: 200px;
+    background-color: rgb(37, 26, 100);
+}
+.banner img{
+    width: 390px;
+    height: 190px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.connect{
+    width: 400px;
+    height: 200px;
+    background-color: rgb(37, 26, 100);
+}
+.connect img{
+    width: 390px;
+    height: 190px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+footer{
+    width: 1200px;
+    height: 100px;
+    background-color: rgb(37, 26, 100);
+    margin: 0 auto;
+}
+.section04{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo_2{
+    margin-left: 30px;
+}
+.logo_2 img{
+    filter: grayscale(100%);
+}
+.footer{
+    width: 1000px;
+    height: 100px;
+}
+.footermenu{
+    width: 100%;
+    height: 50%;
+    color: #232323; 
+}
+.footermenu ul {
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.copy{
+    width: 100%;
+    height: 50%;
+    color: #232323;
+    text-align: center;
+}
