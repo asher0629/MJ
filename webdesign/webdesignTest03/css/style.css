@@ -16,50 +16,89 @@ header{
     height: 100px;
     display: block;
 }
-nav{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.logo{
-    margin-left: 30px;
-}
-.menu{
-    margin-right: 30px;
-    width: 400px;
-    display: block;
-}
-.main_menu ul{
-    width: 100%;
-    justify-content: space-between;
-    display: flex;
-}
-.main_menu li{
-    width: 100px;
-    height: 30px;
-    background-color: whitesmoke ;
-    border: 1px solid rgb(37, 26, 100);
-    box-sizing: border-box;
-    text-align: center;
-}
-.sub_menu{
-    display: none;
-}
 
 section{
     margin: 0 auto;
     width: 1200px;
     height: 500px;
 }
-
-.slide{
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    margin-top: 30px;
+}
+.main_menu{
+    width: 520px;
+    height: 80px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.menu_1{
+    width: 130px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: rgb(36, 65, 145);
+}
+.menu_2{
+    width: 130px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: rgb(36, 65, 145);
+}
+.menu_3{
+    width: 130px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: rgb(36, 65, 145);
+}
+.menu_4{
+    width: 130px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: rgb(36, 65, 145);
+}
+.main_menu  div:hover{
+    border: 1px solid rgb(36, 65, 145);
+    box-sizing: border-box;
+    background-color: white;
+}
+.sub_menu{
+    position: absolute;
+    width: 520px;
+    justify-content: space-between;
+    top: 100px;
+    left: 1040px;
+    height: 150px;
+    display: block;
+    z-index: 3;
+}
+.sub_menu ul{
+    display: none;
+}
+.sub_menu li{
+    width: 128px;
+    line-height: 50px;
+    background-color: white;
+    text-align: center;
+    border: 1px solid rgb(36, 65, 145);
+    box-sizing: border-box;
+}
+#slide_box{
+    position: relative;
+    height: 300px;
+}
+#slide_box>a{
+    position: absolute;
     width: 1200px;
     height: 300px;
-    overflow: hidden;
 }
-
 .section03{
     width: 1200px;
     height: 200px;
@@ -68,7 +107,22 @@ section{
 .tab{
     width: 400px;
     height: 200px;
-    background-color: rgb(37, 26, 100);
+    background-color: rgb(36, 65, 145);
+}
+.title{
+    width: 200px;
+    display: flex;
+}
+.title h3{
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid white;
+    box-sizing: border-box;
+    text-align: center;
+}
+.tab-1{
+    background-color: white;
 }
 
 .tab_2{
@@ -77,7 +131,7 @@ section{
 .banner{
     width: 400px;
     height: 200px;
-    background-color: rgb(37, 26, 100);
+    background-color: rgb(36, 65, 145);
 }
 .banner img{
     width: 390px;
@@ -88,7 +142,7 @@ section{
 .connect{
     width: 400px;
     height: 200px;
-    background-color: rgb(37, 26, 100);
+    background-color: rgb(36, 65, 145);
 }
 .connect img{
     width: 390px;
@@ -100,7 +154,7 @@ section{
 footer{
     width: 1200px;
     height: 100px;
-    background-color: rgb(37, 26, 100);
+    background-color: rgb(36, 65, 145);
     margin: 0 auto;
 }
 .section04{
