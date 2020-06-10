@@ -131,9 +131,12 @@ nav{
 .popup{
     width: 300px;
     height: 250px;
+    margin-top: -280px;
+    margin-left: 10px;
     background-color: white;
     border: 1px solid lightblue;
     position: fixed;
+    display: none;
 }
 .popup h2{
     width: 100%;
@@ -152,6 +155,15 @@ nav{
     margin-top: 30px;
     margin-left: 200px;
     border: 0;
+}
+.popup_button input{
+    width: 50px;
+    height: 25px;
+    cursor: pointer;
+    border: 1px solid lightskyblue;
+    background-color: lightblue;
+    border-radius: 5px;
+    color: white;
 }
 .banner{
     width: 400px;
@@ -174,4 +186,36 @@ nav{
     height: 190px;
     margin-left: 5px;
     margin-top: 5px;
+}
+footer{
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+}
+.section4{
+    display: flex;
+    justify-content: space-between;
+    background-color: slategray;
+}
+.logo-2{
+    width: 400px;
+    height: 100px;
+}
+.logo-2 img{
+    filter: grayscale(100%);
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.copyright{
+    width: 400px;
+    height: 100px;
+    line-height: 100px;
+}
+.sns{
+    margin: 0 auto;
+}
+.sns img{
+    margin-top: 25px;
+    width: 50px;
+    height: 50px;
 }

@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #fff;
+    color:#232323;
+}
+li{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.container{
+    width: 1200px;
+    height: 700px;
+    margin: 0 auto;
+}
+nav{
+    width: 1200px;
+    height: 100px;
+    display: block;
+    position: relative;
+}
+.menu{
+    width: 1200px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.mainNav{
+    margin-top: 60px;
+    margin-right: 20px;
+    width: 500px;
+    height: 40px;
+    line-height: 40px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.mainNav li{
+    width: 125px;
+    height: 40px;
+    border: 1px solid rgb(38, 151, 81);
+    box-sizing: border-box;
+    color: rgb(60, 71, 60);
+    font-weight: 800;
+    text-align: center;
+}
+.mainNav li:hover{
+    background-color: forestgreen;
+    color: white;
+}
+.subNav{
+    width: 1200px;
+    background-color: forestgreen;
+    display: none;
+    height: 130px;
+    position: relative;
+    justify-content: flex-end;
+}
+.subNav ul{
+    width: 125px;
+    line-height: 40px;
+    color: rgb(60, 71, 60);
+    text-align: center;
+}
+.sub_last{
+    margin-right: 20px;
+}
+.subNav li{
+    width: 125px;
+    height: 43px;
+}
+.subNav li:hover{
+    background-color: white;
+    color: forestgreen;
+}
+.section01{
+    width: 1200px;
+    height: 300px;
+    overflow: hidden;
+}
+.section01 ul{
+    display:flex;
+}
+.section02{
+    width: 1200px;
+    height: 200px;
+    display: flex;
+    background-color: forestgreen;
+}
+.tab_menu{
+    width: 400px;
+    height: 200px;
+}
+.tab_menu ul{
+    margin-top: 5px;
+    display: flex;
+}
+.tab_menu li{
+    width: 100px;
+    text-align: center;
+    height: 35px;
+    line-height: 35px;
+    color: white;
+}
+#tab_1{
+    margin-left: 20px;
+    background-color: white;
+    color: forestgreen;
+}
+.tab_1{
+    width: 390px;
+    height: 155px;
+    background-color: white;
+    margin-top: -5px;
+    margin-left: 5px;
+}
+.tab_1 ul{
+    display: block;
+}
+.tab_1 li{
+    color: forestgreen;
+    margin-left: 30px;
+}
+#popup:hover{
+    font-weight: 800;
+}
+.tab_2{
+    width: 390px;
+    height: 155px;
+    background-color: white;
+    margin-left: 5px;
+    display: none;
+    justify-content: center;
+}
+.tab_2 img{
+    margin-top: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.popup{
+    display: none;
+    left: 0;
+    top: 0;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    padding-top: 300px;
+
+}
+.popup_body{
+    margin: 0 auto;
+    display: block;
+    width: 300px;
+    height: 250px;
+    background-color: white;
+    border: 1px solid forestgreen;
+}
+.popup h1{
+    color: forestgreen;
+    line-height: 60px;
+    border-bottom: 1px solid forestgreen;
+}
+.popup p{
+    text-align: center;
+    line-height: 30px;
+}
+.popup input{
+    margin-top: 6px;
+    margin-left: 215px;
+    width: 50px;
+    height: 25px;
+    border-radius: 3px;
+    border: none;
+    background-color: forestgreen;
+    color: white;
+    cursor: pointer;
+}
+.gallery{
+    width: 400px;
+    height: 200px;
+    display: block;
+}
+.gallery img{
+    width: 390px;
+    height: 190px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+.banner{
+    width: 400px;
+    height: 200px;
+}
+.banner img{
+    width: 390px;
+    height: 190px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+.footer{
+    width: 1200px;
+    height: 100px;
+    background-color: rgb(1, 20, 20);
+    display: flex;
+    justify-content: space-between;
+}
+.footer_logo{
+    margin-top: 25px;
+    margin-left: 30PX;
+    filter: grayscale(100%);
+}
+.copyright{
+    line-height: 100px;
+    color: white;
+}
+.connect_btn{
+    margin-right: 20px;
+}
+.connect_btn img{
+    width: 50px;
+    margin-top: 25px;
+}

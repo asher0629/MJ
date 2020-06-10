@@ -30,3 +30,12 @@ $(function(){
         $("#tab_2").css("background","none");
     });
 });
+
+$(function(){
+    $('.text').click(function(){
+        $('.popup').css("display","block");
+    });
+    $('.popup_button input').click(function(){
+        $('.popup').css("display","none");
+    });
+});
