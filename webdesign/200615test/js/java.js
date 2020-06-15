@@ -20,3 +20,12 @@ setInterval(function(){
     $('.slide').delay("2500");
     $('.slide').animate({marginTop:"0px"},"500");
 });
+
+$(function(){
+    $('.board_box a').click(function(){
+        $('.popup_wrap').css("display","block");
+    });
+    $('.pop_button').click(function(){
+        $('.popup_wrap').css("display","none");
+    });
+});
