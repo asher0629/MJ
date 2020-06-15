@@ -27,3 +27,12 @@ a{
     height: 300px;
     transition: 1s;
 }
+button{
+    width: 100px;
+    height: 50px;
+    background-color: #3F69AA;
+    border: none;
+    color: white;
+    position: absolute;
+    top: 0;
+}
