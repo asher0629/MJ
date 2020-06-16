@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Document</title>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+       #index_box{
+           position: relative;
+           /* 실수를 줄이기위해서 */
+           width: 1000px;
+           height: 650px;         
+       }
+       #index_left{
+           float: left;
+           width: 240px;
+           height: 100%;
+           background: steelblue;
+       }
+       /* 로고시작 */
+       .logo_box{
+           width: 200px;
+           height: 40px;
+           padding: 20px;
+       }
+       /* 메뉴네비게이션시작 */
+       .menu{
+            width: 200px;
+            margin: 20px;
+            border-top: 3px solid white;
+            border-left: 3px solid white;
+            border-right: 3px solid white;
+            box-sizing: border-box;
+            text-align: center;
+       }
+       .menu>ul>li>a{
+           display: block;
+           line-height: 30px;
+           border-bottom: 3px solid white;
+           background-color: teal;
+       }
+       .sub_menu{
+           display: none;
+           padding: 5px 0;
+           background: white;
+       }
+       .sub_menu>li>a{
+           display: block;
+           padding:5px 0;
+           
+       }
+       .menu>ul>li:hover>a{
+           background: darkslateblue;
+           color:white;
+       }
+       .sub_menu>li>a:hover{
+           background: darkslateblue;
+           color:white;
+       }
+        
+    </style>
+</head>
+<body>
+    <div id="index_box">
+        <!-- 왼쪽메뉴 -->
+        <div id="index_left">
+            <header>
+                <!-- 로고 -->
+                <div class="logo_box"><a href="#"><img src="img/logo.png" alt="로고"></a></div>
+                <!-- 메뉴네비 -->
+                <div class="menu">
+                <ul>
+                    <li id='menu1'>
+                        <a href="#">이용안내</a>
+                        <ul class="sub_menu sub1">
+                            <li><a href="#">이용방법</a></li>
+                            <li><a href="#">이용시간</a></li>
+                            <li><a href="#">이용요금</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li id='menu2'>
+                        <a href="#">이벤트정보</a>
+                        <ul class="sub_menu sub2">
+                            <li><a href="#">현장이벤트</a></li>
+                            <li><a href="#">온라인이벤트</a></li>
+                            <li><a href="#">이벤트예약</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li id='menu3'>
+                        <a href="#">프로그램</a>
+                        <ul class="sub_menu sub3">
+                            <li><a href="#">프로그램 안내</a></li>
+                            <li><a href="#">온라인 예약</a></li>
+                            <li><a href="#">단체예약상담</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <ul>
+                    <li id='menu4'>
+                        <a href="#">고객센터</a>
+                        <ul class="sub_menu sub4">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">자주묻는질문</a></li>
+                            <li><a href="#">자료실</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                </div>
+            </header>
+        </div>
+        <div class="index_right">
+
+        </div>
+    </div>
+
+    
+    <script>
+       $(function(){
+            $('#menu1').mouseover(function(){
+                $('.sub1').stop().slideDown();
+            });
+            $('#menu1').mouseleave(function(){
+                $('.sub1').stop().slideUp();
+            });
+            // 1
+            $('#menu2').mouseover(function(){
+                $('.sub2').stop().slideDown();
+            });
+            $('#menu2').mouseleave(function(){
+                $('.sub2').stop().slideUp();
+            });
+            // 2
+            $('#menu3').mouseover(function(){
+                $('.sub3').stop().slideDown();
+            });
+            $('#menu3').mouseleave(function(){
+                $('.sub3').stop().slideUp();
+            });
+            // 3
+            $('#menu4').mouseover(function(){
+                $('.sub4').stop().slideDown();
+            });
+            $('#menu4').mouseleave(function(){
+                $('.sub4').stop().slideUp();
+            });
+            // 4
+       });
+    </script>
+</body>
+</html>
