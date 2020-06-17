@@ -22,3 +22,12 @@ setInterval(function(){
     $('.slide').delay("2500");
     $('.slide').animate({marginLeft:"0"},"500");
 });
+
+$(function(){
+    $('.board a').click(function(){
+        $('.modal_popup').css('display','block');
+    });
+    $('.popup input').click(function(){
+        $('.modal_popup').css('display',"none");
+    });
+});

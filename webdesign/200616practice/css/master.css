@@ -145,13 +145,14 @@ a{
 .gallery_wrap h3{
     width: 100px;
     line-height: 40px;
-    margin-left: 10px;
+    margin-left: 30px;
     background: white;
     text-align: center;
     color: tomato;
     font-size: 17px;
 }
 .gallery{
+    margin-left: 20px;
     width: 250px;
     display: flex;
     background: white;
@@ -162,4 +163,29 @@ a{
 .gallery img{
     margin-top: 30px;
     margin-bottom: 30px;
+}
+.connect{
+    margin: 0 auto;
+    width: 200px;
+    height: 180px;
+    background: white;
+    margin-top: 10px;
+}
+
+.connect img{
+    display: block;
+    margin: 0 auto;
+}
+
+.footer_wrap{
+    width: 760px;
+    height: 100px;
+    background: #232323;
+    display: flex;
+    justify-content: space-around;
+    line-height: 100px;
+}
+.logo_2 img{
+    height: 40px;
+    margin-top: 30px;
 }
