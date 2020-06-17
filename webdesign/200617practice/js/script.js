@@ -15,16 +15,26 @@ $(function(){
 
 
 
-start();
-var imgs = $('.section01 li').length -1;
-var now = 0;
-function slide(){
-    now = now == imgs ? 0 : now += 1;
-    $('.section01 img').eq(now - 1).fadeOut('slow');
-    $('.section01 img').eq(now).fadeIn('slow');
-};
-function start() {
-    $('.section01 img').eq(0).siblings().fadeOut('slow');
-    setInterval(function(){
-        slide(); }, 3000);
-      };
+// start();
+// var imgs = $('.slide img').length -1;
+// var now = 0;
+// function slide(){
+//     now = now == imgs ? 0 : now += 1;
+//     $('.slide img').eq(now - 1).fadeOut('slow');
+//     $('.slide img').eq(now).fadeIn('slow');
+// };
+// function start() {
+//     $('.slide img').eq(0).siblings().fadeOut('slow');
+//     setInterval(function(){
+//         slide(); }, 3000);
+//       };
+
+$('.slide img:gt(0)').hide();
+setInterval(function(){
+    $('.slide img:first')
+    .fadeOut('slow')
+    .next()
+    .fadeIn('.slow')
+    .end()
+    .appendTo('.slide')
+},3000);

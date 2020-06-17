@@ -70,28 +70,18 @@ nav{
     color: black;
 }
 /*  header end  */
-
-section{
-    width: 1200px;
-    height: 500px;
-    margin: 0 auto;
-}
 .section01{
     width: 1200px;
     height: 300px;
-    position: relative;
+    margin: 0 auto;
 }
 .slide{
-    width: 100%;
-    height: 100%;
+    width: 1200px;
+    height: 300px;
     position: relative;
-    display: block;
+    overflow: hidden;
 }
-.section01 li{
-    position: absolute;
-}
-.section01 img{
-    display: block;
+.slide img{
     width: 1200px;
     height: 300px;
 }
@@ -100,6 +90,7 @@ section{
     height: 200px;
     background: skyblue;
     display: flex;
+    margin: 0 auto;
 }
 .tab_wrap{
     width: 400px;
