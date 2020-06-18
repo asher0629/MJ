@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.all{
+    width: 100%;
+}
+header{
+    width:1200px;
+    margin: 0 auto;
+}
+section{
+    width: 1200px;
+    margin: 0 auto;
+}
+footer{
+    width: 1200px;
+    margin: 0 auto;
+}
+.header_nav{
+    width: 1200px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    background: darkblue;
+}
+.header_logo{
+    width: 200px;
+    height: 40px;
+    margin-top: 30px;
+    margin-left: 30px;
+    color: white;
+}
+.menu{
+    margin-right: 30px;
+    position: relative;
+    margin-top: 30px;
+}
+.main_nav>ul{
+    display: flex;
+    text-align: center;
+}
+.main_nav>ul>li{
+    width: 125px;
+    height: 40px;
+    background: white;
+}
+.main_nav>ul>li>a{
+    line-height: 40px;
+    font-weight: bold;
+}
+.main_nav>ul>li:hover{
+    background: cadetblue;
+    color: white;
+    cursor: pointer;
+}
+.sub_nav{
+    position: relative;
+    z-index: 10;
+    display: none;
+    background: cadetblue;
+    color: white;
+    line-height: 35px;}
+.sub_nav>li:hover{
+    background: cornflowerblue;
+    cursor: pointer;
+}
+.section01{
+    width: 1200px;
+    height: 300px;
+    position: relative;
+}
+.slide{
+    width:1200px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+.slide>div{
+    position: absolute;
+}
+/*
+.slide img{
+    width: 1200px;
+    height: 300px;
+    position: absolute;
+}
+*/
+.slide_1{
+    width: 1200px;
+    height: 300px;
+    background: url("../images/img1.jpg");
+}
+.slide_2{
+    width: 1200px;
+    height: 300px;
+    background: url("../images/img2.jpg");
+}
+.slide_3{
+    width: 1200px;
+    height: 300px;
+    background: url("../images/img3.jpg");
+}
+.section02{
+    width: 1200px;
+    height: 200px;
+    display: flex;
+    background: darkblue;
+}
+.tab_content{
+    width: 400px;
+    height: 200px;
+}
+.tab_title{
+    display: flex;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.tab_title>li{
+    width: 100px;
+    height: 40px;
+    background: white;
+    text-align: center;
+    line-height: 40px;
+}
+.tab_title>li:last-child{
+    background: skyblue;
+}
+.board{
+    width: 390px;
+    height: 150px;
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    line-height: 30px;
+    margin-left: 5px;
+}
+.gallery{
+    display: none;
+    width: 390px;
+    height: 150px;
+    background: white;
+    margin-left: 5px;
+}
+.gallery ul{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+.gallery img{
+    margin-top: 35px;
+}
+.banner{
+    width: 400px;
+    height: 200px;
+}
+.banner img{
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 390px;
+    height: 190px;
+}
+.connect {
+    width: 400px;
+    height: 200px;
+}
+.connect img{
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 390px;
+    height: 190px;
+}
+.popup{
+    display: none;
+    width: 300px;
+    height: 250px;
+    background: white;
+    position: fixed;
+    left: 50%;
+    top: 30%;
+}
+.popup h3{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: darkblue;
+    color: white;
+}
+.popup ul{
+    margin-top: 10px;
+    line-height: 25px;
+    text-align: center; 
+}
+.button{
+    width: 55px;
+    height: 25px;
+    border: none;
+    background: darkblue;
+    color: white;
+    border-radius: 5px;
+    margin-top: 40px;
+    margin-left: 230px;
+}
+.footer_wrap{
+    width: 1200px;
+    height: 100px;
+    background: #303030;
+    display: flex;
+    justify-content: space-between;
+}
+.footer_logo{
+    width: 200px;
+    height: 40px;
+    color: white;
+    line-height: 100px;
+    text-align: center;
+}
+.footer_nav{
+    width: 1000px;
+    height: 100px;
+}
+.footer_menu{
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px dashed #ccc;
+}
+.footer_menu ul{
+    display: flex;
+    justify-content: space-around;
+    line-height: 50px;
+    color: #ccc
+}
+.footer_menu li:hover{
+    color: white;
+}
+.copyright{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
