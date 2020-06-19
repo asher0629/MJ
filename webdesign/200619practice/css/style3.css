@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.all{
+    width: 1000px;
+    display: flex;
+}
+.main_menu{
+    width: 240px;
+    height: 620px;
+    background: darkblue;
+    position: relative;
+    padding-top: 30px;
+}
+.logo{
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px dashed white;
+}
+.logo img{
+    margin-left: 20px;
+}
+.main_nav{
+    margin-top: 50px;
+}
+.main_nav>ul>li{
+    margin: 0 auto;
+    height: 50px;
+    line-height: 50px;
+    background: white;
+    width: 180px;
+    text-align: center;
+    color: darkblue;
+    font-weight: bold;
+}
+.main_nav>ul>li:hover{
+    background: skyblue;
+    cursor: pointer;    
+}
+.sub_nav{
+    display: none;
+    width: 180px;
+    margin: 0 auto;
+    background: white;
+}
+.sub_nav>li{
+    text-align: center;
+    line-height: 40px;
+    color: darkblue;
+    cursor: pointer;
+}
+.sub_nav>li:hover{
+    background: aquamarine;
+}
+.section01{
+    width: 760px;
+    height: 350px;
+    position: relative;
+}
+.slide img{
+    position: absolute;
+/*    transition: .5s;*/
+}
+/*
+.slide_2{
+    opacity: 0;
+}
+.slide_3{
+    opacity: 0;
+}
+*/
+.section02{
+    width: 760px;
+    height: 200px;
+    display: flex;
+    background: darkblue;
+}
+.tab_content{
+    width: 250px;
+    height: 200px;
+}
+.tab_title{
+    display: flex;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.tab_title li{
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+#tab_1{
+    background: white;
+}
+#tab_2{
+    background: skyblue;
+}
+.board{
+    display: flex;
+    width: 240px;
+    height: 150px;
+    background: white;
+    margin-left: 5px;
+    font-size: 12px;
+    line-height: 25px;
+}
+.board ul{
+    margin-top: 10px;
+    margin-left: 2px;
+}
+.gallery{
+    display: none;
+}
+.gallery ul{
+    display: flex;
+    width: 240px;
+    height: 150px;
+    background: white;
+    margin-left: 5px;
+    justify-content: space-around;
+}
+.gallery img{
+    margin-top: 45px;
+    width: 60px;
+}
+.banner{
+    width: 250px;
+    height: 200px;
+}
+.banner img{
+    margin: 0 auto;
+    width: 240px;
+    height: 190px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.connect{
+    width: 260px;
+    height: 200px;
+}
+.connect img{
+    width: 250px;
+    height: 190px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.popup{
+    position: fixed;
+    width: 300px;
+    height: 250px;
+    background: white;
+    text-align: center;
+    border:1px solid darkblue;
+    margin-top: -150px;
+    margin-left: 100px;
+    display: none;
+}
+.popup h3{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background: darkblue;
+    color: white;
+}
+.popup_text{
+    line-height: 30px;
+}
+.button{
+    width: 40px;
+    height: 25px;
+    line-height: 25px;
+    margin-top: 20px;
+    margin-left: 180px;
+    color: white;
+    border: none;
+    background: darkblue;
+}
+.footer_wrap{
+    width: 760px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    background: #303030;
+}
+.footer_nav{
+    width: 
+}
+.footer_logo{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.footer_menu{
+    width: 500px;
+    line-height: 50px;
+    color: #111;
+    display: flex;
+    justify-content: space-around;
+}
+.copyright{
+    width: 500px;
+    text-align: center;
+    line-height: 50px;
+}
