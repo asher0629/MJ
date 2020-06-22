@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.all{
+    width: 1000px;
+    display: flex;
+}
+nav{
+    width: 240px;
+    height: 650px;
+    background: #9eb78e;
+}
+.logo{
+    width: 200px;
+    height: 60px;
+    margin: 0 auto;
+    padding-top: 50px;
+    border-bottom: 1px dashed #fff;
+}
+.menu{
+    width: 220px;
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: center;
+}
+.main_nav>li>a{
+    margin: 0 auto;
+    width: 200px;
+    height: 50px;
+    display: block;
+    background: white;
+    line-height: 50px;
+    color: #44472a;
+    font-weight: bold;
+    cursor: pointer;
+}
+.main_nav>li>a:hover{
+    background: #44472a;
+    color:white;
+}
+.sub_nav{
+    display: none;
+    margin: 0 auto;
+    width: 200px;
+    line-height: 30px;
+    background: #f2d3d9;
+    cursor: pointer;
+}
+.sub_nav>li:hover{
+    background: #c3919a;
+}
+.section01{
+    width: 760px;
+    height: 350px;
+}
+.slide{
+    position: relative;
+}
+.slide li{
+    position: absolute;
+}
+
+.section02{
+    width: 760px;
+    height: 200px;
+    display: flex;
+}
+.board{
+    width: 300px;
+    height: 200px;
+}
+.board h3{
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 10px;
+    text-align: center;
+    background: #f2d3d9;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+.board_text{
+    width: 290px;
+    height: 155px;
+    background: #f2d3d9;
+    margin-top: -5px;
+    margin-left: 5px;
+}
+.board li{
+    width: 100%;
+    margin-left: 10px;
+    line-height: 35px;
+}
+.board_text a{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.board_text span{
+    margin-right: 20px;
+}
+.gallery{
+    width: 300px;
+    height: 200px;
+}
+.gallery h3{
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background: #c3919a;
+    color: white;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.gallery ul{
+    width: 290px;
+    height: 155px;
+    background: #c3919a;
+    display: flex;
+    justify-content: space-around;
+    margin-top: -5px;
+    margin-left: 5px;
+}
+.gallery li{
+    width: 80px;
+    height: 80px;
+    background: white;
+    margin-top: 35px;
+}
+.gallery img{
+    margin: 15px;
+}
+.modal{
+    display: none;
+}
+.footer_wrap{
+    width: 760px;
+    height: 100px;
+    display: flex;
+    background: #453745;
+}
+.copyright{
+    width: 600px;
+    text-align: center;
+    line-height: 100px;
+}
+.footer_nav{
+    width: 160px;
+}
+.sns{
+    display: flex;
+}
+.sns img{
+    width: 40px;
+}

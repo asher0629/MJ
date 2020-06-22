@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.all{
+    width: 1000px;
+    height: 650px;
+    background: black;
+    display: flex;
+}
+/* 전체       */
+.header_nav{
+    width: 240px;
+    height: 650px;
+}
+.header_logo{
+    width: 200px;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+.menu{
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.main_nav>li{
+    width: 200px;
+    height: 50px;
+    background: tomato;
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: 900;
+    cursor: pointer;
+    position: relative;
+}
+.main_nav>li>a{
+    color: black;
+    display: block;
+}
+.main_nav>li:hover{
+    background: white;
+    color: black;
+}
+.sub_nav{
+/*    display: none;*/
+    position: absolute;
+    left: 200px;
+    top: 0;
+    z-index: 1;
+}
+.sub_nav>li{
+    width: 200px;
+    background: #b93d27;
+    position: relative;
+}
+.sub_nav>li:hover{
+    background: white;
+}
+/*메뉴*/
+
+.section01{
+    width: 760px;
+    height: 350px;
+    overflow: hidden;
+}
+.slide{
+    display: flex;
+}
+/* 슬라이더 */
+.section02{
+    width: 760px;
+    height: 200px;
+    background: tomato;
+    display: flex;
+}
+.board{
+    width: 300px;
+    height: 200px;
+}
+.board h3{
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: white;
+    margin-left: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+.board_wrap{
+    width: 290px;
+    height: 150px;
+    background: white;
+    margin-left: 5px;
+    display:flex;
+    justify-content: space-around;
+    line-height: 30px;
+}
+/*  공지사항  */
+.gallery{
+    width: 300px;
+    height: 200px;
+}
+.gallery h3{
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #ccc;
+    margin-left: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+.gallery ul{
+    width: 290px;
+    height: 150px;
+    background: white;
+    margin-left: 5px;
+    display:flex;
+    justify-content: space-around;
+}
+.gallery li{
+    margin-top: 35px;
+}
+/*갤러리*/
+.banner{
+    width: 160px;
+    height: 200px;
+}
+.banner img{
+    width: 155px;
+    margin-top: 15px;
+}
+/*      배너    */
+.popup{
+    position: fixed;
+    width: 400px;
+    height: 250px;
+    background: white;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: -150px;
+    display: none;
+}
+.popup h3{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background: tomato;
+}
+.popup ul{
+    margin-top: 20px;
+    line-height: 30px;
+}
+.button{
+    cursor: pointer;
+    width: 50px;
+    height: 25px;
+    border-radius: 5px;
+    line-height: 25px;
+    border: none;
+    background: tomato;
+    margin-top: 10px;
+    margin-left: 250px;
+}
+.footer_wrap{
+    width: 760px;
+    height: 100px;
+    display: flex;
+    background: #333;
+}
+.footer_logo{
+    margin-top: 20px;
+    margin-left: 20px;
+    filter: grayscale(100%);
+}
+.footer_nav{
+    width: 500px;
+    text-align: center;
+}
+.footer_menu{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    line-height: 50px;
+}
+.footer_menu>li:hover{
+    color:aliceblue;
+}
+.copyright{
+    line-height: 50px;
+    color: #777
+}
