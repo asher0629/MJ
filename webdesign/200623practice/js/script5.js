@@ -1,0 +1,30 @@
+$(function(){
+    $('.main_nav').hover(function(){
+        $('.sub_nav,.menu_bg').stop().slideToggle();        
+    });
+    $('.main_nav>li').mouseenter(function(){
+        $(this).children('a').css('background',"aliceblue");
+        $(this).children('a').css('color',"#1c4072");
+    });
+    $('.main_nav>li').mouseleave(function(){
+        $(this).children('a').css('background',"#7a92b2");
+        $(this).children('a').css('color',"aliceblue");
+    });
+});
+$(function(){
+    setInterval(function(){
+        $('.slide').delay('2500');
+        $('.slide').animate({marginTop:'-300px'},500);
+        $('.slide').delay('2500');
+        $('.slide').animate({marginTop:'-600px'},500); $('.slide').delay('2500');
+        $('.slide').animate({marginTop:'0'},500);
+    });
+});
+$(function(){
+    $('.팝업열기').click(function(){
+        $('.modal').css('display',"block");
+    });
+    $('.팝업닫기').click(function(){
+        $('.modal').css('display',"none");
+    });
+});

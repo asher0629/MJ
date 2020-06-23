@@ -1,0 +1,28 @@
+$(function(){
+    $('.main_nav>li').mouseenter(function(){
+        $(this).children().stop().slideDown();
+    });
+       $('.main_nav>li').mouseleave(function(){
+        $('.sub_nav').stop().slideUp('slow');
+    });
+});
+$(function(){
+    $('.slide>li').hide();
+    $('.slide>li:first-child').show();
+    setInterval(function(){
+        $('.slide>li:first')
+        .fadeOut(1000)
+        .next()
+        .fadeIn(1000)
+        .end()
+        .appendTo('.slide');
+    },2000);
+});
+$(function(){
+    $('.팝업열기').click(function(){
+        $('.modal').css("display",'block');
+    });
+    $('.팝업닫기').click(function(){
+        $('.modal').css("display",'none');
+    });
+});

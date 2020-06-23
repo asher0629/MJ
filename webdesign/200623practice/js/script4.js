@@ -1,0 +1,28 @@
+$(function(){
+    $('.main_nav>li').hover(function(){
+        $(this).children('.main_nav>li>a').css('background',"white").css('color','black');
+        $('.sub_nav').stop().slideToggle('slow');
+    });
+    $('.main_nav>li').mouseleave(function(){
+        $(this).children('.main_nav>li>a').css('background',"#b49167").css('color','white');
+    })
+});
+
+$(function(){
+    setInterval(function(){
+        $('.slide').delay('2500');
+        $('.slide').animate({marginTop:'-300px'},500);
+        ('.slide').delay('2500');
+        $('.slide').animate({marginTop:'-600px'},500);
+        ('.slide').delay('2500');
+        $('.slide').animate({marginTop:'0'},500);
+    });
+});
+$(function(){
+    $('.팝업열기').click(function(){
+        $('.popup').css('display','block');
+    });
+    $('.팝업닫기').click(function(){
+        $('.popup').css('display','none');
+    });
+});

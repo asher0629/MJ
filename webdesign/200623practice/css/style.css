@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.all{
+    width: 1000px;
+    display: flex;
+}
+.menu{
+    width: 240px;
+    height: 650px;
+    background: #8fa889;
+}
+.logo{
+    margin: 0 auto;
+    width: 200px;
+    padding-top: 50px;
+    margin-bottom: 50px;
+    border-bottom: 1px dashed white;
+}
+.main_nav{
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.main_nav>li{
+    width: 200px;
+    line-height: 40px;
+    background: #dea6b0;
+    font-weight: 700;
+    font-size: 20px;
+    color: indianred;
+    cursor: pointer;
+}
+.main_nav>li:hover{
+    background: white;
+}
+.sub_nav{
+    display: none;
+    font-size: 16px;
+    font-weight: 500;
+    background: indianred;
+    color: white;
+    cursor: pointer;
+}
+.sub_nav>li:hover{
+    background: white;
+    color: indianred;
+}
+.main{
+    width: 760px;
+    height: 650px;
+}
+.section01{
+    width: 760px;
+    height: 350px;
+}
+.slide{
+    position: relative;
+}
+.slide li{
+    position: absolute;
+}
+.section02{
+    width: 760px;
+    height: 200px;
+    display: flex;
+}
+.board{
+    width: 300px;
+    height: 200px;
+    background: #8fa889;
+}
+.board h3{
+    width: 100px;
+    height: 40px;
+    background: white;
+    text-align: center;
+    line-height: 40px;
+    color: indianred;
+    margin-left: 10px;
+    margin-top: 5px;
+    font-size: 18px;
+}
+.board_text{
+    width: 290px;
+    height: 150px;
+    background: white;
+    margin-left: 5px;
+    color: indianred;
+}
+.board_text li{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5px;
+    line-height: 30px;
+}
+.board_text span{
+    margin-right: 5px;
+}
+.gallery{
+    width: 300px;
+    height: 200px;
+    background: indianred;
+}
+.gallery h3{
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background: #ccc;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.gallery ul{
+    display: flex;
+    justify-content: space-around;
+    width: 290px;
+    height: 150px;
+    margin-left: 5px;
+    background: white;
+}
+.gallery li{
+    width: 90px;
+    height: 90px;
+    background: indianred;
+    margin-top: 30px;
+}
+.gallery img{
+    margin: 20px;
+}
+.modal{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.popup{
+    width: 400px;
+    height: 300px;
+    background: indianred;
+    margin-left: 15%;
+    margin-top: 10%;
+    text-align: center;
+}
+.popup h3{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    color: indianred;
+    background: white;
+}
+.popup_text{
+    margin-top: 20px;
+    color: white;
+    line-height: 40px;
+}
+.팝업닫기{
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #912626;
+    border-radius: 5px;
+    color: white;
+    margin-left: 300px;
+    border:none;
+    cursor: pointer;
+}
+.footer_wrap{
+    width: 760px;
+    height: 100px;
+    display: flex;
+    background: #6c746c;
+    justify-content: space-between;
+}
+.copyright{
+    width: 560px;
+    text-align: center;
+    line-height: 100px;
+}
+.footer_nav{
+    width: 200px;
+    height: 100px;
+    border-left: 1px solid #ccc;
+}
+.sns{
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-around;
+}
+.sns img{
+    width: 40px;
+    margin-top: 5px;
+}
+.family_site{
+    width: 100%;
+    height: 50px;
+}
+.family_site select{
+    margin: 15px;
+    margin-left: 55px;
+    cursor: pointer;
+}
