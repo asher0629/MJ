@@ -1,0 +1,85 @@
+@font-face { font-family: 'NEXON Lv2 Gothic Bold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Bold.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face {font-family: "Helvetica Neue"; src: url("//db.onlinewebfonts.com/t/b71c831cd232effde30ce1bec5e171d5.eot"); src: url("//db.onlinewebfonts.com/t/b71c831cd232effde30ce1bec5e171d5.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/b71c831cd232effde30ce1bec5e171d5.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/b71c831cd232effde30ce1bec5e171d5.woff") format("woff"), url("//db.onlinewebfonts.com/t/b71c831cd232effde30ce1bec5e171d5.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/b71c831cd232effde30ce1bec5e171d5.svg#Helvetica Neue") format("svg"); }
+@font-face { font-family: 'locus_sangsang'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/locus_sangsang.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'GyeonggiTitleM'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiTitleM.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: '2YangPyeongM'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/2YangPyeongM.woff') format('woff'); font-weight: normal; font-style: normal; }
+.section01{
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+}
+.section01-title{
+    color: white;
+    width: 23%;
+    height: 40vh;
+    background: #20263b78;
+    text-align: center;
+}
+.title_text{
+    font-family: '2YangPyeongM'; 
+    margin: 15% 0;
+    font-size: 4rem;
+}
+.k7_logo img{
+    width: 40%;
+}
+.k7_logo span{
+    font-family: "Helvetica Neue";
+    font-style: italic;
+    font-size: 5rem;
+}
+.section01-bg-img{
+    background: url(../images/k7_premier_x_edition_main_01.webp);
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.section01-info{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+}
+.section01-info div{
+    width: 20%;
+    text-align: center;
+}
+.section01-info img{
+    display: block;
+    margin: 0 auto ;
+    margin-top: 5%;
+}
+.section01-info span{
+    display: block;
+}
+.info-title{
+    font-family: 'locus_sangsang';
+    margin-top: 2%;
+    font-size: 1.2em;
+    line-height: 2.6em;
+    font-weight: 700;
+    color: #444;
+}
+.info-text{
+    font-family: 'GyeonggiTitleM';
+    font-size: 1.7em;
+    font-weight: 900;
+}
+.section01-info-01{
+    background: #e4dcd5;
+}
+.section01-info-02{
+    background:#d3cbc5;
+}
+.section01-info-03{
+    background: #e4dcd5;
+}
+.section01-info-04{
+    background:#d3cbc5;
+}
+.section01-info-05{
+    background: #e4dcd5;
+}
