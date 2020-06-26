@@ -1,0 +1,173 @@
+@font-face {font-family: "Helvetica Neue"; src: url("//db.onlinewebfonts.com/t/b71c831cd232effde30ce1bec5e171d5.eot"); src: url("//db.onlinewebfonts.com/t/b71c831cd232effde30ce1bec5e171d5.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/b71c831cd232effde30ce1bec5e171d5.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/b71c831cd232effde30ce1bec5e171d5.woff") format("woff"), url("//db.onlinewebfonts.com/t/b71c831cd232effde30ce1bec5e171d5.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/b71c831cd232effde30ce1bec5e171d5.svg#Helvetica Neue") format("svg"); }
+@font-face { font-family: 'locus_sangsang'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/locus_sangsang.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'GyeonggiTitleM'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiTitleM.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: '2YangPyeongM'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/2YangPyeongM.woff') format('woff'); font-weight: normal; font-style: normal; }
+.section01{
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+}
+.section01-title{
+    color: white;
+    width: 23%;
+    height: 40vh;
+    background: #20263b78;
+    text-align: center;
+}
+.title_text{
+    font-family: '2YangPyeongM'; 
+    margin: 15% 0;
+    font-size: 4rem;
+}
+.k7_logo img{
+    width: 40%;
+}
+.k7_logo span{
+    font-family: "Helvetica Neue";
+    font-style: italic;
+    font-size: 5rem;
+}
+.section01-bg-img{
+    background: url(../images/k7_premier_x_edition_main_01.webp);
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.section01-info{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+}
+.section01-info div{
+    width: 20%;
+    text-align: center;
+}
+.section01-info img{
+    display: block;
+    margin: 0 auto ;
+    margin-top: 5%;
+}
+.section01-info span{
+    display: block;
+}
+.info-title{
+    font-family: 'locus_sangsang';
+    margin-top: 2%;
+    font-size: 1.2em;
+    line-height: 2.6em;
+    font-weight: 700;
+    color: #444;
+}
+.info-text{
+    font-family: 'GyeonggiTitleM';
+    font-size: 1.7em;
+    font-weight: 900;
+}
+.section01-info-01{
+    background: #e4dcd5;
+}
+.section01-info-02{
+    background:#d3cbc5;
+}
+.section01-info-03{
+    background: #e4dcd5;
+}
+.section01-info-04{
+    background:#d3cbc5;
+}
+.section01-info-05{
+    background: #e4dcd5;
+}
+/* section01 */
+.section02{
+    width: 100%;
+    padding: 100px 0;
+    background: #333;
+}
+.section02_title{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+}
+.section02_title img{
+    width: 10%;
+}
+.section02_title p{
+    color: white;
+    font-weight: 900;
+    font-size: 5rem;
+    margin-top: 3%;
+    font-family: "Helvetica Neue";
+    font-style: italic;
+}
+.car_img_wrap{
+    height: 60%;
+    display: flex;
+    align-items: center;
+}
+.tap_car_img{
+    width: 100%;
+    height: 80vh;
+}
+
+.ABP,.ABT,.B4U,.SS4{
+    display: none;
+}
+.tab_car_color_text{
+    width: 100%;
+    height: 5%;
+}
+.car-color-text-wrap{
+
+    display: flex;
+    justify-content: space-evenly;
+}
+.car-color-text-wrap>div{
+    width: 50%;
+}
+.car-color ul{
+    display: flex;
+    justify-content: space-around;
+}
+.car-color li{
+    margin: 10% 10%;
+    list-style: none;
+}
+.car-color img{
+    width: 40px;
+    height: 40px;
+    border: 3px solid #ccc;
+}
+.car-text>ul>li:first-child{
+    display: block;
+}
+.car-text>ul>li{
+    display: none;
+    font-weight: 500;
+    color: #ccc;
+    font-size: 2.2rem;
+}
+.notice{
+    width: 100%;
+    padding-top: 2.5%;
+    height: 5%;
+    text-align: center;
+    display: block;
+    color: white;
+}
+
+@media(max-width:767px){
+    .tab_car_img img{
+        width: 100%;
+    }
+    .section02_title img{
+        width: 20%;
+    }
+}
