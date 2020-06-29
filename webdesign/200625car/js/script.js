@@ -60,7 +60,21 @@ $(function(){
         $('.SS4_text').css('display','block');
     });
 });
+$(function(){
+    $('.interior-btn').click(function(){
+        $('.interior').css('display','block');
+        $('.section03-gallery').animate({marginLeft:"-100%"},1000);
+    });
+    $('.exterior-btn').click(function(){
+        $('.section03-gallery').animate({marginLeft:"0"},1000);
+        $('.interior').fadeOut(2000);
+    });
+});
 $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+});
+$(document).on('click', '[data-toggle="lightbox2"]', function(event) {
     event.preventDefault();
     $(this).ekkoLightbox();
 });
