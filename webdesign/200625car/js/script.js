@@ -60,15 +60,6 @@ $(function(){
         $('.SS4_text').css('display','block');
     });
 });
-
-$(function(){
-    $('.exterior_gallery>div>div').hover(function(){
-        $(this).children().css('display',"block");
-    });
-    $('.exterior_gallery>div>div').mouseleave(function(){
-        $(this).children().css('display',"none");
-    });
-});
 $(document).on('click', '[data-toggle="lightbox"]', function(event) {
     event.preventDefault();
     $(this).ekkoLightbox();

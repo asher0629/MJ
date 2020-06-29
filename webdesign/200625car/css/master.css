@@ -7,85 +7,50 @@
     height: 100vh;
     width: 100%;
 }
-.section01-title{
-    color: white;
-    width: 23%;
-    height: 40vh;
-    background: #20263b78;
-    text-align: center;
-}
-.title_text{
-    font-family: '2YangPyeongM'; 
-    margin: 15% 0;
-    font-size: 4rem;
-}
-.k7_logo img{
-    width: 40%;
-}
-.k7_logo span{
-    font-family: "Helvetica Neue";
-    font-style: italic;
-    font-size: 5rem;
-}
+
 .section01-bg-img{
-    background: url(../images/k7_premier_x_edition_main_01.webp);
+    background: url(../images/K7/ms_k7_pl_df2_img_1.jpg);
     background-position: center;
     background-size: cover;
-    height: 80vh;
+    height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
 }
-
-.section01-info{
+.section01-bg-opacity{
     width: 100%;
-    height: 20vh;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(51,51,51,1) 0%, rgba(51,51,51,0.8211659663865546) 9%, rgba(51,51,51,0.31976540616246496) 17%, rgba(51,51,51,0) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-right: 8%;
+}
+.section01-title{
+    color: white;
+    font-size: 5rem;
     display: flex;
+    justify-content: flex-end;
+    margin-top: 12%;
 }
-.section01-info div{
-    width: 20%;
-    text-align: center;
-}
-.section01-info img{
-    display: block;
-    margin: 0 auto ;
-    margin-top: 5%;
-}
-.section01-info span{
-    display: block;
-}
-.info-title{
-    font-family: 'locus_sangsang';
+.section01-title p{
     margin-top: 2%;
-    font-size: 1.2em;
-    line-height: 2.6em;
-    font-weight: 700;
-    color: #444;
+    font-family: "Helvetica Neue";
+    font-style: italic;
 }
-.info-text{
-    font-family: 'GyeonggiTitleM';
-    font-size: 1.7em;
-    font-weight: 900;
+.section01-title img{
+    width: 8%;
+    height: 8%;
+    display: block;
 }
-.section01-info-01{
-    background: #e4dcd5;
-}
-.section01-info-02{
-    background:#d3cbc5;
-}
-.section01-info-03{
-    background: #e4dcd5;
-}
-.section01-info-04{
-    background:#d3cbc5;
-}
-.section01-info-05{
-    background: #e4dcd5;
+.section01-title-text{
+    color: white;
+    font-size: large;
 }
 /* section01 */
 .section02{
     width: 100%;
-    padding: 100px 0;
+    height: 100vh;
+    padding: 150px 0;
     background: #333;
 }
 .section02_title{
@@ -178,8 +143,12 @@
 }
 .gallery_title{
     color: white;
-    font-size: xxx-large;
-    font-family: 'GyeonggiTitleM';
+    font-size: 5rem;
+    font-family: "Helvetica Neue";
+}
+.gallery_title span{
+    font-weight: 100;
+    font-size: xx-large;
 }
 .gallery_title_border{
     width: 40%;
@@ -244,25 +213,44 @@
 }
 /* gallery_img */
 .gallery_opacity{
+    transition: .8s;
+    text-decoration: none !important;
+}
+.gallery_opacity:hover{
     width: 100%;
     height: 33vh;
     background: rgba(0,0,0,0.5);
     background-size: cover;
     background-position: center;
     display: block;
-    text-decoration: none !important;
-    /* display: none; */
 }
 .gallery_text_box{
     font-size: xx-large;
     color: white;
     line-height: 33vh;
-    font-family: 'GyeonggiTitleM';
-    /* display: none; */
+    font-family: "Helvetica Neue";
+    opacity: 0;
+    transition: .5s;
+}
+.gallery_text_box:hover{
+    opacity: 1;
 }
 @media(max-width:767px){
+    .section01-title{
+        margin-top: 40%;
+    }
+    .section01-title img{
+        width: 20%;
+    }
+    .section01-title-text{
+        font-size: small;
+    }
     .tab_car_img img{
         width: 100%;
+    }
+    .section02{
+        display: flex;
+        align-items: center;
     }
     .section02_title img{
         width: 20%;
