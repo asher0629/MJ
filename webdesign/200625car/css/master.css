@@ -139,6 +139,7 @@
 .car-color li{
     margin: 10% 10%;
     list-style: none;
+    cursor: pointer;
 }
 .car-color img{
     width: 40px;
@@ -249,6 +250,7 @@
     background-size: cover;
     background-position: center;
     display: block;
+    text-decoration: none !important;
     /* display: none; */
 }
 .gallery_text_box{
