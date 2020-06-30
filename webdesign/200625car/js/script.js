@@ -64,10 +64,11 @@ $(function(){
     $('.interior-btn').click(function(){
         $('.interior').css('display','block');
         $('.section03-gallery').animate({marginLeft:"-100%"},1000);
+        $('.interior').fadeIn();
     });
     $('.exterior-btn').click(function(){
         $('.section03-gallery').animate({marginLeft:"0"},1000);
-        $('.interior').fadeOut(2000);
+        $('.interior').css('display','none');
     });
 });
 $(document).on('click', '[data-toggle="lightbox"]', function(event) {
@@ -77,4 +78,8 @@ $(document).on('click', '[data-toggle="lightbox"]', function(event) {
 $(document).on('click', '[data-toggle="lightbox2"]', function(event) {
     event.preventDefault();
     $(this).ekkoLightbox();
+});
+
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();
 });
