@@ -122,6 +122,8 @@
 .section03{
     width: 100%;
     height: 100vh;
+    margin: 0;
+    padding: 0;
     background: #333;
     overflow: hidden;
 }
@@ -352,6 +354,7 @@
 .drive-wise-big-img img{
     width: 100%;
     margin-bottom: 3%;
+    position: relative;
 }
 .drive-wise-point{
     position: absolute;
@@ -367,7 +370,68 @@
     width: 20px;
     height: 20px;
     border-radius: 100%;
-    padding: 5px;
+    padding: 7.4px;
+}
+/* drivewise big img*/
+.drive-wise-modal button{
+    width: 60px ;
+    height: 60px ;
+    background-color: darkred;
+    opacity: 1 !important;
+    color: #fff ;
+}
+.drive-wise-modal>div>div{
+    width: 49.4vh;
+    height: 50vh;
+}
+.modal_1-img{
+    background: url(../images/K7/k7_premier_drivewise_02.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.modal_2-img{
+    background: url(../images/K7/k7_premier_drivewise_03.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.modal_3-img{
+    background: url(../images/K7/k7_premier_drivewise_04.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.modal_4-img{
+    background: url(../images/K7/k7_premier_drivewise_05.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* modal */
+.drive-wise-sm-img01{
+    width: 100%;
+    height: 46vh;
+    background: url(../images/K7/k7_premier_drivewise_06.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.drive-wise-sm-img02{
+    width: 100%;
+    height: 46vh;
+    background: url(../images/K7/k7_20my_yg_drivewise_external_air_inflow_control_w.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.drive-wise-sm-img03{
+    width: 100%;
+    height: 46vh;
+    background: url(../images/K7/k7_premier_drivewise_08.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 @keyframes record-lg {
 	0% {
@@ -376,7 +440,7 @@
 	}
 	50% {
 		opacity: 1;
-		transform: scale(1);
+		transform: scale(.8);
 	}
 	100% {
 		opacity: 0;
@@ -397,8 +461,8 @@
 
 
 .drive-wise-point-spot{
-    width: 10px;
-    height: 10px;
+    width: 5px;
+    height: 5px;
     border-radius: 10px;
     display: block;
     background-color: black;
