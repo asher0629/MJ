@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document.Object.Model (DOM)</title>
+    <style type="text/css">
+    #box{
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+    }
+    .box{
+        background: cadetblue;
+    }
+
+    #box2{
+        width: 100px;
+        height: 100px;
+        border: 3px solid black;
+    }
+    #box2.hover{
+        background: darkolivegreen;
+        color: white;
+    }
+    </style>
+</head>
+<body>
+    <div id="box" class="box" onclick="changeColor();">Hello box</div>
+    <button onclick="changeColor();">색없애기</button>
+    <button onclick="returnColor()">돌리기</button>
+
+    <div id="box2"><p>마우스를 올려주세요</p></div>
+
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script type="text/javascript">
+    
+        function changeColor(){
+            var box=document.querySelector('#box');
+            box.removeAttribute('class');
+        }
+        // 이벤트 없애기 클래스 지우기
+        function returnColor(){
+            var box=document.querySelector('#box');
+            box.setAttribute('class','box');
+        }
+        // 돌리기 클래스 없애기
+
+        var box2 = document.getElementById('box2');
+
+        // 마우스오버
+        box2.addEventListener('mouseover',function(){
+            box2.setAttribute('class','hover');
+        });
+
+        // 마우스 아웃
+        box2.addEventListener('mouseout',function(){
+            box2.removeAttribute('class');
+        });
+
+        // onClick 마우스를 클릭했을 때
+        // onmouseover 마우스가 해당 내용안에 들어 왔을 때
+        // mouseout 마우스가 해당 내용안에 벗어났을 때
+        // onkeydown 키보드를 입력했을 때
+        // onkeyup 키보드를 땟을 때
+        // onfocus.onblur 해당 요소가 선택 됐거나 해제 했을 때
+        // onsubmit 폼 전송 이벤트가 발생했을 때
+        
+    </script>
+</body>
+</html>

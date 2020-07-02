@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>first</li>
+        <li>second</li>
+        <li>third</li>
+    </ul>
+
+    <button onclick="setColor();">Click</button>
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script type="text/javascript">
+
+    function setColor(){
+        var li=document.querySelectorAll("li");
+
+        for(var i=0; i<li.length; i++){
+            li[i].style.color="green";
+            li[i].style.background="pink";
+            li[i].style.listStyle="none";
+        }
+    }
+    </script>
+</body>
+</html>

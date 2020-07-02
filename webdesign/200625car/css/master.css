@@ -335,21 +335,44 @@
     width: 100%;
     height: 100vh;
     padding: 0;
+    margin: 0;
 }
 .section04-menu-title{
     height: 100vh;
     padding: 0;
+    margin: 0;
+    position: relative;
 }
 .section04-content{
+    height: 100vh;
     padding: 0;
     position: relative;
 }
 /* section04-big-box */
+.drive_wise_title{
+    width: 100%;
+    height: 14vh;
+    padding: 0;
+    margin: 0;
+    border: 3px solid #ccc;
+    background: #333;
+}
+.dw_title_text{
+    color: white;
+}
+.dw_title_text_line{
+    width: 40px;
+    height: 2px;
+    background: white;
+}
 .drive_wise{
     width: 100%;
     height: 100vh;
     padding: 0;
+    margin: 0;
     position: absolute;
+    display: none;
+    z-index: 2;
 }
 .dw_main_img{
     position: relative;
@@ -362,10 +385,41 @@
 .dw_sub_img{
     width: 100%;
     height: 50vh;
+    padding: 0;
+    margin: 0;
+}
+.dw_sub_img>div{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    border-top: 3px solid white;
+    border-right: 3px solid white;
+}
+.dw_sub_img>div:last-child{
+    border-right: none;
+}
+.dw_sub_img>div>div:hover{
+    transform: scale(1.1);
+    transition:1s;
 }
 .dw_sub_img01{
     height: 50vh;
-    background: url(../images/K7/k7_premier_drivewise_02.jpg);
+    background: url(../images/K7/k7_premier_drivewise_06.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.dw_sub_img02{
+    height: 50vh;
+    background: url(../images/K7/k7_20my_yg_drivewise_external_air_inflow_control_w.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.dw_sub_img03{
+    height: 50vh;
+    background: url(../images/K7/k7_premier_drivewise_08.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -374,16 +428,22 @@
 .convenience{
     width: 100%;
     height: 100vh;
+    margin: 0;
+    padding: 0;
     background: turquoise;
     position: absolute;
-    z-index: -1;
+    z-index: 1;
 }
+
+/* convenience */
 .safety{
     width: 100%;
     height: 100vh;
+    margin: 0;
+    padding: 0;
     background: violet;
     position: absolute;
-    z-index: -2;
+    z-index: 0;
 }
 /* section04 */
 .section05{
