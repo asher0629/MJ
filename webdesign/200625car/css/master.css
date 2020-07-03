@@ -48,8 +48,8 @@
 /* section01 */
 .section02{
     width: 100%;
-    height: 120vh;
-    padding: 120px 0;
+    height: 100vh;
+    padding: 100px 0;
     background: #333;
 }
 .section02_title{
@@ -122,8 +122,8 @@
 .section03{
     width: 100%;
     height: 100vh;
-    margin: 0;
-    padding: 0;
+    margin: 0 !important;
+    padding: 0 !important;
     background: #333;
     overflow: hidden;
 }
@@ -134,15 +134,21 @@
 .exterior{
     height: 100%;
     background: #333;
+    padding: 0;
+    margin: 0;
 }
 .interior{
     height: 100%;
     background: #333;
+    padding: 0 15px;
+    margin: 0;
 }
+
 /* section03 영역분할 */
 .exterior-title-wrap{
-    width: 33%;
-    margin-left: 33%;
+    /* width: 33%; */
+    /* margin-left: 33%; */
+    padding: 0 !;
 }
 .title-border{
     width: 30px;
@@ -153,56 +159,61 @@
     color: #fff;
 }
 /* exterior title */
-
+.exterior-gallery{
+    padding: 0 !important;
+    margin-left: 27.1%;
+}
 .exterior-gallery>div>div{
     padding: 0 !important;
+    margin: 0 !important;
 }
 .exterior-gallery>div>div{
         border-bottom: 3px solid #fff;
 }
 .exterior-gallery>div>div:first-child{
         border-right: 3px solid #fff;
+        box-sizing: border-box;
 }
 .exterior-gallery_1,.exterior-gallery_2{
     border-top: 3px solid #fff;
 }
 .exterior-gallery_1{
-    height: 33.33vh;
-    background: url(../images/K7/k7_premier_popup_ex01.webp);
+    height: 33.2vh;
+    background: url(../images/K7/k7_premier_popup_ex01.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .exterior-gallery_2{
-    height: 33.33vh;
+    height: 33.2vh;
     background: url(../images/K7/k7_premier_popup_ex02.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .exterior-gallery_3{
-    height: 33.33vh;
-    background: url(../images/K7/k7_premier_popup_ex03.webp);
+    height: 33.2vh;
+    background: url(../images/K7/k7_premier_popup_ex03.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .exterior-gallery_4{
-    height: 33.33vh;
-    background: url(../images/K7/k7_premier_popup_ex04.webp);
+    height: 33.2vh;
+    background: url(../images/K7/k7_premier_popup_ex04.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .exterior-gallery_5{
-    height: 33.33vh;
-    background: url(../images/K7/k7_premier_popup_ex05.webp);
+    height: 33.2vh;
+    background: url(../images/K7/k7_premier_popup_ex05.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .exterior-gallery_6{
-    height: 33.33vh;
+    height: 33.2vh;
     background: url(../images/K7/ms_k7_pl_df_img_1.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -236,7 +247,9 @@
 /* exterior */
 .interior-title-wrap{
     width: 33%;
+    margin: 0 !important;
     margin-left: 33%;
+    padding: 0;
 }
 .title-border{
     width: 30px;
@@ -253,20 +266,21 @@
 }
 .interior-gallery>div>div:first-child{
         border-right: 3px solid #fff;
+        box-sizing: border-box;
 }
 .interior-gallery_1,.interior-gallery_2{
     border-top: 3px solid #fff;
 }
 .interior-gallery_1{
     height: 33.2vh;
-    background: url(../images/K7/k7_premier_popup_in01.webp);
+    background: url(../images/K7/k7_premier_popup_in01.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .interior-gallery_2{
     height: 33.2vh;
-    background: url(../images/K7/k7_premier_popup_in02.webp);
+    background: url(../images/K7/k7_premier_popup_in02.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -280,7 +294,7 @@
 }
 .interior-gallery_4{
     height: 33.2vh;
-    background: url(../images/K7/k7_premier_popup_in04.webp);
+    background: url(../images/K7/k7_premier_popup_in04.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -294,7 +308,7 @@
 }
 .interior-gallery_6{
     height: 33.2vh;
-    background: url(../images/K7/k7_premier_popup_in05.webp);
+    background: url(../images/K7/k7_premier_popup_in05.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -329,7 +343,7 @@
     width: 100%;
     height: 100vh; 
     background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.5) 36%, rgba(51,51,51,0.85) 82%, rgba(51,51,51,0.9) 87%, rgba(51,51,51,0.95) 94%, rgba(51,51,51,1) 100%);
-    padding: 200px 0;
+    position: relative;
 }
 .section04_container{
     width: 100%;
@@ -405,21 +419,21 @@
 }
 .dw_sub_img01{
     height: 50vh;
-    background: url(../images/K7/k7_premier_drivewise_06.webp);
+    background: url(../images/K7/k7_premier_drivewise_06.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .dw_sub_img02{
     height: 50vh;
-    background: url(../images/K7/k7_20my_yg_drivewise_external_air_inflow_control_w.webp);
+    background: url(../images/K7/k7_20my_yg_drivewise_external_air_inflow_control_w.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .dw_sub_img03{
     height: 50vh;
-    background: url(../images/K7/k7_premier_drivewise_08.webp);
+    background: url(../images/K7/k7_premier_drivewise_08.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -433,17 +447,158 @@
     background: turquoise;
     position: absolute;
     z-index: 1;
+    display: none;
+}
+.convenience_title{
+    width: 100%;
+    height: 14vh;
+    padding: 0;
+    margin: 0;
+    border: 3px solid #ccc;
+    background: #333;
+}
+.con_title_text{
+    color: white;
+}
+.con_title_text_line{
+    width: 40px;
+    height: 2px;
+    background: white;
 }
 
+.con_main_img{
+    position: relative;
+    height: 36vh;
+    background: url(../images/K7/k7_20my_yg_interior_horizontal_layout_w.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.con_sub_img{
+    width: 100%;
+    height: 50vh;
+    padding: 0;
+    margin: 0;
+}
+.con_sub_img>div{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    border-top: 3px solid white;
+    border-right: 3px solid white;
+}
+.con_sub_img>div:last-child{
+    border-right: none;
+}
+.con_sub_img>div>div:hover{
+    transform: scale(1.1);
+    transition:1s;
+}
+.con_sub_img01{
+    height: 50vh;
+    background: url(../images/K7/K7_premier_con04.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.con_sub_img02{
+    height: 50vh;
+    background: url(../images/K7/K7_premier_con05.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.con_sub_img03{
+    height: 50vh;
+    background: url(../images/K7/K7_premier_con06.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.con_sub_img04{
+    height: 50vh;
+    background: url(../images/K7/K7_premier_con07.jpg);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 /* convenience */
 .safety{
     width: 100%;
     height: 100vh;
     margin: 0;
     padding: 0;
-    background: violet;
     position: absolute;
     z-index: 0;
+}
+.safety_title{
+    width: 100%;
+    height: 14vh;
+    padding: 0;
+    margin: 0;
+    border: 3px solid #ccc;
+    background: #333;
+}
+.safety_title_text{
+    color: white;
+}
+.safety_title_text_line{
+    width: 40px;
+    height: 2px;
+    background: white;
+}
+
+.safety_main_img{
+    position: relative;
+    height: 36vh;
+    background: url(../images/K7/K7_premier_safety01_w1.jpg);
+    background-position: center;
+    background-size: 100% 65vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.safety_sub_img{
+    width: 100%;
+    height: 50vh;
+    padding: 0;
+    margin: 0;
+}
+.safety_sub_img>div{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    border-top: 3px solid white;
+    border-right: 3px solid white;
+}
+.safety_sub_img>div:last-child{
+    border-right: none;
+}
+.safety_sub_img>div>div:hover{
+    transform: scale(1.1);
+    transition:1s;
+}
+.safety_sub_img01{
+    height: 50vh;
+    background: url(../images/K7/K7_premier_con04.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.safety_sub_img02{
+    height: 50vh;
+    background: url(../images/K7/K7_premier_con05.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.safety_sub_img03{
+    height: 50vh;
+    background: url(../images/K7/K7_premier_con06.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 /* section04 */
 .section05{
