@@ -1,7 +1,10 @@
 @font-face {font-family: "Helvetica Neue"; src: url("//db.onlinewebfonts.com/t/b71c831cd232effde30ce1bec5e171d5.eot"); src: url("//db.onlinewebfonts.com/t/b71c831cd232effde30ce1bec5e171d5.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/b71c831cd232effde30ce1bec5e171d5.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/b71c831cd232effde30ce1bec5e171d5.woff") format("woff"), url("//db.onlinewebfonts.com/t/b71c831cd232effde30ce1bec5e171d5.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/b71c831cd232effde30ce1bec5e171d5.svg#Helvetica Neue") format("svg"); }
-@font-face { font-family: 'locus_sangsang'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/locus_sangsang.woff') format('woff'); font-weight: normal; font-style: normal; }
-@font-face { font-family: 'GyeonggiTitleM'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiTitleM.woff') format('woff'); font-weight: normal; font-style: normal; }
-@font-face { font-family: '2YangPyeongM'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/2YangPyeongM.woff') format('woff'); font-weight: normal; font-style: normal; }
+/* premier font */
+@font-face { font-family: 'GmarketSansMedium'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'GmarketSansLight'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff'); font-weight: normal; font-style: normal; }
+body{
+    font-family: 'GmarketSansLight'; 
+}
 .section01{
     background-color: black;
     height: 100vh;
@@ -35,6 +38,7 @@
 .section01-title p{
     font-family: "Helvetica Neue";
     font-style: italic;
+    margin-top: 1%;
 }
 .section01-title img{
     width: 8%;
@@ -43,7 +47,7 @@
 }
 .section01-title-text{
     color: white;
-    font-size: large;
+    font-size: normal;
 }
 /* section01 */
 .section02{
@@ -65,8 +69,8 @@
 .section02_title p{
     color: white;
     font-weight: 900;
-    font-size: 5rem;
-    margin-top: 3%;
+    font-size: 4.5rem;
+    margin-top: 2.5%;
     font-family: "Helvetica Neue";
     font-style: italic;
 }
@@ -113,10 +117,21 @@
     display: block;
 }
 .car-text>ul>li{
+    margin-top: 2.3%;
     display: none;
-    font-weight: 500;
+    font-weight: 800;
     color: #ccc;
-    font-size: 2.2rem;
+    font-size: 2.4rem;
+}
+.car-text>ul>li>p{
+    font-weight: lighter;
+    font-size: 1.2rem;
+}
+.section02-notice{
+    font-size: x-small;
+    color: #ccc;
+    font-family: 'GmarketSansLight';
+    margin-top: 7%;
 }
 /* section02 */
 .section03{
@@ -146,9 +161,7 @@
 
 /* section03 영역분할 */
 .exterior-title-wrap{
-    /* width: 33%; */
-    /* margin-left: 33%; */
-    padding: 0 !;
+    padding: 0 !important;
 }
 .title-border{
     width: 30px;
@@ -161,7 +174,7 @@
 /* exterior title */
 .exterior-gallery{
     padding: 0 !important;
-    margin-left: 27.1%;
+    margin: 0 !important;
 }
 .exterior-gallery>div>div{
     padding: 0 !important;
@@ -352,8 +365,9 @@
     margin: 0;
 }
 .section04-menu-title{
-    height: 100vh;
-    padding: 0;
+    /* height: 100vh; */
+    padding: 0 5%;
+    padding-top: 10%;
     margin: 0;
     position: relative;
 }
@@ -385,7 +399,7 @@
     padding: 0;
     margin: 0;
     position: absolute;
-    display: none;
+    /* display: none; */
     z-index: 2;
 }
 .dw_main_img{
@@ -426,7 +440,7 @@
 }
 .dw_sub_img02{
     height: 50vh;
-    background: url(../images/K7/k7_20my_yg_drivewise_external_air_inflow_control_w.jpg);
+    background: url(../images/K7/k7_20my_yg_drivewise_external_air_inflow_control_w.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -447,7 +461,7 @@
     background: turquoise;
     position: absolute;
     z-index: 1;
-    display: none;
+    /* display: none; */
 }
 .convenience_title{
     width: 100%;
@@ -554,7 +568,6 @@
     height: 36vh;
     background: url(../images/K7/K7_premier_safety01_w1.jpg);
     background-position: center;
-    background-size: 100% 65vh;
     background-size: cover;
     background-repeat: no-repeat;
 }
