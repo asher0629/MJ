@@ -20,7 +20,7 @@
     <script>
         $(document).ready(function(){
             $('#fullpage').fullpage({
-                verticalCentered: true,
+                verticalCentered: true
             });
         });
     </script>
@@ -34,18 +34,18 @@
         <ul>
             <li><a href="#"><span style="background: white;"></span></a>
             <div class="fp-tooltip right">Main</div></li>
+            <li><a href="#" data-menuanchor="secondPage"><span style="background: white;"></span></a>
+                <div class="fp-tooltip right">Color Guide</div></li>
             <li><a href="#"><span style="background: white;"></span></a>
-                <div class="fp-tooltip right">Main</div></li>
+                <div class="fp-tooltip right">Gallery</div></li>
             <li><a href="#"><span style="background: white;"></span></a>
-                <div class="fp-tooltip right">Main</div></li>
+                <div class="fp-tooltip right">Technology</div></li>
             <li><a href="#"><span style="background: white;"></span></a>
-                <div class="fp-tooltip right">Main</div></li>
-            <li><a href="#"><span style="background: white;"></span></a>
-                <div class="fp-tooltip right">Main</div></li>
+                <div class="fp-tooltip right">Specification</div></li>
         </ul>
     </div>
     <section id="fullpage">
-        <div class="section01 section slide fp-section active fp-completely" data-anchor="slide1" id="section0">
+        <div class="section01 section">
             <div class="section01-bg-img">
                 <div class="section01-bg-opacity">
                     <div class="section01-title text-right">
@@ -62,7 +62,7 @@
             </div>
         </div>
         <!-- section01 -->
-        <div class="section02 container section slide" data-anchor="slide2">
+        <div class="section02 container section">
             <div class="container">
                 <div class="row">
                     <div class="section02_title col-sm-12">
@@ -152,64 +152,180 @@
         </div>
         <!-- section02 -->
         <div class="section03 section">
-            <div class="row section03_gallery ">
-                <div class="col-sm-6 exterior">
-                    <div class="row">
-                        <div class="col-sm-12 exterior-title-wrap">
-                            <!-- <div class="title-border"></div> -->
-                            <div class="title-text">
-                            <strong>EXTERIOR</strong>
+           <div class="section03-gallery">
+            <div class="exterior slide" data-anchor="slide1">
+                <div class="gallery-title-wrap">
+                        <div class="gallery-border"></div>
+                        <div class="gallery-text">
+                            <strong style="letter-spacing:  1vh; font-size: 2.5rem; font-weight: 900; line-height: 4.8rem;">과감한 변화로 더욱 담대해진 디자인</strong><br>
+                               <strong>EXTERIOR</strong>
                             <br>
                             Gallery
                         </div>
+                            <button class="gallery-btn fp-controlArrow">interior</button>
+                    </div>
+                <!-- title -->
+                <div class="exterior-gallery">
+                    <div class="row">
+                        <div class="col-sm-4 exterior-gallery_1">
+                            <a href="images/K7/k7_premier_popup_ex01.jpg"data-toggle="lightbox" data-gallery="k7_premier_popup_ex0" data-title="    파노라마 선루프" >
+                                <p>파노라마 선루프</p>
+                            </a>
+                        </div>
+                        <div class="col-sm-4 exterior-gallery_2">
+                            <a href="images/K7/k7_premier_popup_ex02.jpg"data-toggle="lightbox" data-gallery="k7_premier_popup_ex0" data-title="    LED 리피터 일체형 크롬 아웃사이드 미러">
+                                <p>LED 리피터 일체형 크롬 아웃사이드 미러</p>
+                                </a>
+                        </div>
+                        <div class="col-sm-4 exterior-gallery_3">
+                            <a href="images/K7/k7_premier_popup_ex03.jpg"data-toggle="lightbox" data-gallery="k7_premier_popup_ex0" data-title="    벌브타입 턴 시그널 램프">
+                                <p>벌브타입 턴 시그널 램프</p>
+                            </a>
                         </div>
                     </div>
+                    <!-- 1열 -->
+                    <div class="row">
+                        <div class="col-sm-4 exterior-gallery_4">
+                            <a href="images/K7/k7_premier_popup_ex04.jpg"data-toggle="lightbox" data-gallery="k7_premier_popup_ex0" data-title="    LED 턴 시그널 램프">
+                                <p>LED 턴 시그널 램프</p>
+                            </a>
+                        </div>
+                        <div class="col-sm-4 exterior-gallery_5">
+                            <a href="images/K7/k7_premier_popup_ex05.jpg"data-toggle="lightbox" data-gallery="k7_premier_popup_ex0" data-title="    전동식 세이프티 파워 트렁크">
+                                <p>전동식 세이프티 파워 트렁크</p>
+                            </a>
+                        </div>
+                        <div class="col-sm-4 exterior-gallery_6">
+                            <a href="images/K7/k7_premier_popup_ex06.jpg"data-toggle="lightbox" data-gallery="k7_premier_popup_ex0" data-title="    인탈리오 라디에이터 그릴">
+                                <p>인탈리오 라디에이터 그릴</p>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 2열 -->
                 </div>
-                <!-- exterior -->
-                <div class="col-sm-6 interior">
-
-                </div>
+                <!-- exterior image -->
+           </div>
+           <!-- exterior -->
+           <div class="interior slide" data-anchor="slide2">
+            <div class="gallery-title-wrap" style="width: 100%;">
+                    <div class="gallery-border"></div>
+                    <div class="gallery-text" style="width: 100%; margin-top:-0.5px;">
+                        <strong style="letter-spacing:  1vh; font-size: 2.5rem; font-weight: 800; line-height: 5rem;">고급소재와 첨단 편의사양으로
+                            심플하게 정제된 고품격 실내 공간</strong><br>
+                        <strong>INTERIOR</strong>
+                        <br>
+                        Gallery
+                    </div>
+                        <button class="gallery-btn fp-controlArrow">exterior</button>
             </div>
-            <!-- gallery 전체 박스 -->
+            <!-- title -->
+            <div class="interior-gallery">
+                <div class="row">
+                    <div class="col-sm-4 interior-gallery_1">
+                        <a href="images/K7/k7_premier_popup_in01.jpg"data-toggle="lightbox2" data-gallery="k7_premier_popup_in0" data-title="    앞좌석/뒷좌석 스마트 히티드 시트 & 운전석/동승석 통풍 시트">
+                            <p>앞좌석/뒷좌석 스마트 히티드 시트 <br>& 운전석/동승석 통풍 시트</p>
+                        </a>
+                    </div>
+                    <div class="col-sm-4 interior-gallery_2">
+                        <a href="images/K7/k7_premier_popup_in02.jpg"data-toggle="lightbox2" data-gallery="k7_premier_popup_in0" data-title="   카드타입 스마트키 & 스마트키">
+                            <p>카드타입 스마트키 & 스마트키</p>
+                            </a>
+                    </div>
+                    <div class="col-sm-4 interior-gallery_3">
+                        <a href="images/K7/k7_premier_popup_in03.jpg"data-toggle="lightbox2" data-gallery="k7_premier_popup_in0" data-title="   전자식 파킹 브레이크 (EPB)">
+                            <p>전자식 파킹 브레이크 (EPB)</p>
+                        </a>
+                    </div>
+                </div>
+                <!-- 1열 -->
+                <div class="row">
+                    <div class="col-sm-4 interior-gallery_4">
+                        <a href="images/K7/k7_premier_popup_in04.jpg"data-toggle="lightbox2" data-gallery="k7_premier_popup_in0" data-title="   슈퍼비전 클러스터 (12.3인치 풀사이즈 칼라 TFT LCD)">
+                            <p>슈퍼비전 클러스터 (12.3인치 풀사이즈 칼라 TFT LCD)</p>
+                        </a>
+                    </div>
+                    <div class="col-sm-4 interior-gallery_5">
+                        <a href="images/K7/k7_premier_popup_in05.jpg"data-toggle="lightbox2" data-gallery="k7_premier_popup_in0" data-title="   패들쉬프트">
+                            <p>패들쉬프트</p>
+                        </a>
+                    </div>
+                    <div class="col-sm-4 interior-gallery_6">
+                        <a href="images/K7/k7_premier_popup_in06.jpg"data-toggle="lightbox2" data-gallery="k7_premier_popup_in0" data-title="   휴대폰 무선충전 시스템">
+                            <p>휴대폰 무선충전 시스템</p>
+                        </a>
+                    </div>
+                </div>
+                <!-- 2열 -->
+            </div>
+            <!-- exterior image -->
+           </div>
+           <!-- interior -->
+           </div>
+           <!-- gallery box -->
+
         </div>
         <!-- section03 -->
         <div class="section04 section">
-            <div class="section04_container row">
-                <div class="col-sm-3 section04-menu-title">
-                    <ul class="btn-group-vertical">
-                        <li class="btn">DRIVE WISE</li>
-                        <li class="btn">CONVENIENCE</li>
-                        <li class="btn">SAFETY</li>
+            <div class="section04_container">
+                <div class="row">
+                    <div class="col-sm-12 section04-menu-title">
+                    <ul class="btn-group">
+                        <li class="btn"><a href="#">DRIVE WISE</a></li>
+                        <li class="btn"><a href="#">CONVENIENCE</a></li>
+                        <li class="btn"><a href="#">SAFETY</a></li>
                     </ul>
+                    </div>
                     <!-- button -->
                 </div>
                 <!-- menu/title -->
-                <div class="col-sm-9 section04-content">
+                <div class="row">
+                <div class="col-sm-12 section04-content">
                     <div class="row drive_wise">
                         <div class="row drive_wise_title">
                             <div class="col-sm-12 dw_title_text">
-                                <div class="dw_title_text_line"></div>
-                                DRIVE WISE<br>
-                                동급 최상위 첨단 지능형 주행안전 기술 (ADAS)
+                               <span class="dw_title_text01"> DRIVE WISE<br></span>
+                               <span class="dw_title_text02"> 동급 최상위 첨단 지능형 주행안전 기술 (ADAS)</span>
                                 <br>*ADAS : (Advanced Driver Assistance System) 새롭게 적용된 ADAS 사양과 업그레이드된 드라이브 와이즈
                                 기능이 자칫 운전자가 놓치기 쉬운 순간들까지 세심하게 컨트롤합니다.
                             </div>
                         </div>
-                        <div class="col-sm-12 dw_main_img"></div>
+                        <div class="col-sm-12 dw_main_img">
+                            <div class="dots" id="dw_dot_01" data-toggle="tooltip" title="전방 충돌방지 보조 (FCA)">
+                                <div><a href="images/K7/k7_premier_drivewise_02.jpg" data-toggle="lightbox" data-title="    전방 충돌방지 보조 (FCA)" data-footer="전방 차량 및 보행자와의 충돌 위험이 감지될 경우 운전자에게 이를 경고하고, 필요시 브레이크 제어를 통해 전방 충돌 방지를 보조해 줍니다."></a></div>
+                            </div>
+                            <div class="dots" id="dw_dot_02" data-toggle="tooltip" title="차로 이탈방지 보조 (LKA)">
+                                <div><a href="images/K7/k7_premier_drivewise_03.jpg" data-toggle="lightbox" data-title="   차로 이탈방지 보조 (LKA)" data-footer="LKA(Lane Keeping Assist): 전방 카메라를 이용해 차선을 인식하고 방향지시등 조작없이 차량이 차로를 이탈하려 할 경우, 운전자의 주의 환기를 위해 경고해 줍니다. 필요시 자동으로 스티어링 휠 제어를 통해 차로 이탈 방지를 보조해 줍니다"></a></div>
+                            </div>
+                            <div class="dots" id="dw_dot_03" data-toggle="tooltip" title="후측방 충돌방지 보조 (BCA) & 하이빔 보조 (HBA)">
+                                <div><a href="images/K7/k7_premier_drivewise_04.jpg" data-toggle="lightbox" data-title="   후측방 충돌방지 보조 (BCA) & 하이빔 보조 (HBA)" data-footer="후측방 충돌방지 보조 (BCA) : 전방 카메라를 이용하여 전방 차선을 인식하고 후측방 레이더 센서를 이용하여 자차의 후측방 영역을 감지하여 차로를 이탈할 때 자차 후측방에 위치한 상대 차량과의 충돌 위험이 감지되면 위험 판단에 따라 편제동 제어를 하여 충돌회피를 지원 하거나 피해를 경감하는 시스템입니다.
+                                    하이빔 보조 (HBA) : 전면 유리창 상단에 장착된 전방 카메라가 주변의 조명상황, 선행 차량과 대항차의 광원을 인식해 하이빔의 작동을 자동으로 ON/OFF 함으로써 야간주행의 편의성을 높였습니다."></a></div>
+                            </div>
+                            <div class="dots" id="dw_dot_04" data-toggle="tooltip" title="차로 유지 보조 (LFA) & 스마트 크루즈 컨트롤 (SCC)">
+                                <div><a href="images/K7/k7_premier_drivewise_05.jpg" data-toggle="lightbox" data-title="   차로 유지 보조 (LFA) & 스마트 크루즈 컨트롤 (SCC)" data-footer="-차로 유지 보조 (LFA) : 전방 카메라로 실시간 차로 감지 및 차선, 전방차량을 인식하고 자동적인 조향 제어로 차로유지를 보조해 더욱 편리하고 안정적인 드라이빙 환경을 제공해 주는 첨단 시스템입니다.
+
+                                    -스마트 크루즈 컨트롤 (SCC) : 운전자가 설정한 속도를 유지시켜 주는 것은 물론, 차량에 장착된 전방 카메라와 전방 레이더를 이용하여 선행하는 차량과의 거리를 유지시켜 주며, 선행차 출발 시 재출발하여 설정된 속도까지 자동으로 가속되는 주행 편의 시스템입니다.
+                                    "></a></div>
+                            </div>
+                        </div>
                         <div class="row dw_sub_img container-fluid">
                             <div class="col-sm-4">
                                 <div class="dw_sub_img01">
-                                    <p>후측방 모니터(BVM)</p>
+                                    <a href="images/K7/k7_premier_drivewise_06.jpg" data-toggle="lightbox" data-title=" 후측방 모니터(BVM)" data-footer="운전자가 방향 지시등 조작 시, 해당 방향의 후측방 영상을 클러스터 화면에 표시하여 더욱 안전하고 편리한 주행을 도와드립니다.">
+                                        <p>후측방 모니터(BVM)</p></a>
                                 </div>
                             </div>
                             <div class="col-sm-4">
                                 <div class="dw_sub_img02">
-                                   <p> 외부공기 유입방지 제어</p>
+                                   <a href="images/K7/k7_20my_yg_drivewise_external_air_inflow_control_w.webp" data-toggle="lightbox" data-title="  외부공기 유입방지 제어" data-footer="내비게이션과 연동하여 차량의 터널 진입 및 비청정 예상 지역을 지날 때, 윈도우가 개방되어 있으면 자동으로 도어 윈도우를 닫아주며, 공조 시스템을 내기 순환 모드로 전환함으로써 쾌적한 실내 공기 유지에 도움을 드립니다.
+                                   ※ 고속도로/자동차 전용도로에서 작동하며 50m 이하의 터널에서는 미작동 합니다.">
+                                   <p> 외부공기 유입방지 제어</p></a>
                                 </div>
                             </div>
                             <div class="col-sm-4">
                                 <div class="dw_sub_img03">
-                                    <p>후방 교차 충돌방지 보조 (RCCA)</p>
+                                    <a href="images/K7/k7_premier_drivewise_08.jpg" data-toggle="lightbox" data-title="후방 교차 충돌방지 보조 (RCCA)" data-footer="후진 출차와 같은 저속 후진 시 후측방에서 접근하는 차량을 감지 하여 운전자에게 경고해 주며,
+                                    경고 조건에서 충돌 위험 발생 시 제동 제어를 통해충돌 방지 보조 및 사고를 저감합니다.">
+                                        <p>후방 교차 충돌방지 보조 (RCCA)</p></a>
                                 </div>
                             </div>
                         </div>
@@ -218,33 +334,46 @@
                     <div class="convenience row">
                         <div class="row convenience_title">
                             <div class="col-sm-12 con_title_text">
-                                <div class="con_title_text_line"></div>
                                 CONVENIENCE<br>
-                                12.3인치 UVO 내비게이션
-                                차급을 뛰어넘는 인포테인먼트 시스템<br>
-                                12.3인치 UVO 내비게이션
+                                <span>차급을 뛰어넘는 인포테인먼트 시스템 / 
+                                    플래그쉽 수준의 첨단 드라이빙 편의사양</span>
                             </div>
                         </div>
-                        <div class="col-sm-12 con_main_img"></div>
+                        <div class="col-sm-12 con_main_img">
+                            <div class="dots" id="con_dot_01" data-toggle="tooltip" title="12.3인치 UVO 내비게이션">
+                                <div><a href="images/K7/K7_premier_con01.jpg" data-toggle="lightbox" data-title="    12.3인치 UVO 내비게이션"></a></div>
+                            </div>
+                            <div class="dots" id="con_dot_02" data-toggle="tooltip" title="슈퍼비전 클러스터 (12.3인치 풀사이즈 칼라 TFT LCD)">
+                                <div><a href="images/K7/K7_premier_con02.jpg" data-toggle="lightbox" data-title="   슈퍼비전 클러스터 (12.3인치 풀사이즈 칼라 TFT LCD)"></a></div>
+                            </div>
+                            <div class="dots" id="con_dot_03" data-toggle="tooltip" title="전자식 변속레버 (SBW)">
+                                <div><a href="images/K7/K7_premier_con03.jpg" data-toggle="lightbox" data-title="   전자식 변속레버 (SBW)"></a></div>
+                            </div>
+                        </div>
                         <div class="row con_sub_img container-fluid">
                             <div class="col-sm-3">
                                 <div class="con_sub_img01">
-                                    <p>카투홈/홈투카</p>
+                                    <a href="images/K7/K7_premier_con04.jpg" data-toggle="lightbox" data-title="    카투홈/홈투카">
+                                        <p>카투홈/홈투카</p></a>
                                 </div>
                             </div>
                             <div class="col-sm-3">
                                 <div class="con_sub_img02">
-                                   <p> 빌트인 캠</p>
+                                   <a href="images/K7/K7_premier_con05.jpg" data-toggle="lightbox" data-title="    빌트인 캠">
+                                    <p> 빌트인 캠</p></a>
                                 </div>
                             </div>
                             <div class="col-sm-3">
                                 <div class="con_sub_img03">
-                                    <p>네비게이션 무선 업데이트</p>
+                                    <a href="images/K7/K7_premier_con06.jpg" data-toggle="lightbox" data-title="    네비게이션 무선 업데이트">
+                                        <p>네비게이션 무선 업데이트</p>
+                                    </a>
                                 </div>
                             </div>
                             <div class="col-sm-3">
                                 <div class="con_sub_img04">
-                                    <p>UVO 원격제어</p>
+                                    <a href="images/K7/K7_premier_con07.jpg" data-toggle="lightbox" data-title="    UVO 원격제어">
+                                        <p>UVO 원격제어</p></a>
                                 </div>
                             </div>
                         </div>
@@ -253,11 +382,10 @@
                     <div class="safety row">
                             <div class="row safety_title">
                                 <div class="col-sm-12 safety_title_text">
-                                    <div class="safety_title_text_line"></div>
-                                    SAFETY<br>
-                                    철저한 사고예방에서부터 능동적인 방어,
-                                    섬세한 케어
-                                    <br>
+                                    <span class="safety_title_text01">SAFETY<br></span>
+                                    <span class="safety_title_text02">철저한 사고예방에서부터 능동적인 방어,
+                                        섬세한 케어
+                                        <br></span>
                                     충돌 정도에 따라 에어백의 팽창 압력을 구분해 에어백의 전개를 제어하는 어드밴스드 에어백 (운전석/동승석 정면)
                                 </div>
                             </div>
@@ -265,29 +393,39 @@
                             <div class="row safety_sub_img container-fluid">
                                 <div class="col-sm-4">
                                     <div class="safety_sub_img01">
-                                        <p>운전석 무릎 에어백</p>
+                                        <a href="images/K7/K7_premier_safety01_w2.jpg" data-toggle="lightbox" data-title="  운전석 무릎 에어백">
+                                            <p>운전석 무릎 에어백</p>
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="col-sm-4">
                                     <div class="safety_sub_img02">
-                                       <p> 개별 타이어 공기압 경보 시스템(TPMS)</p>
+                                      <a href="images/K7/K7_premier_safety01_w3.jpg" data-toggle="lightbox" data-title="    개별 타이어 공기압 경보 시스템(TPMS)">
+                                        <p> 개별 타이어 공기압 경보 시스템(TPMS)</p></a>
                                     </div>
                                 </div>
                                 <div class="col-sm-4">
                                     <div class="safety_sub_img03">
-                                        <p> 서라운드 뷰 모니터(SVM)</p>
+                                        <a href="images/K7/K7_premier_safety01_w4.jpg" data-toggle="lightbox" data-title="  서라운드 뷰 모니터(SVM)">
+                                            <p> 서라운드 뷰 모니터(SVM)</p></a>
                                     </div>
                                 </div>
                             </div>
                     </div>
                     <!-- safety -->
                 </div>
+                </div>
             </div>
             <!-- section04-container -->
         </div>
         <!-- section04 -->
-        <div class="section05 section">
-
+        <div class="section05 section Specification">
+            <div class="row">
+                <div class="col-sm-12"></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12"></div>
+            </div>
         </div>
     </section>
     <script src="js/script.js"></script>
@@ -295,4 +433,3 @@
     <script src="js/jquery.fullpage.js"></script>
 </body>
 </html>
-

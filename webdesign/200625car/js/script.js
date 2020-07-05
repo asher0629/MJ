@@ -60,17 +60,6 @@ $(function(){
         $('.SS4_text').css('display','block');
     });
 });
-$(function(){
-    $('.interior-btn').click(function(){
-        $('.interior').css('display','block');
-        $('.section03-gallery').animate({marginLeft:"-100%"},1000);
-        $('.interior').fadeIn();
-    });
-    $('.exterior-btn').click(function(){
-        $('.section03-gallery').animate({marginLeft:"0"},1000);
-        $('.interior').css('display','none');
-    });
-});
 $(document).on('click', '[data-toggle="lightbox"]', function(event) {
     event.preventDefault();
     $(this).ekkoLightbox();
@@ -79,37 +68,34 @@ $(document).on('click', '[data-toggle="lightbox2"]', function(event) {
     event.preventDefault();
     $(this).ekkoLightbox();
 });
-
 $(document).ready(function(){
   $('[data-toggle="tooltip"]').tooltip();
 });
 
-
-$(document).ready(function() {
-    $('#fullpage').fullpage({
-        'verticalCentered': false,
-        'css3': true,
-        'navigation': true,
-        'navigationPosition': 'right',
-        'navigationTooltips': ['fullPage.js', 'Powerful', 'Amazing', 'Simple'],
-
-        'afterLoad': function(anchorLink, index){
-            if(index == 2){
-                $('#section0, #iphone2, #iphone4').addClass('active');
-            }
-        },
-
-        'onLeave': function(index, nextIndex, direction){
-            if (index == 3 && direction == 'down'){
-                $('.section').eq(index -1).removeClass('moveDown').addClass('moveUp');
-            }
-            else if(index == 3 && direction == 'up'){
-                $('.section').eq(index -1).removeClass('moveUp').addClass('moveDown');
-            }
-
-            $('#staticImg').toggleClass('active', (index == 2 && direction == 'down' ) || (index == 4 && direction == 'up'));
-            $('#staticImg').toggleClass('moveDown', nextIndex == 4);
-            $('#staticImg').toggleClass('moveUp', index == 4 && direction == 'up');
-        }
+$(function(){
+    $('.btn:first').click(function(){
+        $('.drive_wise').css('display','block');
+        $('.convenience').css('display','none');
+        $('.safety').css('display','none');
+        $('.drive_wise').addClass("active");
+        $('.convenience').removeClass('active');
+        $('.safety').removeClass('active');
     });
-}); 
+    $('.btn:nth(1)').click(function(){
+        $('.drive_wise').css('display','none');
+        $('.convenience').css('display','block');
+        $('.safety').css('display','none');
+        $('.drive_wise').removeClass('active');
+        $('.convenience').addClass('active');
+        $('.safety').removeClass('active');
+    });
+    $('.btn:nth(2)').click(function(){
+        $('.drive_wise').css('display','none');
+        $('.convenience').css('display','none');
+        $('.safety').css('display','block');
+        $('.drive_wise').removeClass('active');
+        $('.convenience').removeClass('active');
+        $('.safety').addClass('active');
+    });
+
+});
