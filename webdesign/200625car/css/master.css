@@ -15,6 +15,7 @@ body{
     background: url(../images/K7/ms_k7_pl_df2_img_1.jpg);
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
     display: flex;
@@ -53,12 +54,12 @@ body{
 .section02{
     width: 100%;
     height: 100vh;
-    padding: 80px 0;
     background: #333;
+    position: relative;
 }
 .section02_title{
     width: 100%;
-    height: 20%;
+    height: 15%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,13 +76,13 @@ body{
     font-style: italic;
 }
 .car_img_wrap{
-    height: 60%;
+    height: 50%;
     display: flex;
     align-items: center;
 }
 .tap_car_img{
     width: 100%;
-    height: 70vh;
+    height: 60vh;
 }
 
 .ABP,.ABT,.B4U,.SS4{
@@ -130,225 +131,41 @@ body{
     font-size: x-small;
     color: #ccc;
     font-family: 'GmarketSansLight';
+    margin-top: 4%;
 }
 /* section02 */
 .section03{
+    position: relative;
     width: 100%;
     height: 100vh;
-    margin: 0 !important;
-    padding: 0 !important;
+    margin: 0;
+    padding: 0;
     background: #333;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
-.section03-gallery{
+.section03_gallery{
     width: 200%;
     height: 100%;
-}
-.exterior{
-    height: 100%;
-    background: #333;
+    display: flex;
     padding: 0;
     margin: 0;
 }
-.interior{
+.exterior{
+    width: 50%;
     height: 100%;
     background: #333;
-    padding: 0 15px;
-    margin: 0;
+    /* padding: 0;
+    margin: 0; */
+}
+.interior{
+    width: 50%;
+    height: 100%;
+    background: #fff;
+    /* padding: 0;
+    margin: 0; */
 }
 
 /* section03 영역분할 */
-.exterior-title-wrap{
-    padding: 0 !important;
-}
-.title-border{
-    width: 30px;
-    height: 5px;
-    background: white;
-}
-.title-text{
-    color: #fff;
-}
-/* exterior title */
-.exterior-gallery{
-    padding: 0 !important;
-    margin: 0 !important;
-}
-.exterior-gallery>div>div{
-    padding: 0 !important;
-    margin: 0 !important;
-}
-.exterior-gallery>div>div{
-        border-bottom: 3px solid #fff;
-}
-.exterior-gallery>div>div:first-child{
-        border-right: 3px solid #fff;
-        box-sizing: border-box;
-}
-.exterior-gallery_1,.exterior-gallery_2{
-    border-top: 3px solid #fff;
-}
-.exterior-gallery_1{
-    height: 33.2vh;
-    background: url(../images/K7/k7_premier_popup_ex01.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.exterior-gallery_2{
-    height: 33.2vh;
-    background: url(../images/K7/k7_premier_popup_ex02.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.exterior-gallery_3{
-    height: 33.2vh;
-    background: url(../images/K7/k7_premier_popup_ex03.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.exterior-gallery_4{
-    height: 33.2vh;
-    background: url(../images/K7/k7_premier_popup_ex04.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.exterior-gallery_5{
-    height: 33.2vh;
-    background: url(../images/K7/k7_premier_popup_ex05.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.exterior-gallery_6{
-    height: 33.2vh;
-    background: url(../images/K7/ms_k7_pl_df_img_1.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-/* exterior gallery img & border */
-.exterior-gallery a{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: white;
-    font-size: x-large;
-}
-.exterior-gallery a:hover{
-    background: rgba(0,0, 0, 0.8);
-}
-.exterior-gallery>div>div>a>p{
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    text-align: center;
-    line-height: 33.33vh;
-}
-.exterior-gallery>div>div>a>p:hover{
-    opacity: 1;
-}
-
-/* exterior */
-.interior-title-wrap{
-    width: 33%;
-    margin: 0 !important;
-    margin-left: 33%;
-    padding: 0;
-}
-.title-border{
-    width: 30px;
-    height: 5px;
-    background: white;
-}
-.title-text{
-    color: #fff;
-}
-/* exterior title */
-.interior-gallery>div>div{
-        border-bottom: 3px solid #fff;
-        padding: 0;
-}
-.interior-gallery>div>div:first-child{
-        border-right: 3px solid #fff;
-        box-sizing: border-box;
-}
-.interior-gallery_1,.interior-gallery_2{
-    border-top: 3px solid #fff;
-}
-.interior-gallery_1{
-    height: 33.2vh;
-    background: url(../images/K7/k7_premier_popup_in01.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.interior-gallery_2{
-    height: 33.2vh;
-    background: url(../images/K7/k7_premier_popup_in02.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.interior-gallery_3{
-    height: 33.2vh;
-    background: url(../images/K7/k7_premier_popup_in03.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.interior-gallery_4{
-    height: 33.2vh;
-    background: url(../images/K7/k7_premier_popup_in04.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.interior-gallery_5{
-    height: 33.2vh;
-    background: url(../images/K7/k7_premier_popup_in05.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.interior-gallery_6{
-    height: 33.2vh;
-    background: url(../images/K7/k7_premier_popup_in05.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-/* interior gallery img & border */
-.interior-gallery a{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: white;
-    font-size: x-large;
-}
-.interior-gallery a:hover{
-    background: rgba(0,0, 0, 0.8);
-}
-.interior-gallery>div>div>a>p{
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    text-align: center;
-    line-height: 33.33vh;
-}
-.interior-gallery>div>div>a>p:hover{
-    opacity: 1;
-}
-/* interior */
 /* section03 */
 .section04{
     width: 100%;
