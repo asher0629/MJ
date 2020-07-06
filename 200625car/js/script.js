@@ -1,3 +1,4 @@
+
 $(function(){
     $('#SWP').click(function(){
         $('.SWP').fadeIn();
@@ -60,3 +61,43 @@ $(function(){
         $('.SS4_text').css('display','block');
     });
 });
+$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+});
+$(document).on('click', '[data-toggle="lightbox2"]', function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+});
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();
+});
+
+$(function(){
+    $('.btn:first').click(function(){
+        $('.drive_wise').css('display','block');
+        $('.convenience').css('display','none');
+        $('.safety').css('display','none');
+        $('.drive_wise').addClass("active");
+        $('.convenience').removeClass('active');
+        $('.safety').removeClass('active');
+    });
+    $('.btn:nth(1)').click(function(){
+        $('.drive_wise').css('display','none');
+        $('.convenience').css('display','block');
+        $('.safety').css('display','none');
+        $('.drive_wise').removeClass('active');
+        $('.convenience').addClass('active');
+        $('.safety').removeClass('active');
+    });
+    $('.btn:nth(2)').click(function(){
+        $('.drive_wise').css('display','none');
+        $('.convenience').css('display','none');
+        $('.safety').css('display','block');
+        $('.drive_wise').removeClass('active');
+        $('.convenience').removeClass('active');
+        $('.safety').addClass('active');
+    });
+
+});
+
