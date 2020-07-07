@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="loadDoc()">Request data</button>
+    <p id="demo"></p>
+
+    <script>
+        function loadDoc() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById('demo').innerHTML = this.responseText;
+                }
+            };  
+            xhttp.open('POST','index2.html',true);
+            // get방식은 캐시가 쌓이면서 히스토리가 쌓이게됨 히스토리때문에 더 선호하는 경우도 많음
+            // post 방식은 캐시가 쌓이지 않음 화면만 가져옴
+            xhttp.send();
+        }
+    </script>
+</body>
+</html>
