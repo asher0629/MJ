@@ -1185,16 +1185,12 @@ a{
         height: 60%;
         display: flex !important;
         align-items: center !important;
-        cursor: pointer;
     }
     .specinfo-icon img{
-        width: 80%;
-        height: 70%;
-        margin: 0 auto;
-        cursor: pointer;
+        display: none;
     }
     .specinfo-icon ul{
-        display: none;
+        display: block;
         margin: 0 auto; 
     }
     .specinfo-icon li:first-child{
@@ -1205,5 +1201,9 @@ a{
     }
     .specinfo-icon li:nth-child(3){
         display: none;
+    }
+    .img-comp-slider{
+        width: 20px;
+        height: 20px;
     }
 }
