@@ -64,20 +64,21 @@ html{
 }
 .title{
 	margin: 0 auto;
-	padding-top: 10%;
+	padding-top: 5%;
 	font-family:'Cafe24Oneprettynight';
 	text-align: center;
 	font-weight: bold;
-	font-size: 2.5rem;
+	font-size: 1.5rem;
 }
 .line{
 	width: 60%;
 	margin: 0 auto;
-	border-bottom: 1px solid #c7c7c7;
+    border-bottom: 1px solid #c7c7c7;
 }
 /* Section01 Start */
 #section01{
     width: 100%;
+    height: 100vh;
     background: #fbf3ef;
 }
 .navi{
@@ -233,88 +234,104 @@ html{
     font-family: 'Cafe24Oneprettynight';
 	width: 100%;
 }
-
+.main>img{
+    width: 8% !important;
+}
 .main-img img{
 	margin: 0 auto;
 	padding-top: 20px;
     padding-left: 20px;
-    width: 730px;
+    width: 40%;
     display: flex;
 }
 .main-txt{
 	text-align: center;
-    padding-top: 18px;
-    font-size: 1.3rem;
+    padding-top: 1%;
+    font-size: .75rem;
 }
 #main-txt-bold{
 	margin: 0 auto;
-	padding-bottom: 150px;
+	padding-bottom: 6.2%;
     font-weight: bold;
-    font-size: 7rem;
+    font-size: 4rem;
 }
 
 /* Section01 End */
 /* Section02 Start */
  #section02{
-	width: 100%;
-	background: #fbf3ef;
+    width: 100%;
+    height: 100vh;
+    background: #fbf3ef;
 }
 /* about1 */
 .about{
-	width: 100%;
+	width: 60%;
 	margin: 0 auto;
-	padding-bottom: 150px;
 	font-family: 'Cafe24Oneprettynight';
 	color:#44472a;
 	}
 .about1{
 	margin: 0 auto;
-	padding-top: 8%;
-	width: 68%;
+	padding-top: 5%;
+	width: 100%;
 	height: 50%;
-	display: flex;
-	align-items: center;
+    display: flex;
 }
 .about1-img{
 	width: 25%;
-	margin: 0 auto;
+    margin: 0;
+    padding: 0;
 }
 .about1-img img{
 	width:100%;
 }
 .about1-txt{
-	width: 55%;
-	padding-right: 6.1%;
-	font-size: 1.7rem;
-	
+    width: 75%;
+    height: 100%;
+    text-align: justify;
+    line-height: 4vh;
+}
+.about1-txt>p{
+    width: 80%;
+    height: 90%;
+    display: block;
+    margin-left: 20%;
+    margin-top: 3%;
 }
 .txtline{
 	width: 100%;
-	padding-right: 6.1%;
-	padding-top: 8.5%;
+    padding-right: 6.1%;
+    margin-top: 3%;
 }
 /* about2 */
 .about2{
 	margin: 0 auto;
-	padding-top: 10%;
-	width: 65%;
+	padding-top: 5%;
+	width: 100%;
 	height: 50%;
-	display: flex;
-	align-items: center;
+    display: flex;
+    margin-bottom: 11%;
 }
 .about2-img{
 	width: 25%;
-	margin: 0 auto;
-	
-	
+    margin: 0;
+    padding: 0;
 }
 .about2-img img{
 	width:100%;
 }
 .about2-txt{
-	margin: 0 auto;
-	width: 55%;
-	font-size: 1.7rem;
+    width: 75%;
+    height: 100%;
+    text-align: justify;
+    line-height: 4vh;
+}
+.about2-txt>p{
+    width: 80%;
+    height: 90%;
+    display: block;
+    margin-right: 20%;
+    margin-top: 3%;
 }
 .txtline2{
 	width: 100%;
@@ -325,20 +342,21 @@ html{
 /* section02 End */
 /* section03 Start */
 #section03{
-	width: 100%;
+    width: 100%;
+    height: 100vh;
 	background: #fbf3ef;
-	color:#44472a;	
+    color:#44472a;	
 }
 
 .container-fluid {
 	position: relative;
-	width: 50%;
+    width: 25%;
    }
    
    .service_image {
 	display: block;
-	width: 100%;
-	height: auto;
+    width: 100%;
+    height: 100%;
    }
    
    .service_overlay {
@@ -383,11 +401,12 @@ html{
 
    }
    .service_wrap{
-	  width: 60%;
+      width: 60%;
+      height: 65%;
 	  margin: 0 auto;
 	  display: flex;
-	  padding-top: 8%;
-	  padding-bottom: 8%;
+      margin-top: 5%;
+      margin-bottom: 6.3%;
    }
  
 /* Section03 End */
@@ -400,49 +419,84 @@ html{
 
 .popup-wrap{
     width: 60%;
-    height: 1000px;
+    height: 90vh;
     margin: 0 auto;
     margin-top: 6rem;
     background: beige;
     position: relative;
+    overflow: hidden;
 }
 .popup-gallery{
+    width: 100%;
+    height: 100%;
     float: left;
+}
+.popup-gallery div{
+    border: 3px solid #fff;
+    box-sizing: border-box;
 }
 .img1{
     float: left;
     width: 35%;
-    height: 700px;
+    height: 60%;
+    background: url(../images/1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .img2{
     float: right;
     width: 65%;
-    height: 350px;
+    height: 30%;
+    background: url(../images/2.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .img3{
     float: left;
     width: 32.5%;
-    height: 350px;
+    height: 30%;
+    background: url(../images/3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .img4{  
     float: left;
     width: 32.5%;
-    height: 350px;
+    height: 30%;
+    background: url(../images/4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .img5{
     float: left;
     width: 33%;
-    height: 300px;
+    height: 40%;
+    background: url(../images/5.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .img6{
     float: left;
     width: 34%;
-    height: 300px;
+    height: 40%;
+    background: url(../images/6.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .img7{
     float: left;
     width: 33%;
-    height: 300px;
+    height: 40%;
+    background: url(../images/10.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 /* Section04 End */
 /* Section05 Start */
