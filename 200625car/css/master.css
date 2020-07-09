@@ -433,6 +433,7 @@ a{
 .section04-menu-title>ul>li>a{
     border-radius: unset;
     text-decoration: none;
+    font-size: 2rem;
     color: rgba(255, 255, 255, 0.6);
 }
 .section04-content{
@@ -827,81 +828,154 @@ a{
 /* section04 */
 .section05{
     width: 100%;
-    height: 100vh;
+    height: 100vh !important;
     background: #333;
-    box-sizing: border-box;
     position: relative;
+    box-sizing: border-box;
     overflow: hidden;
 }
-.fp-tableCell {
-    display: unset !important;
-    vertical-align: unset !important;}
-
-.Spec-img-container{
-    width: 85%;
-    height: 100vh;
-    margin: 0 auto !important;
-}
-.Spec-img01{
-    width: 100%;
-    height: 50vh;
-}
-.Spec-img02 img{
-    width: 100%;
-    height: 50vh;
-    background-color: #333;
-}
-.Spec-img01{
-    width: 100%;
-    height: 50vh;
-}
-.Spec-img02 img{
-    width: 100% !important;
-    height: 50vh !important;
+.spec-title{
+    font-size: x-large;
+    font-weight: 900;
+    letter-spacing: 1.5vh;
+    color: #fff;
+    margin-top: 6%;
 }
 /* 슬라이더  vvvvv */
-.img-comp-large-container {
-    width: 100%;
-    height: 100vh;
-    background: #333;
-    box-sizing: border-box;
+.img-comp-container {
     position: relative;
-    margin: 0 auto;
-    padding: 1%;
+    height: 100%;
+    padding: 10% 0;
   }
-
-  .img-comp-container {
-      position: relative;
-      /* top: 40%;
-      left: 40%; */
-      /* transform: transparent(-50%, -50%); */
-  }
-  
   
   .img-comp-img {
+    width: 100% !important;
     position: absolute;
     width: auto;
     height: auto;
-    overflow:hidden;
+    overflow: hidden;
   }
   
   .img-comp-img div {
-    display:block;
-    vertical-align:middle;
+    display: block;
+    vertical-align: middle;
   }
-  
   .img-comp-slider {
     position: absolute;
-    background-color: none;
-    border-radius: 50%;
-    border: 1px solid white;
-    z-index:99;
-    cursor: pointer;
+    z-index: 9;
+    cursor: ns-resize;
     width: 40px;
     height: 40px;
-    opacity: 1;
+    background:url(../images/K7/scroll.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 50%;
   }
-/* slider */
+  /* 슬라이더 이미지 설정 vvv */
+.spec-wrap{
+    width: 85%;
+    height: 85%;
+    margin: 0 auto;
+    position: relative;
+
+}
+.spec-img01{
+    width: 100%;
+    height: 60vh !important;
+    background-color: #333;
+}
+.spec-img01-img{
+    width: 100%;
+    height: 100%;
+    background: #333;
+}
+.specinfo{
+    width: 85%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center !important;
+}
+.specinfo-img-wrap{
+    width: 100%;
+    height: 60%;
+    overflow: hidden;
+    position: relative;
+}
+.specinfo-img{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/K7/img_k7_premier_byo_w.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0 auto !important;
+}
+
+.specinfo-icon{
+    width: 100%;
+    height: 30%;
+    display: flex !important;
+}
+.specinfo-icon>div{
+    width: 20%;
+    height: 100%;
+    padding: 1.5% 0;
+    color: #fff;
+}
+.specinfo-icon ul{
+    padding: 0;
+    margin: 0;
+    margin-top: 7%;
+    display: block;
+}
+.specinfo-icon li:first-child{
+    font-size: small;
+    font-weight: 100;
+}
+.specinfo-icon li:nth-child(2){
+    font-weight: bold;
+    font-size: medium;
+}
+.specinfo-icon li:nth-child(3){
+    font-size: xx-small;
+    font-weight: 100;
+}
+.specinfo-icon li{
+    list-style: none;
+}
+.specinfo-icon01{
+    background-color: #555;
+}
+.specinfo-icon02{
+    background-color: #666;
+}
+.specinfo-icon03{
+    background-color: #555;
+}
+.specinfo-icon04{
+    background-color: #666;
+}
+.specinfo-icon05{
+    background-color: #555;
+}
+.spec-img02{
+    width: 100%;
+    height: 60vh !important;
+    background-color: #333;    
+}
+.spec-img02-img{
+    width: 85%;
+    height: 80%;
+    background-image: url(../images/K7/k7_allview.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 auto !important;
+}
 /* section05 */
 @media(max-width:767px){
     .section01-title{
@@ -920,11 +994,6 @@ a{
         width: 100%;
     }
     /* section01 */
-    .section02{
-        display: flex;
-        align-items: center;
-        padding: 20% 0;
-    }
     .section02_title img{
         width: 20%;
     }
@@ -950,7 +1019,7 @@ a{
         line-height: 4rem;
     }
     .gtt{
-        font-size: 2rem;
+        font-size: 1.5rem;
         line-height: 3rem;
     }
     .exterior-gallery>div{
@@ -1002,12 +1071,22 @@ a{
 }
 /* section03 */
     .section04{
-        padding: 3% 0;
+        padding-top: 4%;
+    }
+    .section04-menu-title>ul{
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        margin-left: 0 !important;
+    }
+    .section04-menu-title a{
+        font-size: small !important;
     }
     .dw_title_text{
         font-size: xx-small;
         line-height: unset;
         padding-top: 2% ;
+        overflow: hidden;
     }
     .dw_title_text01{
         font-size: small;
@@ -1100,5 +1179,31 @@ a{
     }
     .safety_sub_img p{
         font-size: xx-small;
+    }
+    /* section04 */
+    .specinfo-icon>div{
+        height: 60%;
+        display: flex !important;
+        align-items: center !important;
+        cursor: pointer;
+    }
+    .specinfo-icon img{
+        width: 80%;
+        height: 70%;
+        margin: 0 auto;
+        cursor: pointer;
+    }
+    .specinfo-icon ul{
+        display: none;
+        margin: 0 auto; 
+    }
+    .specinfo-icon li:first-child{
+        font-size: xx-small;
+    }
+    .specinfo-icon li:nth-child(2){
+        font-size: x-small;
+    }
+    .specinfo-icon li:nth-child(3){
+        display: none;
     }
 }
