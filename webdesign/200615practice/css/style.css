@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+#slide_wrap{
+    clear: both;
+    width: 1200px;
+    height: 300px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.slide_box{
+    overflow: hidden;
+}
+.slide_box>ul>li>a>img{
+    display: block;
+    border: 0;
+    width: 1200px;
+    height: 300px;
+    transition: 1s;
+}
+button{
+    width: 100px;
+    height: 50px;
+    background-color: #3F69AA;
+    border: none;
+    color: white;
+    position: absolute;
+    top: 0;
+}

@@ -1,0 +1,30 @@
+$(function(){
+    $('.main_1').mouseover(function(){
+        $('.sub_1').stop().slideDown();
+        $('.sub_1').css("display","block");
+    });
+    $('.menu').mouseleave(function(){
+        $('.subNav').children().stop().slideUp();
+    })
+    $('.main_2').mouseover(function(){
+        $('.sub_2').stop().slideDown();
+        $('.sub_2').css("display","block");
+    });
+    $('.main_3').mouseover(function(){
+        $('.sub_3').stop().slideDown();
+        $('.sub_3').css("display","block");
+    });
+    $('.main_4').mouseover(function(){
+        $('.sub_4').stop().slideDown();
+        $('.sub_4').css("display","block");
+    });
+});
+
+setInterval(function(){
+    $('.slide').fadeIn().delay('2500');
+    $('.slide').fadeOut().animate({marginTop:"-300px"},"500");
+    $('.slide').fadeIn().delay('2500');
+    $('.slide').fadeOut().animate({marginTop:"-600px"},"500");
+    $('.slide').fadeIn().delay('2500');
+    $('.slide').fadeOut().animate({marginTop:"0"},"500");
+})

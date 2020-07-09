@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    width: 1200px;
+    margin: 0 auto;
+}
+nav{
+    width: 1200px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    background:rgb(187, 184, 184);
+}
+/* nav */
+.logo{
+    margin-top: 25px;
+    margin-left: 20px;
+    width: 200px;
+    height: 50px;
+}
+/* logo */
+.menu{
+    position: relative;
+    margin-top: 30px;
+}
+.mainNav{
+    display: flex;
+    width: 500px;
+    height: 40px;
+    justify-content: space-between;
+    text-align: center;
+    margin-right: 20px;
+}
+.mainNav li{
+    width: 125px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-left: none;
+}
+.mainNav li:first-child{
+    border-left: 1px solid black;
+}
+.mainNav li:hover{
+    background-color: black;
+    color: white;
+}
+/* mainNav */
+.subNav{
+    width: 500px;
+    margin-right: 20px;
+    display: flex;
+    position: relative;
+}
+.subNav li:hover{
+    background: black;
+    color: white;
+}
+.subNav ul{
+    display: none;
+    z-index: 10;
+}
+.sub_1{
+    width: 125px;
+    height: 120px;
+    background: rgb(187, 184, 184);
+    border: 1px solid black;
+    border-top: none;
+    box-sizing: border-box;
+    line-height: 40px;
+    text-align: center;
+}
+.sub_2{
+    width: 125px;
+    height: 120px;
+    background: rgb(187, 184, 184);
+    border: 1px solid black;
+    border-top: none;
+    box-sizing: border-box;
+    line-height: 40px;
+    text-align: center;
+}
+.sub_3{
+    width: 125px;
+    height: 120px;
+    background: rgb(187, 184, 184);
+    border: 1px solid black;
+    border-top: none;
+    box-sizing: border-box;
+    line-height: 40px;
+    text-align: center;
+}
+.sub_4{
+    width: 125px;
+    height: 120px;
+    background: rgb(187, 184, 184);
+    border: 1px solid black;
+    border-top: none;
+    box-sizing: border-box;
+    line-height: 40px;
+    text-align: center;
+}
+/* suvNav */
+.section01{
+    width: 1200px;
+    height: 300px;
+    overflow: hidden;
+}
+.slide{
+    float: left;
+}
+/* slide */

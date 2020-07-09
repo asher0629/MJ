@@ -1,0 +1,385 @@
+
+  .frame{
+    width: 100%;
+    display: block;
+  }
+  .frame_bg{
+    margin: 0 auto;
+    position: absolute;
+    width:77%;
+    height: 80%;
+    z-index: -1;
+    left: 11.2%;
+    top: -4.5%;
+  }
+  .frame-img1{
+    position: absolute;
+    z-index: 9;
+    width: 20%;
+    margin: 0 auto;
+    top: 25.4%;
+    left: 7%;
+  }
+  .frame-img2{
+    position: absolute;
+    z-index: 9;
+    width: 20%;
+    margin: 0 auto;
+    top: 46%;
+    left: 75%;
+  }
+.thumbnail{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    margin-top: 4rem;
+    
+}
+/* Create four equal columns that floats next to eachother */
+.column {
+        width: 25%;
+    }
+.column img{
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* The Modal (background) */
+.modal {
+display: none;
+position: fixed;
+z-index: 1;
+padding-top: 100px;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+overflow: auto;
+background-color: #fbf3ef;
+}
+
+/* Modal Content */
+.modal-content {
+position: relative;
+margin: 0 auto;
+width: 90%;
+max-width: 1200px;
+
+}
+
+/* The Close Button */
+.close {
+color: #44472a;
+position: absolute;
+z-index: 999;
+top: 10px;
+right: 25px;
+font-size: 3.5rem;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: #999;
+text-decoration: none;
+cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides1 {
+margin: 0 auto;
+display: none;
+width: 100%;
+}
+.mySlides1 img{
+    margin: 0 auto;
+    display: flex;
+}
+/* Next & previous buttons */
+.prev,
+.next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+padding: 16px;
+margin-top: -50px;
+color: #44472a;
+font-weight: bold;
+font-size: 20px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+-webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+background-color: rgba(0, 0, 0, 0.8);
+}
+/* ↑↑↑↑↑갤러리1 */
+/* ↓↓↓↓↓갤러리2 */
+.frame2{
+  width: 100%;
+  display: block;
+}
+.frame2_bg{
+  margin: 0 auto;
+  position: relative;
+  width:77%;
+  height: 80%;
+  z-index: -2;
+  left: 11.2%;
+  top: -4.5%;
+}
+.frame2-img1{
+  position: absolute;
+  z-index: 9;
+  width: 20%;
+  margin: 0 auto;
+  top: 25.4%;
+  left: 7%;
+}
+.frame2-img2{
+  position: absolute;
+  z-index: 9;
+  width: 20%;
+  margin: 0 auto;
+  top: 46%;
+  left: 75%;
+}
+.thumbnail2{
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+  margin-top: 4rem;
+  
+}
+/* Create four equal columns that floats next to eachother */
+.column2 {
+      width: 25%;
+  }
+.column2 img{
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* The Modal (background) */
+.modal2 {
+display: none;
+position: fixed;
+z-index: 1;
+padding-top: 100px;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+overflow: auto;
+background-color: #fbf3ef;
+}
+
+/* Modal Content */
+.modal-content2 {
+position: relative;
+margin: 0 auto;
+width: 90%;
+max-width: 1200px;
+
+}
+
+/* The Close Button */
+.close2 {
+color: #44472a;
+position: absolute;
+z-index: 999;
+top: 10px;
+right: 25px;
+font-size: 3.5rem;
+font-weight: bold;
+}
+
+.close2:hover,
+.close2:focus {
+color: #999;
+text-decoration: none;
+cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides2 {
+margin: 0 auto;
+display: none;
+width: 100%;
+}
+.mySlides2 img{
+  margin: 0 auto;
+  display: flex;
+}
+/* Next & previous buttons */
+.prev2,
+.next2 {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+padding: 16px;
+margin-top: -50px;
+color: #44472a;
+font-weight: bold;
+font-size: 20px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+-webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next2 {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev2:hover,
+.next2:hover {
+background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* ↑↑↑↑↑갤러리2 */
+/* ↓↓↓↓↓갤러리3 */
+
+.frame3{
+  width: 100%;
+  display: block;
+}
+.frame3_bg{
+  margin: 0 auto;
+  position: relative;
+  width:77%;
+  height: 80%;
+  z-index: -2;
+  left: 11.2%;
+  top: -4.5%;
+}
+.frame3-img1{
+  position: absolute;
+  z-index: 9;
+  width: 20%;
+  margin: 0 auto;
+  top: 25.4%;
+  left: 7%;
+}
+.frame3-img2{
+  position: absolute;
+  z-index: 9;
+  width: 20%;
+  margin: 0 auto;
+  top: 46%;
+  left: 75%;
+}
+.thumbnail3{
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+  margin-top: 4rem;
+  
+}
+/* Create four equal columns that floats next to eachother */
+.column3 {
+      width: 25%;
+  }
+.column3 img{
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* The Modal (background) */
+.modal3 {
+display: none;
+position: fixed;
+z-index: 1;
+padding-top: 100px;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+overflow: auto;
+background-color: #fbf3ef;
+}
+
+/* Modal Content */
+.modal-content3 {
+position: relative;
+margin: 0 auto;
+width: 90%;
+max-width: 1200px;
+
+}
+
+/* The Close Button */
+.close3 {
+color: #44472a;
+position: absolute;
+z-index: 999;
+top: 10px;
+right: 25px;
+font-size: 3.5rem;
+font-weight: bold;
+}
+
+.close3:hover,
+.close3:focus {
+color: #999;
+text-decoration: none;
+cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides3 {
+margin: 0 auto;
+display: none;
+width: 100%;
+}
+.mySlides3 img{
+  margin: 0 auto;
+  display: flex;
+}
+/* Next & previous buttons */
+.prev3,
+.next3 {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+padding: 16px;
+margin-top: -50px;
+color: #44472a;
+font-weight: bold;
+font-size: 20px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+-webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next3 {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev3:hover,
+.next3:hover {
+background-color: rgba(0, 0, 0, 0.8);
+}
