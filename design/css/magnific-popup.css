@@ -55,16 +55,7 @@
 .mfp-ajax-cur {
   cursor: progress; }
 
-.mfp-zoom-out-cur, .mfp-zoom-out-cur .mfp-image-holder .mfp-close {
-  cursor: -moz-zoom-out;
-  cursor: -webkit-zoom-out;
-  cursor: zoom-out; }
 
-.mfp-zoom {
-  cursor: pointer;
-  cursor: -webkit-zoom-in;
-  cursor: -moz-zoom-in;
-  cursor: zoom-in; }
 
 .mfp-auto-cursor .mfp-content {
   cursor: auto; }
@@ -135,7 +126,7 @@ button::-moz-focus-inner {
   padding: 0 0 18px 10px;
   color: #44472a;
   font-style: normal;
-  font-size: 4.5rem;
+  font-size: 3rem;
   font-family: Arial, Baskerville, monospace; }
   .mfp-close:hover,
   .mfp-close:focus {
