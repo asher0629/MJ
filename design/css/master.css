@@ -557,8 +557,9 @@ html{
 }
 .gill{
     margin: 0 auto;
+    padding-top: 1%;
     top: 70%;
-    height: 16rem;
+    height: 12.1rem;
     font-family: 'Cafe24Oneprettynight';
     background-color: #44472a;
     opacity: .7;
@@ -687,11 +688,12 @@ html{
         height: 59.99% !important;
     }
     .container-fluid:hover .service_overlay {
-        height: 50%;
+        height: 35%;
        }
        .gill{
-        top: 60%;
-        height: 25rem;
+        top: 65%;
+        height: 10rem;
+        padding-top: 2%;
     }
     #map img{
         width: 45px !important;
@@ -817,75 +819,34 @@ html{
        }
     /* section04 */
    .popup-wrap{
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    transition: all .5s ease;
-    transition: all .5s ease;
     width: 65%;
     height: 50vh;    
 }
 .img1{
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    transition: all .5s ease;
     width: 30%;
-    height: 60%;
+    height: 59.99%;
 }
 .img2{
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    transition: all .5s ease;
     width: 70%;
     height: 30%;
 }
 .img3{
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    transition: all .5s ease;
     width: 35%;
     height: 30%;
 }
 .img4{
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    transition: all .5s ease;
     width: 35%;
     height: 30%;
 }
 .img5{
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    transition: all .5s ease;
     width: 33%;
     height: 40%;
 }
 .img6{
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    transition: all .5s ease;
     width: 34%;
     height: 40%;
 }
 .img7{
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    transition: all .5s ease;
     width: 33%;
     height: 40%;
 }
