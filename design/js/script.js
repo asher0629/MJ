@@ -44,3 +44,36 @@ $(document).ready(function() {
 		}
 	});
 });
+
+$(function(){
+  $('.aboutBtn1-1').click(function(){
+    $('.about1-txt p').css('height','30%');
+    $('.aboutBtn1-1').css('display','none');
+    $('.aboutBtn1-2').css('display','block');
+  });
+  $('.aboutBtn1-2').click(function(){
+    $('.about1-txt p').css('height','0');
+    $('.aboutBtn1-1').css('display','block');
+    $('.aboutBtn1-2').css('display','none');
+  });
+  $('.aboutBtn2-1').click(function(){
+    $('.about2-txt p').css('height','30%');
+    $('.aboutBtn2-1').css('display','none');
+    $('.aboutBtn2-2').css('display','block');
+  });
+  $('.aboutBtn2-2').click(function(){
+    $('.about2-txt p').css('height','0');
+    $('.aboutBtn2-1').css('display','block');
+    $('.aboutBtn2-2').css('display','none');
+  });
+});
+
+$(window).resize(function() { 
+  if($(window).width() <768) 
+  { $('.morebutton').css('display','block');
+  } 
+  else{
+    $('.morebutton').css('display','none');
+    $('.upbutton').css('display','none');
+  }
+});
