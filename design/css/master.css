@@ -638,6 +638,10 @@ html{
     .container-fluid:hover .service_overlay {
         height: 50%;
        }
+       .gill{
+        top: 60%;
+        height: 25rem;
+    }
 }
 @media (min-width: 768px){
 .main_page {
