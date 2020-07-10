@@ -69,11 +69,16 @@ $(function(){
 });
 
 $(window).resize(function() { 
-  if($(window).width() <768) 
-  { $('.morebutton').css('display','block');
-  } 
-  else{
+  if($(window).width() > 768) 
+  { 
     $('.morebutton').css('display','none');
     $('.upbutton').css('display','none');
+    $('.about1-txt>p').css('height','90%');
+    $('.about2-txt>p').css('height','90%');
+  } 
+  else{
+    $('.morebutton').css('display','block');
+    $('.about1-txt>p').css('height','0');
+    $('.about2-txt>p').css('height','0');
   }
 });

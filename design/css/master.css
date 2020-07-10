@@ -721,7 +721,8 @@ html{
 		padding-top: 20%;
 		display: flex;
 		align-items: center;
-		flex-direction: column-reverse;
+        flex-direction: column-reverse;
+        margin-bottom: 20%;
 	}
 	.about2-img{
 		width: 50%;
