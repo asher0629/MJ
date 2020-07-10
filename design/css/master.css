@@ -84,7 +84,7 @@ html{
     height: 100%;
     position: absolute;
     background: rgba(255,255,255,0.9);
-    display: flex;
+    display: none;
     align-items: center;
 }
 .popup{
@@ -483,7 +483,7 @@ html{
 .img1{
     float: left;
     width: 30%;
-    height: 60%;
+    height: 59.99%;
     background: url(../images/1.jpg);
     background-position: center;
     background-size: cover;
@@ -563,15 +563,15 @@ html{
     background-color: #44472a;
     opacity: .7;
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-align: center;
-    line-height: 2.2rem;
+    line-height: 2rem;
     position: relative;
     z-index: 99;
 }
 .gill strong{
-    font-size: 1.8rem;
-    line-height: 3.5rem;
+    font-size: 1.5rem;
+    line-height: 3rem;
 }
 /* map */
 #map{
