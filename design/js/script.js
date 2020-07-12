@@ -1,5 +1,6 @@
 // 스크롤 탑버튼
 jQuery(document).ready(function () {
+  $('#scroll_btn').css('position','unset');
   $('.scroll').click(function (e) {
     e.preventDefault();
     $('html, body').animate({scrollTop: 0}, 200);
@@ -82,3 +83,25 @@ $(window).resize(function() {
     $('.about2-txt>p').css('height','0');
   }
 });
+
+$(document).ready(function(){
+    $("html, body").css({"overflow":"hidden", "height":"100%"});
+    $(".modal").bind("touchmove", function(e) {
+    e.preventDefault();
+    });
+    $(".modal .popup").bind("touchmove", function(e) {
+    e.stopPropagation();
+});
+$('.menu').css('display','none');
+
+  $('#close').click(function(){
+    $('.modal').css('display','none');
+    $("html, body").css({"overflow":"auto", "height":"auto"});
+    $('.popup').unbind('touchmove');
+    $('#scroll_btn').css('position','fixed');
+    $('.menu').css('display','unset');
+});
+});
+
+
+
