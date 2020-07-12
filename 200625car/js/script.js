@@ -61,6 +61,7 @@ $(function(){
         $('.SS4_text').css('display','block');
     });
 });
+
 $(document).on('click', '[data-toggle="lightbox"]', function(event) {
     event.preventDefault();
     $(this).ekkoLightbox();
@@ -99,4 +100,21 @@ $(function(){
         $('.safety').addClass('active');
     });
 
+});
+
+$(document).on("click", function(){
+    $('.vd-menu-text01 .play-line01').click(function(){
+        $('.play-line01>div').animate({width:'100%'},1000).css('background','red');
+        $('.vd-menu-txt01').css('color','#fff');
+        $('.play-line02>div').animate({width:'0'},1000);
+        $('.vd-menu-txt02').css('color','#666');
+        $('.video_01').css('display','block');
+    });
+    $('.vd-menu-text02 .play-line02').click(function(){
+        $('.play-line01>div').animate({width:'0'},1000);
+        $('.vd-menu-txt01').css('color','#666');
+        $('.play-line02>div').animate({width:'100%'},1000).css('background','red');
+        $('.vd-menu-txt02').css('color','#fff');
+        $('.video_01').css('display','none');
+    });
 });

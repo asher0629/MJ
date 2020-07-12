@@ -1,9 +1,10 @@
 @font-face {font-family: "Helvetica Neue"; src: url("//db.onlinewebfonts.com/t/b71c831cd232effde30ce1bec5e171d5.eot"); src: url("//db.onlinewebfonts.com/t/b71c831cd232effde30ce1bec5e171d5.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/b71c831cd232effde30ce1bec5e171d5.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/b71c831cd232effde30ce1bec5e171d5.woff") format("woff"), url("//db.onlinewebfonts.com/t/b71c831cd232effde30ce1bec5e171d5.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/b71c831cd232effde30ce1bec5e171d5.svg#Helvetica Neue") format("svg"); }
 /* premier font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 @font-face { font-family: 'GmarketSansMedium'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff'); font-weight: normal; font-style: normal; }
 @font-face { font-family: 'GmarketSansLight'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff'); font-weight: normal; font-style: normal; }
 body{
-    font-family: 'GmarketSansLight'; 
+    font-family: 'Noto Sans KR', sans-serif;
 }
 a{
     text-decoration: none;
@@ -57,95 +58,113 @@ a{
 /* section01 */
 .section02{
     width: 100%;
-    height: 100vh;
+    height: 100vh !important;
     background: #333;
-    position: relative;
+    color: #fff;
+    display: none;
 }
-.section02_title{
+.section02>div{
+    display: unset !important;
+    width: 100%;
+    height: 100%;
+}
+.video-title{
     width: 100%;
     height: 15%;
+    font-size: xx-large;
+    font-weight: 100;
+    letter-spacing: 1vh;
+    text-align: center;
+    line-height: 15vh;
+}
+.video-content{
+    width: 85%;
+    height: 80vh !important;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    background: #000;
+}
+
+.play-line{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+.play-line01{
+    width: 100%;
+    height: 1px;
+    background: #fff;
+}
+.play-line01>div{
+    width: 100%;
+    height: 100%;
+    background: red;
+}
+.play-line02{
+    width: 100%;
+    height: 1px;
+    background: #fff;
+}
+.play-line02>div{
+    width: 100%;
+    height: 1px;
+}
+.vd-menu-txt02{
+    color: #666;
+}
+.video-menu{
+    width: 100%;
+    height: 12.5%;
+    padding: 0 !important;
+    margin: 0 !important;
+    top: .34%;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    position: absolute;
+    z-index: 11;
 }
-.section02_title img{
-    width: 9%;
-}
-.section02_title p{
-    color: white;
-    font-weight: 900;
-    font-size: 4.5rem;
-    margin-top: 2%;
-    font-family: "Helvetica Neue";
-    font-style: italic;
-}
-.car_img_wrap{
-    height: 50%;
-    display: flex;
-    align-items: center;
-}
-.tap_car_img{
-    width: 100%;
-    height: 60vh;
-}
-
-.ABP,.ABT,.B4U,.SS4{
-    display: none;
-}
-.tab_car_color_text{
-    width: 100%;
-    height: 5%;
-}
-.car-color-text-wrap{
-    display: flex;
-    justify-content: space-evenly;
-}
-.car-color-text-wrap>div{
-    width: 50%;
-}
-.car-color ul{
-    display: flex;
-    justify-content: space-around;
-}
-.car-color li{
-    margin: 10% 10%;
-    list-style: none;
+.vd-menu-txt{
+    width: 43%;
+    text-align: center;
+    font-size: 1.7rem;
+    letter-spacing: 1vh;
     cursor: pointer;
 }
-.car-color img{
-    width: 40px;
-    height: 40px;
-    border: 3px solid #ccc;
+.playBtn{
+    width: 3.5%;
 }
-.car-text>ul>li:first-child{
-    display: block;
+.video-content video{
+    width: 100%;
+    height: 100%;
 }
-.car-text>ul>li{
-    margin-top: 2.3%;
-    display: none;
-    font-weight: 800;
-    color: #ccc;
-    font-size: 2.4rem;
+.video_01{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
 }
-.car-text>ul>li>p{
-    font-weight: lighter;
-    font-size: 1.2rem;
-}
-.section02-notice{
-    font-size: x-small;
-    color: #ccc;
-    font-family: 'GmarketSansLight';
-    margin-top: 4%;
+.video_02{
+    width: 100%;
+    height: 100%;
+    position: absolute;
 }
 /* section02 */
-.section03{
+
+/* section03 */
+.section04{
     width: 100%;
     height: 100vh;
     margin: 0;
     padding: 0;
     background: #333;
 }
-.section03-gallery{
+.section04-gallery{
     width: 200% !important;
     height: 100vh;
     display: flex;
@@ -153,6 +172,7 @@ a{
     padding: 0;
 }
 .gtt{
+    font-family: 'GmarketSansLight'; 
     letter-spacing:  1vh; 
     font-size: 2.5rem; 
     font-weight: 900; 
@@ -168,7 +188,7 @@ a{
     text-align: center;
     padding: 2.5% 0;
 }
-.section03-gallery>div{
+.section04-gallery>div{
     z-index: 0;
     height: 100%;
     width: 100%;
@@ -215,7 +235,7 @@ a{
 .fp-slidesContainer{
     width: 100% !important;
 }
-/* section03 영역분할 */
+/* section04 영역분할 */
 .gallery-title-wrap{
     width: 50%;
     margin: 0 auto;
@@ -237,7 +257,7 @@ a{
     display: block;
     margin: 0 auto;
 }
-/* section03-title */
+/* section04-title */
 .exterior-gallery{
     width: 85%;
     height: 80vh;
@@ -405,38 +425,39 @@ a{
     color: #fff;
     font-size: xx-large;
 }
-/* section03 */
-.section04{
+/* section04 */
+.section05{
     width: 100%;
     height: 100vh; 
     background: #333;
     position: relative;
     padding: 0;
 }
-.section04_container{
+.section05_container{
     width: 84%;
     height: 100vh;
     padding: 0;
     margin: 0 auto;
 }
-.section04-menu-title{
+.section05-menu-title{
     width: 100%;
     padding-top: 3%;
     margin: 0 auto;
 }
-.section04-menu-title>ul{
+.section05-menu-title>ul{
     margin: 0 auto;
 }
-.section04-menu-title>ul>li{
+.section05-menu-title>ul>li{
     margin: 0 auto;
 }
-.section04-menu-title>ul>li>a{
+.section05-menu-title>ul>li>a{
     border-radius: unset;
     text-decoration: none;
     font-size: 2rem;
+    font-weight: 100;
     color: rgba(255, 255, 255, 0.6);
 }
-.section04-content{
+.section05-content{
     height: 80vh;
     padding: 0;
     position: relative;
@@ -825,8 +846,90 @@ a{
     background-size: cover;
     background-repeat: no-repeat;
 }
-/* section04 */
-.section05{
+/* section05 */
+.section06{
+    width: 100%;
+    height: 100vh;
+    background: #333;
+    position: relative;
+}
+.section06_title{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section06_title img{
+    width: 9%;
+}
+.section06_title p{
+    color: white;
+    font-weight: 900;
+    font-size: 4.5rem;
+    margin-top: 2%;
+    font-family: "Helvetica Neue";
+    font-style: italic;
+}
+.car_img_wrap{
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+.tap_car_img{
+    width: 100%;
+    height: 60vh;
+}
+
+.ABP,.ABT,.B4U,.SS4{
+    display: none;
+}
+.tab_car_color_text{
+    width: 100%;
+    height: 5%;
+}
+.car-color-text-wrap{
+    display: flex;
+    justify-content: space-evenly;
+}
+.car-color-text-wrap>div{
+    width: 50%;
+}
+.car-color ul{
+    display: flex;
+    justify-content: space-around;
+}
+.car-color li{
+    margin: 10% 10%;
+    list-style: none;
+    cursor: pointer;
+}
+.car-color img{
+    width: 40px;
+    height: 40px;
+    border: 3px solid #ccc;
+}
+.car-text>ul>li:first-child{
+    display: block;
+}
+.car-text>ul>li{
+    margin-top: 2.3%;
+    display: none;
+    font-weight: 800;
+    color: #ccc;
+    font-size: 2.4rem;
+}
+.car-text>ul>li>p{
+    font-weight: lighter;
+    font-size: 1.2rem;
+}
+.section03-notice{
+    font-size: x-small;
+    color: #ccc;
+    margin-top: 4%;
+}
+/* section06 */
+.section07{
     width: 100%;
     height: 100vh !important;
     background: #333;
@@ -835,8 +938,8 @@ a{
     overflow: hidden;
 }
 .spec-title{
-    font-size: x-large;
-    font-weight: 900;
+    font-size: xx-large;
+    font-weight: 100;
     letter-spacing: 1.5vh;
     color: #fff;
     margin-top: 6%;
@@ -976,7 +1079,7 @@ a{
     background-size: contain;
     margin: 0 auto !important;
 }
-/* section05 */
+/* section07 */
 @media(max-width:767px){
     .section01-title{
         margin-top: 30%;
@@ -994,20 +1097,13 @@ a{
         width: 100%;
     }
     /* section01 */
-    .section02_title img{
-        width: 20%;
-    }
-    .car-text{
-        margin-top: 10%;
-    }
-   .section02-notice{
-       margin-top: 10%;
-   }
     /* section02 */
-    .section03{
+
+    /* section03 */
+    .section04{
         padding-top: 12%;
     }
-    .section03-gallery{
+    .section04-gallery{
         display: flex;
     }
     .exterior-gallery{
@@ -1069,17 +1165,17 @@ a{
    height: 35vh !important;
    border: 2px solid #ccc !important;
 }
-/* section03 */
-    .section04{
+/* section04 */
+    .section05{
         padding-top: 4%;
     }
-    .section04-menu-title>ul{
+    .section05-menu-title>ul{
         width: 70%;
         display: flex;
         justify-content: center;
         margin-left: 0 !important;
     }
-    .section04-menu-title a{
+    .section05-menu-title a{
         font-size: small !important;
     }
     .dw_title_text{
@@ -1180,7 +1276,17 @@ a{
     .safety_sub_img p{
         font-size: xx-small;
     }
-    /* section04 */
+    /* section05 */
+    .section06_title img{
+        width: 20%;
+    }
+    .car-text{
+        margin-top: 10%;
+    }
+   .section06-notice{
+       margin-top: 10%;
+   }
+    /* section06 */
     .specinfo-icon>div{
         height: 60%;
         display: flex !important;
