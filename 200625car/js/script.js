@@ -102,19 +102,26 @@ $(function(){
 
 });
 
-$(document).on("click", function(){
-    $('.vd-menu-text01 .play-line01').click(function(){
-        $('.play-line01>div').animate({width:'100%'},1000).css('background','red');
+
+$(function(){
+    $('.vd-menu-txt01').click(function(){
+        $('.play-line01>div').animate({width:'100%'},'fast').css('background','red');
         $('.vd-menu-txt01').css('color','#fff');
-        $('.play-line02>div').animate({width:'0'},1000);
+        $('.play-line02>div').animate({width:'0'},'fast');
         $('.vd-menu-txt02').css('color','#666');
-        $('.video_01').css('display','block');
+        $('.video_01').animate({marginTop:'0',opacity:'1'},'3000').css('transition','1s');
     });
-    $('.vd-menu-text02 .play-line02').click(function(){
-        $('.play-line01>div').animate({width:'0'},1000);
+    $('.vd-menu-txt02').click(function(){
+        $('.play-line01>div').animate({width:'0'},'fast');
         $('.vd-menu-txt01').css('color','#666');
-        $('.play-line02>div').animate({width:'100%'},1000).css('background','red');
+        $('.play-line02>div').animate({width:'100%'},'fast').css('background','red');
         $('.vd-menu-txt02').css('color','#fff');
-        $('.video_01').css('display','none');
+        $('.video_01').animate({marginTop:'100%',opacity:'0'},'3000').css('transition','1s');
     });
-});
+})
+
+function fms(url){
+	if(url){
+		window.open(url);
+	}
+}
