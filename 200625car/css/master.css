@@ -58,12 +58,94 @@ a{
 /* section01 */
 .section02{
     width: 100%;
+    height: 100vh;
+    background: #333;
+    position: relative;
+}
+.section02_title{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section02_title img{
+    width: 9%;
+}
+.section02_title p{
+    color: white;
+    font-weight: 900;
+    font-size: 4.5rem;
+    margin-top: 2%;
+    font-family: "Helvetica Neue";
+    font-style: italic;
+}
+.car_img_wrap{
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+.tap_car_img{
+    width: 100%;
+    height: 60vh;
+}
+
+.ABP,.ABT,.B4U,.SS4{
+    display: none;
+}
+.tab_car_color_text{
+    width: 100%;
+    height: 5%;
+}
+.car-color-text-wrap{
+    display: flex;
+    justify-content: space-evenly;
+}
+.car-color-text-wrap>div{
+    width: 50%;
+}
+.car-color ul{
+    display: flex;
+    justify-content: space-around;
+}
+.car-color li{
+    margin: 10% 10%;
+    list-style: none;
+    cursor: pointer;
+}
+.car-color img{
+    width: 40px;
+    height: 40px;
+    border: 3px solid #ccc;
+}
+.car-text>ul>li:first-child{
+    display: block;
+}
+.car-text>ul>li{
+    margin-top: 2.3%;
+    display: none;
+    font-weight: 800;
+    color: #ccc;
+    font-size: 2.4rem;
+}
+.car-text>ul>li>p{
+    font-weight: lighter;
+    font-size: 1.2rem;
+}
+.section02-notice{
+    font-size: x-small;
+    color: #ccc;
+    margin-top: 4%;
+}
+/* section02 */
+.section03{
+    width: 100%;
     height: 100vh !important;
     background: #333;
     color: #fff;
     display: none;
 }
-.section02>div{
+.section03>div{
     display: unset !important;
     width: 100%;
     height: 100%;
@@ -74,8 +156,9 @@ a{
     font-size: xx-large;
     font-weight: 100;
     letter-spacing: 1vh;
-    text-align: center;
-    line-height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .video-content{
     width: 85%;
@@ -145,7 +228,7 @@ a{
     height: 100%;
 }
 .video_01{
-    width: 100% !important;
+    width: 100%;
     height: 100%;
     position: absolute;
     z-index: 10;
@@ -154,21 +237,6 @@ a{
     width: 100%;
     height: 100%;
     position: absolute;
-}
-/* section02 */
-.section03{
-    width: 100%;
-    height: 100vh;
-    background: #333;
-}
-.border{
-    width: 85%;
-    height: 80%;
-    background: url(../images/K7/k7_20my_yg_interior_indoor_space_w.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 0 auto;
 }
 /* section03 */
 .section04{
@@ -513,7 +581,7 @@ a{
 		transform: scale(1.5);
 	}
 }
-/* section04-big-box */
+/* section05-big-box */
 .drive_wise_title{
     width: 100%;
     height: 14vh;
@@ -863,88 +931,6 @@ a{
 /* section05 */
 .section06{
     width: 100%;
-    height: 100vh;
-    background: #333;
-    position: relative;
-}
-.section06_title{
-    width: 100%;
-    height: 15%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.section06_title img{
-    width: 9%;
-}
-.section06_title p{
-    color: white;
-    font-weight: 900;
-    font-size: 4.5rem;
-    margin-top: 2%;
-    font-family: "Helvetica Neue";
-    font-style: italic;
-}
-.car_img_wrap{
-    height: 50%;
-    display: flex;
-    align-items: center;
-}
-.tap_car_img{
-    width: 100%;
-    height: 60vh;
-}
-
-.ABP,.ABT,.B4U,.SS4{
-    display: none;
-}
-.tab_car_color_text{
-    width: 100%;
-    height: 5%;
-}
-.car-color-text-wrap{
-    display: flex;
-    justify-content: space-evenly;
-}
-.car-color-text-wrap>div{
-    width: 50%;
-}
-.car-color ul{
-    display: flex;
-    justify-content: space-around;
-}
-.car-color li{
-    margin: 10% 10%;
-    list-style: none;
-    cursor: pointer;
-}
-.car-color img{
-    width: 40px;
-    height: 40px;
-    border: 3px solid #ccc;
-}
-.car-text>ul>li:first-child{
-    display: block;
-}
-.car-text>ul>li{
-    margin-top: 2.3%;
-    display: none;
-    font-weight: 800;
-    color: #ccc;
-    font-size: 2.4rem;
-}
-.car-text>ul>li>p{
-    font-weight: lighter;
-    font-size: 1.2rem;
-}
-.section06-notice{
-    font-size: x-small;
-    color: #ccc;
-    margin-top: 4%;
-}
-/* section06 */
-.section07{
-    width: 100%;
     height: 100vh !important;
     background: #333;
     position: relative;
@@ -1093,8 +1079,8 @@ a{
     background-size: contain;
     margin: 0 auto !important;
 }
-/* section07 */
-.section08{
+/* section06 */
+.section07{
     width: 100%;
     height: 100vh;
     background: #333;
@@ -1465,7 +1451,7 @@ a{
 .footer-box3 a{
     color: inherit;
 }
-/* section08 */
+/* section07 */
 @media(max-width:767px){
     .section01-title{
         margin-top: 30%;
@@ -1483,8 +1469,49 @@ a{
         width: 100%;
     }
     /* section01 */
+    .section02_title img{
+        width: 20%;
+    }
+    .section02_title p{
+        font-size: 2.5rem;
+    }
+    .tab_car_color_text>div:last-child{
+        padding: 0;
+    }
+    .car-color-text-wrap{
+        padding: 0;
+    }
+    .car-text{
+        margin-top: 10%;
+    }
+    .car-text>ul{
+        padding-left: 3%;
+    }
+    .car_img_wrap{
+        margin: 20% 0;
+    }
+    .car-text>ul>li{
+        font-size: 1.8rem;
+    }
+    .car-text>ul>li>p{
+        font-size: 1rem;
+        font-weight: 100;
+        margin-left: 3%;
+    }
+   .section02-notice{
+       margin-top: 20%;
+   }
     /* section02 */
-
+    .video-title{
+        height: 20%;
+        font-size: x-large;
+    }
+    .video-content{
+        height: 50%;
+    }
+    .video-menu{
+        display: none;
+    }
     /* section03 */
     .section04{
         padding-top: 12%;
@@ -1663,16 +1690,6 @@ a{
         font-size: xx-small;
     }
     /* section05 */
-    .section06_title img{
-        width: 20%;
-    }
-    .car-text{
-        margin-top: 10%;
-    }
-   .section06-notice{
-       margin-top: 10%;
-   }
-    /* section06 */
     .specinfo-icon>div{
         height: 60%;
         display: flex !important;
@@ -1698,4 +1715,5 @@ a{
         width: 20px;
         height: 20px;
     }
+    /* section06 */
 }

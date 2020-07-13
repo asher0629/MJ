@@ -125,3 +125,15 @@ function fms(url){
 		window.open(url);
 	}
 }
+
+
+$(window).resize(function() { 
+    var video = document.querySelector('video');
+    if($(window).width() < 768){ 
+      $(function(){
+          video.removeAttribute('[data-autoplay]');
+      });
+    } 
+    else{
+    }
+  });
