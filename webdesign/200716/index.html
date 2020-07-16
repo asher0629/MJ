@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+</head>
+<body>
+    
+    <script>
+    //   $(function(){
+    //      $.ajax({
+    //         url: 'book.xml',
+    //         dataType: 'xml',
+    //         success: function(data){
+    //            $(data).find('book').each(function(){
+    //               var title = $('title', this).text();
+    //               var author = $('author', this).text();
+    //               var price = $('price', this).text();
+    //               var txt = "<li>" + title + ", " + author + ", "+ price + "</li><hr>";
+    //               $('body').append(txt);
+    //            });
+    //         }
+    //      });   
+    //   });   
+    $(function(){
+        $.getJSON('book.json',function(data){
+            var books=data.book;
+            $(books).each(function(i,obj){
+                var title = obj.title;
+                var author = obj.author;
+                var price = obj.price;
+                var txt = "<li>" + title + "," + author + "," + price + "</li><hr>";
+                $('body').append(txt);
+            });
+        });
+    });
+    </script>
+</body>
+</html>
