@@ -73,12 +73,8 @@ function initComparisons() {
       slider.style.top = img.offsetHeight - (slider.offsetHeight / 1) + "px";
     }
   }
-  var mql = window.matchMedia("screen and (max-width: 768px)");
+//   var mql = window.matchMedia("screen and (max-width: 768px)");
 
-      mql.addListener(function(z) {
-      if(z.matches) 
-        {clear(createElement);
-          initComparisons();}
-});
+// });
 }
 

@@ -130,10 +130,14 @@ function fms(url){
 $(window).resize(function() { 
     var video = document.querySelector('video');
     if($(window).width() < 768){ 
-      $(function(){
-          video.removeAttribute('[data-autoplay]');
-      });
+        $(video).trigger('pause');
+        $(video).removeAttr('autoplay');
+        $(video).load();
+        $(video).pause();
     } 
     else{
+        $(video).trigger('play'); 
+        $(video).autoplay = true;
+        $(video).load();
     }
   });
