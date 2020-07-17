@@ -9,7 +9,7 @@
 <body>
 
     <script>
-        var url = 'http://api.openweathermap.org/data/2.5/weather?q=incheon&appid=28981aff47d330d87837128734f55567'
+        var url = 'http://api.openweathermap.org/data/2.5/weather?q=seoul&appid=28981aff47d330d87837128734f55567'
 
         $.getJSON(url,function(data){
             var sys = data.sys;             // 국가명, 일출 일몰
@@ -30,6 +30,10 @@
                 + '최저 온도: ' + parseInt(temp_min-273.15) + ' '
                 + '최고 온도: ' + parseInt(temp_max-273.15) + ' '
                 + country + ' ' +  city + ' ' + w_id + ' ' + '<br>');
+
+        //  날씨 아이콘 표시
+        var icon_url = 'http://openweathermap.org/img/w/' + icon;
+         $('body').append("<img src='" + icon_url + ".png'>");
         });
 
     </script>
