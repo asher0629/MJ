@@ -1,0 +1,8 @@
+api.openweathermap.org/data/2.5/weather?q={city name}&appid={your api key}
+
+api.openweathermap.org/data/2.5/weather?q={city name},{state code}&appid={your api key}
+
+api.openweathermap.org/data/2.5/weather?q={city name},{state code},{country code}&appid={your api key}
+
+
+28981aff47d330d87837128734f55567
