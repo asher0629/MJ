@@ -334,10 +334,14 @@ a{
     margin: 1% 0;
 }
 .gallery-btn{
-    width: 114px !important;
-    height: 30px !important;
+    width: 115px !important;
+    height: 35px !important;
     display: block;
     margin: 0 auto;
+    font-weight: 600;
+}
+.gallery-btn:hover{
+    background: rgb(235, 95, 95);
 }
 /* section04-title */
 .exterior-gallery{
