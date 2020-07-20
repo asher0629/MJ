@@ -282,25 +282,25 @@ a{
     height: 100vh;
     padding: 1.2% 0;
     margin: 0;
-    display: unset !important;
-    table-layout: unset !important;
+    /* display: unset !important;
+    table-layout: unset !important; */
 }
-.exterior>div{
+/* .exterior>div{
     display: unset !important;
     vertical-align: unset !important;
     width: 100%;
-}
+} */
 .interior{
     width: 50%;
     height: 100vh;
     padding: 1.2% 0;
     margin: 0;
 }
-.interior>div{
+/* .interior>div{
     display: unset !important;
     vertical-align: unset !important;
     width: 100%;
-}
+} */
 .fp-controlArrow{
     position: unset !important;
     width: unset;

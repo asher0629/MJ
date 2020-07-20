@@ -5,38 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>weather</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/weather-icons.min.scss">
 </head>
 <body>
+    <div id="weather_info">
+        <h1 class="city"></h1>
+        <section>
+            <p class="w_id"></p>
+            <i class="icon wi wi-owm-314: rain"></i>
+            <p class="temp"></p>
+            <aside>
+                <p class="temp-max">max</p>
+                <p class="temp-min">min</p>
+            </aside>
+        </section>
+        <img class="load_img" src="loading.gif" width="50">
+    </div>
 
     <script>
-        var url = 'http://api.openweathermap.org/data/2.5/weather?q=seoul&appid=28981aff47d330d87837128734f55567'
+        var url = 'http://api.openweathermap.org/data/2.5/weather?q=seoul&appid=28981aff47d330d87837128734f55567';
+         $('weather_info .load_img').show();
 
-        $.getJSON(url,function(data){
-            var sys = data.sys;             // 국가명, 일출 일몰
-            var city = data.name;           // 도시명
-            var weather = data.weather;     // 날씨 객체
-            var main = data.main;           // 온도 기압 관련 객체
-            var wmain = weather[0].main;    // 구름 상태
-            var w_id = weather[0].id;       // 날씨상태 id 코드
-            var icon = weather[0].icon;     // 날씨 아이콘 정보
-            var country = sys.country;      // 국가명
-            var temp = main.temp;           // 현재 온도
-            var temp_min = main.temp_min;   // 최저 온도
-            var temp_max = main.temp_max;   // 최고 온도
-            // 온도는 국제단위인 켈빈값이여서 -273.15를 빼줘서 섭씨로 바꿈
+            $.getJSON(url, function(data) {
+                var sys = data.sys;                 // 국가명, 일출/일몰
+                var wind = data.wind;         
+                var city = data.name;               // 도시명
+                var weather = data.weather;         // 날씨 객체
+                var main = data.main;               // 온도 기압 관련 객체
+                var wmain = weather[0].main;        // 구름 상태(Cloudiness)
+                var w_id = weather[0].id;           // 날씨상태 id 코드
+                var icon = weather[0].main;         // 날씨 아이콘 정보
+                var country = sys.country;          // 국가명
+                var temp = main.temp;               // 현재 온도
+                var temp_min = main.temp_min;       // 최저 온도
+                var temp_max = main.temp_max;       // 최고 온도
+                var icon_url = 'css/weather-icons.min.scss' + icon;
 
-            $('body').append(wmain + ', ' + icon + ' '
-                + '현재 온도: ' + parseInt(temp-273.15) + ' '
-                + '최저 온도: ' + parseInt(temp_min-273.15) + ' '
-                + '최고 온도: ' + parseInt(temp_max-273.15) + ' '
-                + country + ' ' +  city + ' ' + w_id + ' ' + '<br>');
-
-        //  날씨 아이콘 표시
-        var icon_url = 'http://openweathermap.org/img/w/' + icon;
-         $('body').append("<img src='" + icon_url + ".png'>");
-        });
+                $('#weather_info>.city').html(city + "/" + country);
+                $('#weather_info .icon').html("<img src='" + icon_url + ".png'>");
+                $('#weather_info .w_id').html(wmain);
+                $('#weather_info .temp_min').html(parseInt(temp_min-273.15)+'&deg' + 'min');
+                $('#weather_info .temp_max').html(parseInt(temp_max-273.15)+'&deg' + 'max');
+                $('#weather_info .temp').html(parseInt(temp-273.15)+'&deg;');
+                $('#weather_info .load_img').hide();
+            })
+            .fail(function(){
+                alert("loading error");
+            });
+        
 
     </script>
-    
 </body>
 </html>
