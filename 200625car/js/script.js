@@ -129,9 +129,26 @@ function fms(url){
 
 $(window).resize(function() { 
     if($(window).width() < 768){ 
+        $('.specinfo-icon>div>ul').css('display','none');
+        $('.specinfo-icon>div').mouseover(function(){
+            $(this).children('ul').show();
+            $(this).children('img').hide();
+        });
+        $('.specinfo-icon>div').mouseout(function(){
+            $(this).children('ul').hide();
+            $(this).children('img').show();
+        });
 
-        }
+    }
     else{
-
+        $('.specinfo-icon>div>ul').css('display','block');
+        $('.specinfo-icon>div').mouseover(function(){
+            $(this).children('ul').show();
+            $(this).children('img').show();
+        });
+        $('.specinfo-icon>div').mouseout(function(){
+            $(this).children('ul').show();
+            $(this).children('img').show();
+        });
     }
   });
