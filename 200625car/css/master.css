@@ -238,6 +238,9 @@ a{
     height: 100%;
     position: absolute;
 }
+.sm-size{
+    display:none;
+}
 /* section03 */
 .section04{
     width: 100%;
@@ -1509,12 +1512,24 @@ a{
     .video-title{
         height: 20%;
         font-size: x-large;
+        margin-bottom: 15%;
     }
     .video-content{
-        height: 50%;
+        height: 50vh !important;
     }
     .video-menu{
+        top: 6%;
+    }
+    .vd-menu-txt{
+        letter-spacing:0;
+        font-size: 1.4rem;
+        padding : 0 3%;
+    }
+    .fullsize{
         display: none;
+    }
+    .sm-size{
+        display: block;
     }
     /* section03 */
     .section04{

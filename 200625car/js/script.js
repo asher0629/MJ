@@ -129,6 +129,7 @@ function fms(url){
 
 $(window).resize(function() { 
     var video = document.querySelector('video');
+    var data = $(video).data();
     if($(window).width() < 768){ 
        
     }
