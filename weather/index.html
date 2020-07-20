@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>weather</title>
+    <link rel="icon" href="images/favicon.ico">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/weather-icons.min.scss">
+    <link rel="stylesheet" href="css/weather-icons.min.css">
 </head>
 <body>
     <div id="weather_info">
         <h1 class="city"></h1>
         <section>
+            <i class="icon wi"></i>
             <p class="w_id"></p>
-            <i class="icon wi wi-owm-804"></i>
             <p class="temp"></p>
             <aside>
-                <p class="temp-max">max</p>
-                <p class="temp-min">min</p>
+                <p class="feels_like"></p>
+                <p class="temp-max"></p>
+                <p class="temp-min"></p>
             </aside>
         </section>
         <img class="load_img" src="loading.gif" width="50">
@@ -28,6 +30,7 @@
          $('weather_info .load_img').show();
 
             $.getJSON(url, function(data) {
+                var date = new Date;
                 var sys = data.sys;                 // 국가명, 일출/일몰
                 var wind = data.wind;         
                 var city = data.name;               // 도시명
@@ -35,49 +38,31 @@
                 var main = data.main;               // 온도 기압 관련 객체
                 var wmain = weather[0].main;        // 구름 상태(Cloudiness)
                 var w_id = weather[0].id;           // 날씨상태 id 코드
-                var icon = weather[0].main;         // 날씨 아이콘 정보
+                var icon = weather.icon;            // 날씨 아이콘 정보
                 var country = sys.country;          // 국가명
                 var temp = main.temp;               // 현재 온도
                 var temp_min = main.temp_min;       // 최저 온도
                 var temp_max = main.temp_max;       // 최고 온도
-                var icon_url = dict + icon;
+                var feel = main.feels_like;         // 체감 온도
+                var nowTimestamp = Math.floor(Date.now() / 1000);
+                var weatherClass = 'wi wi-owm-';
+                weatherClass += (nowTimestamp >= data.sunrise && nowTimestamp <= data.sunset ? 'day' : 'night');
+                weatherClass += ('-' + weather[0].id);
 
+                $("#weather_info .icon").addClass(weatherClass);
 
-                var dict = {
-                    '01d': 'wi-owm-800',
-                    '02d': 'wi-owm-day-801',
-                    '03d': 'wi-owm-day-802',
-                    '04d': 'wi-owm-day-803',
-                    '09d': 'wi-showers',
-                    '10d': 'wi-day-rain-mix',
-                    '11d': 'wi-thunderstorm',
-                    '13d': 'wi-snow',
-                    '50d': 'wi-fog',
-                    '01n': 'wi-night-clear',
-                    '02n': 'wi-night-alt-cloudy',
-                    '03n': 'wi-night-alt-cloudy-high',
-                    '04n': 'wi-cloudy',
-                    '09n': 'wi-night-alt-sprinkle',
-                    '10n': 'wi-night-alt-showers',
-                    '11n': 'wi-night-alt-thunderstorm',
-                    '13n': 'wi-night-alt-snow',
-                    '50n': 'wi-night-fog'
-                };
-
-                
-
-                $('#weather_info>.city').html(city + "/" + country);
-                $('#weather_info .icon').html("<img src='" + icon_url + ".png'>");
+                $('#weather_info>.city').html(city);
                 $('#weather_info .w_id').html(wmain);
-                $('#weather_info .temp_min').html(parseInt(temp_min-273.15)+'&deg' + 'min');
-                $('#weather_info .temp_max').html(parseInt(temp_max-273.15)+'&deg' + 'max');
-                $('#weather_info .temp').html(parseInt(temp-273.15)+'&deg;');
+                $('#weather_info .temp_min').html(parseInt(temp_min-273.15)+'&deg;' + 'min');
+                $('#weather_info .temp_max').html(parseInt(temp_max-273.15)+'&deg;' + 'max');
+                $('#weather_info .temp').html('현재 온도 : ' + parseInt(temp-273.15)+'&deg;');
+                $('#weather_info .feels_like').html('체감 온도 : ' + parseInt(feel-273.15)+'&deg;');
                 $('#weather_info .load_img').hide();
+
             })
             .fail(function(){
                 alert("loading error");
             });
-        
 
     </script>
 </body>
