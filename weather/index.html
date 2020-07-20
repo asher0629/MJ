@@ -13,7 +13,7 @@
         <h1 class="city"></h1>
         <section>
             <p class="w_id"></p>
-            <i class="icon wi wi-owm-314: rain"></i>
+            <i class="icon wi wi-owm-804"></i>
             <p class="temp"></p>
             <aside>
                 <p class="temp-max">max</p>
@@ -40,7 +40,31 @@
                 var temp = main.temp;               // 현재 온도
                 var temp_min = main.temp_min;       // 최저 온도
                 var temp_max = main.temp_max;       // 최고 온도
-                var icon_url = 'css/weather-icons.min.scss' + icon;
+                var icon_url = dict + icon;
+
+
+                var dict = {
+                    '01d': 'wi-owm-800',
+                    '02d': 'wi-owm-day-801',
+                    '03d': 'wi-owm-day-802',
+                    '04d': 'wi-owm-day-803',
+                    '09d': 'wi-showers',
+                    '10d': 'wi-day-rain-mix',
+                    '11d': 'wi-thunderstorm',
+                    '13d': 'wi-snow',
+                    '50d': 'wi-fog',
+                    '01n': 'wi-night-clear',
+                    '02n': 'wi-night-alt-cloudy',
+                    '03n': 'wi-night-alt-cloudy-high',
+                    '04n': 'wi-cloudy',
+                    '09n': 'wi-night-alt-sprinkle',
+                    '10n': 'wi-night-alt-showers',
+                    '11n': 'wi-night-alt-thunderstorm',
+                    '13n': 'wi-night-alt-snow',
+                    '50n': 'wi-night-fog'
+                };
+
+                
 
                 $('#weather_info>.city').html(city + "/" + country);
                 $('#weather_info .icon').html("<img src='" + icon_url + ".png'>");
