@@ -6,3 +6,10 @@ api.openweathermap.org/data/2.5/weather?q={city name},{state code},{country code
 
 
 28981aff47d330d87837128734f55567
+
+
+
+
+
+지역별 좌표
+https://kor.timegenie.com/latitude_longitude/country/kr
