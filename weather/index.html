@@ -11,6 +11,8 @@
 </head>
 <body>
     <div id="weather_info">
+        <h3 class="date"></h3>
+        <h3 class="week"></h3>
         <h1 class="city"></h1>
         <section>
             <i class="icon wi"></i>
@@ -18,19 +20,31 @@
             <p class="temp"></p>
             <aside>
                 <p class="feels_like"></p>
-                <p class="temp-max"></p>
-                <p class="temp-min"></p>
+                <p class="temp_max"></p>
+                <p class="temp_min"></p>
+                <p class="d_weather"></p>
             </aside>
         </section>
         <img class="load_img" src="loading.gif" width="50">
     </div>
 
     <script>
-        var url = 'http://api.openweathermap.org/data/2.5/weather?q=seoul&appid=28981aff47d330d87837128734f55567';
+        var url = 'http://api.openweathermap.org/data/2.5/weather?q=seoul&appid=28981aff47d330d87837128734f55567&lang=kr';
          $('weather_info .load_img').show();
 
             $.getJSON(url, function(data) {
-                var date = new Date;
+                var  Now = new Date(),
+                    StrNow = String(Now),
+                    nowYear = String(Now.getFullYear()),
+                    nowMon = String(Now.getMonth()+1),
+                    nowDay = String(Now.getDate());
+                    if(nowMon.length == 1) {
+                    nowMon = "0"+nowMon
+                    }
+                var NowToday = nowYear+nowMon+nowDay;
+                var week = new Array('일','월','화','수','목','금','토');
+                    
+
                 var sys = data.sys;                 // 국가명, 일출/일몰
                 var wind = data.wind;         
                 var city = data.name;               // 도시명
@@ -39,20 +53,26 @@
                 var wmain = weather[0].main;        // 구름 상태(Cloudiness)
                 var w_id = weather[0].id;           // 날씨상태 id 코드
                 var icon = weather.icon;            // 날씨 아이콘 정보
+                var krw = weather[0].description;
                 var country = sys.country;          // 국가명
                 var temp = main.temp;               // 현재 온도
                 var temp_min = main.temp_min;       // 최저 온도
                 var temp_max = main.temp_max;       // 최고 온도
                 var feel = main.feels_like;         // 체감 온도
+
+
                 var nowTimestamp = Math.floor(Date.now() / 1000);
                 var weatherClass = 'wi wi-owm-';
                 weatherClass += (nowTimestamp >= data.sunrise && nowTimestamp <= data.sunset ? 'day' : 'night');
                 weatherClass += ('-' + weather[0].id);
 
                 $("#weather_info .icon").addClass(weatherClass);
+                $('#weather_info .date').html(NowToday);
+                $('#weather_info .week').html(week[Now.getDay()]);
+                // $('#weather_info .d_weather').html(d_weather);
 
                 $('#weather_info>.city').html(city);
-                $('#weather_info .w_id').html(wmain);
+                $('#weather_info .w_id').html(krw);
                 $('#weather_info .temp_min').html(parseInt(temp_min-273.15)+'&deg;' + 'min');
                 $('#weather_info .temp_max').html(parseInt(temp_max-273.15)+'&deg;' + 'max');
                 $('#weather_info .temp').html('현재 온도 : ' + parseInt(temp-273.15)+'&deg;');
