@@ -11,16 +11,22 @@
 </head>
 <body>
     <div id="weather_info">
+        <div class="day">
         <h3 class="date"></h3>
         <h3 class="week"></h3>
+        </div>
         <h1 class="city"></h1>
         <section>
             <i class="icon wi"></i>
-            <p class="w_id"></p>
             <p class="temp"></p>
-                <p class="feels_like"></p>
-                <p class="temp_max"></p>
+            <p class="pop"></p>
+            <div class="max_min">
+                <!-- <p class="feels_like"></p> -->
                 <p class="temp_min"></p>
+                <p class="temp_max"></p>
+                
+                
+            </div>
         </section>
 
         <div id="weekly_info">
@@ -44,12 +50,14 @@
                     if(nowMon.length == 1) {
                     nowMon = "0"+nowMon
                     }
-                var NowToday = nowYear+nowMon+nowDay;
+                var NowToday = nowMon+'.'+nowDay;
                 var week = new Array('일','월','화','수','목','금','토');
+                var month = new Array('')
                 
                     
 
-                var city = data.timezone;       // 도시명
+                var timezone = data.timezone;       // 도시명
+                var city = timezone.replace('Asia/Seoul','Gimpo');
                 var current = data.current;        //
                 var ctemp = data.current.temp;
                 var feel = current.feels_like;
@@ -58,28 +66,29 @@
                 var c_dscript = current.weather[0].description;
                 var daily = data.daily;
                 var dtemp = daily.temp;
-                var temp_min = daily[0].temp.min;
-                var temp_max = daily[0].temp.max;
-                var rain = daily[0].rain;
-                var dew_point = daily[0].dew_point;
-                var pop = daily[0].pop;
+                var temp_min = daily[Now.getDay()].temp.min;
+                var temp_max = daily[Now.getDay()].temp.max;
+                var rain = daily[Now.getDay()].rain;
+                var dew_point = daily[Now.getDay()].dew_point;
+                var pop = daily[Now.getDay()].pop;
 
 
                 var nowTimestamp = Math.floor(Date.now() / 1000);
                 var weatherClass = 'wi wi-owm-';
-                weatherClass += (nowTimestamp >= data.sunrise && nowTimestamp <= data.sunset ? 'day' : 'night');
-                weatherClass += ('-' + current.weather[0].id);
+                // weatherClass += (nowTimestamp >= data.sunrise && nowTimestamp <= data.sunset ? 'night' : 'day');
+                weatherClass += (current.weather[0].id);
 
                 $("#weather_info .icon").addClass(weatherClass);
                 $('#weather_info .date').html(NowToday);
-                $('#weather_info .week').html(week[Now.getDay()]);
+                $('#weather_info .week').html(week[Now.getDay()]+'요일');
 
                 $('#weather_info>.city').html(city);
                 $('#weather_info .w_id').html(c_dscript);
                 $('#weather_info .temp_min').html(parseInt(temp_min-273.15)+'&deg;' + 'min');
                 $('#weather_info .temp_max').html(parseInt(temp_max-273.15)+'&deg;' + 'max');
-                $('#weather_info .temp').html('현재 온도 : ' + parseInt(ctemp-273.15)+'&deg;');
+                $('#weather_info .temp').html(parseInt(ctemp-273.15)+'&deg;');
                 $('#weather_info .feels_like').html('체감 온도 : ' + parseInt(feel-273.15)+'&deg;');
+                $('#weather_info .pop').html('강수확률 : ' + parseInt(pop*100) + '%');
                 $('#weather_info .load_img').hide();
 
             })
