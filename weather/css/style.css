@@ -60,14 +60,6 @@ section{
     justify-content: center;
     padding-top: 4vh;
 }
-.date {
-    font-size: x-large;
-    margin-right: 20px;
-}
-.week{
-    font-weight: 400;
-    font-size:medium;
-}
 .temp{
     font-size:5.5rem;
     color: rgba(38, 113, 184, 0.7);
@@ -86,4 +78,19 @@ section{
 }
 .temp_min{
     margin-right: 20px;
+}
+#weekly{
+    margin: 0 auto;
+    width: 50%;
+    display:flex;
+    justify-content: space-between; 
+    text-align : center;
+}
+
+#weekweather{
+    margin: 0 auto;
+    width: 50%;
+    display:flex;
+    justify-content: space-between; 
+    text-align : center;
 }

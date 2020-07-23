@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+    <link rel="icon" href="images/favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/weather-icons.min.css">
+</head>
+<body>
+    <div id="weather_info">
+        <div class="day">
+        <h3 class="date"></h3>
+        </div>
+        <h1 class="city"></h1>
+        <section>
+            <i class="icon wi"></i>
+            <p class="temp"></p>
+            <p class="pop"></p>
+            <div class="max_min">
+                <!-- <p class="feels_like"></p> -->
+                <p class="temp_min"></p>
+                <p class="temp_max"></p>
+                
+                
+            </div>
+        </section>
+
+        <div id="weekly">
+            <p class="today"></p>
+            <p class="f-day"></p>
+            <p class="s-day"></p>
+            <p class="t-day"></p>
+            <p class="four-day"></p>
+            <p class="five-day"></p>
+            <p class="six-day"></p>
+        </div>
+        <div id="weekweather">
+            <p class="todayw"></p>
+            <p class="f-dayw"></p>
+            <p class="s-dayw"></p>
+            <p class="t-dayw"></p>
+            <p class="four-dayw"></p>
+            <p class="five-dayw"></p>
+            <p class="six-dayw"></p>
+        </div>
+        <!-- <img class="load_img" src="loading.gif" width="50"> -->
+    </div>
+
+    <script>
+        url = 'https://api.openweathermap.org/data/2.5/onecall?id=1842936&lat=37.623611&lon=126.714172&exclude=minutely&appid=28981aff47d330d87837128734f55567';
+         $('weather_info .load_img').show();
+            $.getJSON(url, function(data) {
+                var daily = data.daily[getDay()];
+
+                $('#weather_info .date').html(daily);
+            });
+
+    </script>
+</body>
+</html>

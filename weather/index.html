@@ -13,7 +13,6 @@
     <div id="weather_info">
         <div class="day">
         <h3 class="date"></h3>
-        <h3 class="week"></h3>
         </div>
         <h1 class="city"></h1>
         <section>
@@ -29,13 +28,25 @@
             </div>
         </section>
 
-        <div id="weekly_info">
-            <p class="d-week"></p>
+        <div id="weekly">
+            <p class="today"></p>
+            <p class="f-day"></p>
+            <p class="s-day"></p>
+            <p class="t-day"></p>
+            <p class="four-day"></p>
+            <p class="five-day"></p>
+            <p class="six-day"></p>
+        </div>
+        <div id="weekweather">
+            <p class="todayw"></p>
+            <p class="f-dayw"></p>
+            <p class="s-dayw"></p>
+            <p class="t-dayw"></p>
+            <p class="four-dayw"></p>
+            <p class="five-dayw"></p>
+            <p class="six-dayw"></p>
         </div>
         <!-- <img class="load_img" src="loading.gif" width="50"> -->
-    </div>
-    <div id="weekly_info">
-            
     </div>
 
     <script>
@@ -47,30 +58,39 @@
                     nowYear = String(Now.getFullYear()),
                     nowMon = String(Now.getMonth()+1),
                     nowDay = String(Now.getDate());
-                    if(nowMon.length == 1) {
-                    nowMon = "0"+nowMon
-                    }
-                var NowToday = nowMon+'.'+nowDay;
-                var week = new Array('일','월','화','수','목','금','토');
-                var month = new Array('')
+                var week = new Array('SUN','MON','TUE','WED','THU','FRI','SAT','SUN','MON','TUE','WED','THU','FRI','SAT');              
+                var month = new Array('JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC');
+                var NowToday = month[Now.getMonth()]+nowDay+'th'+week[Now.getDay()];
                 
                     
 
-                var timezone = data.timezone;       // 도시명
+                var timezone = data.timezone;       
                 var city = timezone.replace('Asia/Seoul','Gimpo');
-                var current = data.current;        //
+                var current = data.current;        
                 var ctemp = data.current.temp;
                 var feel = current.feels_like;
                 var c_weather = current.weather[0].main;
                 var c_icon = current.weather[0].id;
                 var c_dscript = current.weather[0].description;
                 var daily = data.daily;
-                var dtemp = daily.temp;
+                var dtemp = daily[Now.getDay()].temp;
                 var temp_min = daily[Now.getDay()].temp.min;
                 var temp_max = daily[Now.getDay()].temp.max;
                 var rain = daily[Now.getDay()].rain;
                 var dew_point = daily[Now.getDay()].dew_point;
                 var pop = daily[Now.getDay()].pop;
+                var fmin = daily[1].temp.min;
+                var fmax = daily[1].temp.max;
+                var smin = daily[2].temp.min;
+                var smax = daily[2].temp.max;
+                var tmin = daily[3].temp.min;
+                var tmax = daily[3].temp.max;
+                var fourmin = daily[4].temp.min;
+                var fourmax = daily[4].temp.max;
+                var fivemin = daily[5].temp.min;
+                var fivemax = daily[5].temp.max;
+                var sixmin = daily[6].temp.min;
+                var sixmax = daily[6].temp.max;
 
 
                 var nowTimestamp = Math.floor(Date.now() / 1000);
@@ -80,8 +100,6 @@
 
                 $("#weather_info .icon").addClass(weatherClass);
                 $('#weather_info .date').html(NowToday);
-                $('#weather_info .week').html(week[Now.getDay()]+'요일');
-
                 $('#weather_info>.city').html(city);
                 $('#weather_info .w_id').html(c_dscript);
                 $('#weather_info .temp_min').html(parseInt(temp_min-273.15)+'&deg;' + 'min');
@@ -91,6 +109,22 @@
                 $('#weather_info .pop').html('강수확률 : ' + parseInt(pop*100) + '%');
                 $('#weather_info .load_img').hide();
 
+
+                // 요일별
+                    $('#weekly .today').html(week[Now.getDay()]);
+                    $('#weekly .f-day').html(week[Now.getDay()+1]);
+                    $('#weekly .s-day').html(week[Now.getDay()+2]);
+                    $('#weekly .t-day').html(week[Now.getDay()+3]);
+                    $('#weekly .four-day').html(week[Now.getDay()+4]);
+                    $('#weekly .five-day').html(week[Now.getDay()+5]);
+                    $('#weekly .six-day').html(week[Now.getDay()+6]);
+
+                    $('#weekweather .todayw').html(parseInt(temp_min-273.15)+'&deg;'+'min'+'<br>'+parseInt(temp_max-273.15)+'&deg;' + 'max');
+                    $('#weekweather .f-dayw').html(parseInt(fmin-273.15)+'&deg;'+'min'+'<br>'+parseInt(fmax-273.15)+'&deg;' + 'max');
+                    $('#weekweather .s-dayw').html(parseInt(smin-273.15)+'&deg;'+'min'+'<br>'+parseInt(smax-273.15)+'&deg;' + 'max');
+                    $('#weekweather .t-dayw').html(parseInt(tmin-273.15)+'&deg;'+'min'+'<br>'+parseInt(tmax-273.15)+'&deg;' + 'max');
+                    $('#weekweather .four-dayw').html(parseInt(fourmin-273.15)+'&deg;'+'min'+'<br>'+parseInt(fourmax-273.15)+'&deg;' + 'max');
+                    $('#weekweather .five-dayw').html(parseInt(fivemin-273.15)+'&deg;'+'min'+'<br>'+parseInt(fivemax-273.15)+'&deg;' + 'max');
             })
             .fail(function(){
                 alert("loading error");
