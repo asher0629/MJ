@@ -37,6 +37,15 @@
             <p class="five-day"></p>
             <p class="six-day"></p>
         </div>
+        <div id="weekicon">
+            <p class="today"></p>
+            <p class="f-day"></p>
+            <p class="s-day"></p>
+            <p class="t-day"></p>
+            <p class="four-day"></p>
+            <p class="five-day"></p>
+            <p class="six-day"></p>
+        </div>
         <div id="weekweather">
             <p class="todayw"></p>
             <p class="f-dayw"></p>
@@ -91,12 +100,19 @@
                 var fivemax = daily[5].temp.max;
                 var sixmin = daily[6].temp.min;
                 var sixmax = daily[6].temp.max;
+                var d_icon = daily[0].weather[0].id;
+                var f_icon = daily[1].weather[0].id;
+                var s_icon = daily[2].weather[0].id;
+                var t_icon = daily[3].weather[0].id;
+                var four_icon = daily[4].weather[0].id;
+                var five_icon = daily[5].weather[0].id;
+                var six_icon = daily[6].weather[0].id;
 
 
                 var nowTimestamp = Math.floor(Date.now() / 1000);
                 var weatherClass = 'wi wi-owm-';
-                // weatherClass += (nowTimestamp >= data.sunrise && nowTimestamp <= data.sunset ? 'night' : 'day');
-                weatherClass += (current.weather[0].id);
+                weatherClass += (nowTimestamp >= data.sunrise && nowTimestamp <= data.sunset ? 'night' : 'day');
+                weatherClass += ('-'+current.weather[0].id);
 
                 $("#weather_info .icon").addClass(weatherClass);
                 $('#weather_info .date').html(NowToday);
@@ -119,12 +135,21 @@
                     $('#weekly .five-day').html(week[Now.getDay()+5]);
                     $('#weekly .six-day').html(week[Now.getDay()+6]);
 
-                    $('#weekweather .todayw').html(parseInt(temp_min-273.15)+'&deg;'+'min'+'<br>'+parseInt(temp_max-273.15)+'&deg;' + 'max');
-                    $('#weekweather .f-dayw').html(parseInt(fmin-273.15)+'&deg;'+'min'+'<br>'+parseInt(fmax-273.15)+'&deg;' + 'max');
-                    $('#weekweather .s-dayw').html(parseInt(smin-273.15)+'&deg;'+'min'+'<br>'+parseInt(smax-273.15)+'&deg;' + 'max');
-                    $('#weekweather .t-dayw').html(parseInt(tmin-273.15)+'&deg;'+'min'+'<br>'+parseInt(tmax-273.15)+'&deg;' + 'max');
-                    $('#weekweather .four-dayw').html(parseInt(fourmin-273.15)+'&deg;'+'min'+'<br>'+parseInt(fourmax-273.15)+'&deg;' + 'max');
-                    $('#weekweather .five-dayw').html(parseInt(fivemin-273.15)+'&deg;'+'min'+'<br>'+parseInt(fivemax-273.15)+'&deg;' + 'max');
+                    $('#weekweather .todayw').html('min'+'<br>'+parseInt(temp_min-273.15)+'&deg;'+'<br>'+'max'+'<br>'+parseInt(temp_max-273.15)+'&deg;');
+                    $('#weekweather .f-dayw').html('min'+'<br>'+parseInt(fmin-273.15)+'&deg;'+'<br>'+'max'+'<br>'+parseInt(fmax-273.15)+'&deg;');
+                    $('#weekweather .s-dayw').html('min'+'<br>'+parseInt(smin-273.15)+'&deg;'+'<br>' +'max'+'<br>'+parseInt(smax-273.15)+'&deg;');
+                    $('#weekweather .t-dayw').html('min'+'<br>'+parseInt(tmin-273.15)+'&deg;'+'<br>'+'max'+'<br>'+parseInt(tmax-273.15)+'&deg;');
+                    $('#weekweather .four-dayw').html('min'+'<br>'+parseInt(fourmin-273.15)+'&deg;'+'<br>'+'max'+'<br>'+parseInt(fourmax-273.15)+'&deg;');
+                    $('#weekweather .five-dayw').html('min'+'<br>'+parseInt(fivemin-273.15)+'&deg;'+'<br>'+'max'+'<br>'+parseInt(fivemax-273.15)+'&deg;');
+                    $('#weekweather .six-dayw').html('min'+'<br>'+parseInt(sixmin-273.15)+'&deg;'+'<br>'+'max'+'<br>'+parseInt(sixmax-273.15)+'&deg;');
+
+                    $('#weekicon .today').addClass('wi wi-owm-'+d_icon);
+                    $('#weekicon .f-day').addClass('wi wi-owm-'+f_icon);
+                    $('#weekicon .s-day').addClass('wi wi-owm-'+s_icon);
+                    $('#weekicon .t-day').addClass('wi wi-owm-'+t_icon);
+                    $('#weekicon .four-day').addClass('wi wi-owm-'+four_icon);
+                    $('#weekicon .five-day').addClass('wi wi-owm-'+five_icon);
+                    $('#weekicon .six-day').addClass('wi wi-owm-'+six_icon);
             })
             .fail(function(){
                 alert("loading error");
