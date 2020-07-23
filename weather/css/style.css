@@ -1,4 +1,5 @@
 @font-face { font-family: 'BMJUA'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff'); font-weight: normal; font-style: normal; }
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -12,79 +13,103 @@ a{
 }
 body{
     height: 100vh;
-    background: url('../images/background.jpg');
-    background-position: bottom;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-#weather_info{
-    width:100%;
-    margin: 0 auto;
-}
-.city{
-    width: 100%;
-    height: 15vh;
-    color: rgba(38, 113, 184, 0.65);
-    font-weight: 550;
+    background: steelblue;
+    color: #fff;
+    font-family: 'Noto Sans KR', sans-serif;
     display: flex;
     justify-content: center;
-    align-items: center;
-    font-size: 2.5rem;
 }
 section{
-    width: 100%;
-        text-align: center;
-        color: #fff;
+    padding-top: 24px;
 }
-.w_id{
-    font-size: x-large;
+#nowTimes{
+    text-align: right;
+    margin-right: -70px;
+}
+#main_weather{
+    padding-top: 30px;
+}
+.date{
+    font-size: 16px;
     font-weight: 100;
+    text-align: center;
+    letter-spacing:2px;
+    line-height: 20px;
+}
+.city{
+    font-size: 50px;
+    font-weight: 100;
+    text-align: center;
+    letter-spacing: 5px;
+    line-height: 100px;
+}
+.description{
+    font-size:16px;
+    font-weight: 100;
+    text-align: center;
 }
 .icon{
-    /* margin: 15% 0; */
-    font-size: 10rem;
-    font-style: inherit;
-    color: rgba(38, 113, 184, 0.5);
-    /* text-shadow: 0 3px 0 rgba(0,0,0,.3); */
-    text-shadow: 0 5px 0 rgba(255,255,255,.5);
-    text-decoration-color: #fff;
-}
-
-.day{
-    display: flex;
-    color: rgba(38, 113, 184, 0.8);
-    align-items: center;
-    justify-content: center;
-    padding-top: 4vh;
-}
-.temp{
-    font-size:5.5rem;
-    color: rgba(38, 113, 184, 0.7);
-    margin-left: 1%;
+    width: 100%;
+    font-size: 150px;
+    text-align: center;
+    margin-top: 20px;
+    line-height: unset !important;
+    text-shadow: 0 10px 20px rgba(0, 0, 0,.2);
 }
 .pop{
-    color: rgba(38, 113, 184, 0.5);
-    line-height: 3.5vh;
+    text-align: center;
+    line-height: 32px;
 }
-.max_min{
-    display: flex;
-    justify-content: center;
-}
-.temp_max, .temp_min{
-    color: rgba(38, 113, 184, 0.5);
-}
-.temp_min{
-    margin-right: 20px;
-}
-#weekly{
+.temperature{
     display:flex;
-    justify-content: space-between; 
 }
-#weekicon{
+.temp{
+    font-size: 50px;
+    font-weight: 100;
+    letter-spacing: 10px;
+    margin-left: 20px;
+}
+.temperature>div:last-child{
+    margin-top:10px;
+    margin-left: 10px;
+}
+.temp_max{
+    margin-top: 10px;
+}
+.secondcontain{
+    text-align: center;
+    padding-top: 20%;
+}
+.weekly-title{
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    margin-bottom: 5%;
+}
+.title-line{
+    width: 80px;
+    height: 3px;
+    background: #fff;
+    margin: 0 auto;
+}
+#week_weather{
     display:flex;
-    justify-content: space-between; 
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 30px;
 }
-#weekweather{
-    display:flex;
-    justify-content: space-between; 
+#week_weather>ul{
+    margin-left: 12%;
+    font-size: 14px;
 }
+#week_weather>ul:first-child{
+    margin-left:0;
+}
+#week_weather li{
+    margin-bottom: 5px;
+}
+#week_weather>ul>li:nth-child(2){
+    font-size: 24px;
+    margin: 10px 0;
+}
+
