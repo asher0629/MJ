@@ -62,6 +62,7 @@ section{
 }
 .temperature{
     display:flex;
+    padding-top: 18px;
 }
 .temp{
     font-size: 50px;
@@ -78,17 +79,17 @@ section{
 }
 .secondcontain{
     text-align: center;
-    padding-top: 20%;
+    padding-top: 18%;
 }
 .weekly-title{
     font-size: 16px;
     font-weight: 100;
     letter-spacing: 2px;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
 }
 .title-line{
-    width: 80px;
-    height: 3px;
+    width: 40px;
+    height: 1.5px;
     background: #fff;
     margin: 0 auto;
 }
