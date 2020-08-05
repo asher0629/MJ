@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <style>
+        body {display: flex;}
+        div {
+            padding-left: 10px;
+        }
+        </style>
+</head>
+<body>
+    <div id="app">
+        <button v-on:click="increment">{{count}}</button>
+    </div>
+    <div id="app2">
+        <button v-on:click="increment">{{count}}</button>
+    </div>
+    <div id="app3">
+        <button v-on:click="increment">{{count}}</button>
+    </div>
+
+    <script>
+            new Vue({
+            el: '#app',
+            data: {
+                count: 0
+            },
+            methods : {
+                increment: function(){
+                    this.count += 1
+                }
+            }
+        })
+        new Vue({
+            el: '#app2',
+            data: {
+                count: 0
+            },
+            methods : {
+                increment: function(){
+                    this.count += 1
+                }
+            }
+        })
+        new Vue({
+            el: '#app3',
+            data: {
+                count: 0
+            },
+            methods : {
+                increment: function(){
+                    this.count += 1
+                }
+            }
+        })
+    </script>
+</body>
+</html>

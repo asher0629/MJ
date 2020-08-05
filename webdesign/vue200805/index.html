@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vue.js</title>
+    <!-- 개발버전, 도움되는 콘솔 경고를 포함. -->
+    <style>
+        .v-enter-active, .v-leave-active{
+            transition: opacity 1s;
+        }
+        /* opacity:0 에서 1까지 페이드인& 페이드아웃하기 */
+        .v-enter, .v-leave-to {
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <!-- <button v-on:click="handClick">Click</button> -->
+        <input v-model="message">
+        <p>{{message}}</p>
+    </div>
+    <div id="app2">
+        <button v-on:click="show=!show">변경하기</button>
+        <transition>
+        <p v-if="show">Hello Vue.js</p>
+        </transition>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    var app = new Vue({
+        el:"#app",
+        // methods: {
+        //     handClick: function (event) {
+        //         alert(event.target)     //[object HTMLButtonElement]
+        //         // 내용을 아무것도 달지 않아서 object뭐라고 뜨는것
+        //         // event 부분을 다른명으로 바꿔도됨
+        //     }}
+        data: {
+            message: '초기 메시지'
+        
+        }
+    })
+    new Vue({
+        el: '#app2',
+            data: {
+                show: true
+            }
+    })
+</script>
+
+
+
+</body>
+</html>

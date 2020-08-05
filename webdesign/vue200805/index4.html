@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <ul>
+            <li v-for="n in numbers">{{ n }}</li>
+        </ul>
+        <table>
+            <thead>
+                <tr>
+                    <th>이름</th>
+                    <th>나이</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="p in people" v-if="p.age < 31">
+                    <td>{{p.name}}</td>
+                    <td>{{p.age}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="app2">
+        <h1 v-if="visible">
+            <!-- 아주 복잡하고 오래 걸리는 처리 -->
+        </h1>
+        <!-- v-if는 쇼랑 같으나 완전 삭제기능 -->
+        <h2 v-show="visible">
+            <!-- 아주 복잡하고 오래 걸리는 처리 -->
+            <!-- show는 보이지 않아도 남는 기능 -->
+        </h2>
+    </div>
+    <script src="vue.js"></script>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                numbers: [1, 2, 3, 4, 5, 6, 7],
+                people: [
+                    {
+                        name: '이순신',
+                        age: 30
+                    },
+                    {
+                        name: '신사임당',
+                        age: 40
+                    },
+                    {
+                        name: '이율곡',
+                        age: 20
+                    }
+                ]
+            }
+        });
+        var app = new Vue({
+            el: '#app2',
+            data: {
+                visible: false
+            }
+        });
+    </script>
+</body>
+</html>

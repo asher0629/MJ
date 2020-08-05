@@ -1,5 +1,7 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic");
+@import url(//fonts.googleapis.com/earlyaccess/nanummyeongjo.css); .nanummyeongjo * { font-family: 'Nanum Myeongjo', serif; };
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 
 /*
 	Spectral by HTML5 UP
@@ -103,11 +105,12 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #104069;
-		font-family: "Open Sans", Helvetica, sans-serif;
+		font-family: 'Noto Sans KR', sans-serif;
 		font-size: 15pt;
 		font-weight: 400;
 		letter-spacing: 0.075em;
 		line-height: 1.65em;
+		margin: 0;
 	}
 
 		@media screen and (max-width: 1680px) {
@@ -2078,15 +2081,37 @@ input, select, textarea {
 			}
 
 		.icon.style1 {
-			color: #00ffcc;
+			background: url("../../images/protein-icon.png");
+			background-position: center;
+			background-repeat: no-repeat;
 		}
 
 		.icon.style2 {
-			color: #00f0ff;
+			background: url("../../images/chicken-icon.png");
+			background-position: center;
+			background-repeat: no-repeat;
 		}
 
 		.icon.style3 {
-			color: #76ddff;
+			background: url("../../images/grainfree-icon.png");
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+
+		@media screen and (max-width: 736px) {
+
+			.icon.style1 {
+				background-size: contain;
+			}
+	
+			.icon.style2 {
+				background-size: contain;
+			}
+	
+			.icon.style3 {
+				background-size: contain;
+			}
+
 		}
 
 /* Image */
@@ -2661,6 +2686,8 @@ input, select, textarea {
 /* Spotlight */
 
 	.spotlight {
+		width: 100%;
+		height: 55.5vh;
 		-moz-align-items: center;
 		-webkit-align-items: center;
 		-ms-align-items: center;
@@ -2669,78 +2696,13 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
+		background: url("../../images/sub-img.jpg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
 	}
 
-		.spotlight .image {
-			-moz-order: 1;
-			-webkit-order: 1;
-			-ms-order: 1;
-			order: 1;
-			border-radius: 0;
-			width: 40%;
-		}
-
-			.spotlight .image img {
-				border-radius: 0;
-				width: 100%;
-			}
-
-		.spotlight .content {
-			padding: 2em 4em 0.1em 4em ;
-			-moz-order: 2;
-			-webkit-order: 2;
-			-ms-order: 2;
-			order: 2;
-			max-width: 48em;
-			width: 60%;
-		}
-
-		.spotlight:nth-child(2n) {
-			-moz-flex-direction: row-reverse;
-			-webkit-flex-direction: row-reverse;
-			-ms-flex-direction: row-reverse;
-			flex-direction: row-reverse;
-		}
-
-		.spotlight:nth-child(1) {
-			background-color: rgba(0, 0, 0, 0.075);
-		}
-
-		.spotlight:nth-child(2) {
-			background-color: rgba(0, 0, 0, 0.15);
-		}
-
-		.spotlight:nth-child(3) {
-			background-color: rgba(0, 0, 0, 0.225);
-		}
-
-		.spotlight:nth-child(4) {
-			background-color: rgba(0, 0, 0, 0.3);
-		}
-
-		.spotlight:nth-child(5) {
-			background-color: rgba(0, 0, 0, 0.375);
-		}
-
-		.spotlight:nth-child(6) {
-			background-color: rgba(0, 0, 0, 0.45);
-		}
-
-		.spotlight:nth-child(7) {
-			background-color: rgba(0, 0, 0, 0.525);
-		}
-
-		.spotlight:nth-child(8) {
-			background-color: rgba(0, 0, 0, 0.6);
-		}
-
-		.spotlight:nth-child(9) {
-			background-color: rgba(0, 0, 0, 0.675);
-		}
-
-		.spotlight:nth-child(10) {
-			background-color: rgba(0, 0, 0, 0.75);
-		}
+	
 
 		@media screen and (max-width: 1280px) {
 
@@ -2794,6 +2756,17 @@ input, select, textarea {
 		.wrapper > .inner {
 			width: 60em;
 			margin: 0 auto;
+		}
+		.wrapper > .inner h2{
+			border-bottom: none;
+		}
+		.inner #line{
+			width: 844px;
+			height: 3px;
+			background: #99bfd2;
+			margin: 0 auto;
+			margin-top: -2rem;
+			margin-bottom: 2rem;
 		}
 
 			@media screen and (max-width: 1280px) {

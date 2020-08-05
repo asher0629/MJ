@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <!-- 1.객체의 속성 출력하기 -->
+        <p>{{message.value}}</p>
+        <!-- 2.문자열의 길이 출력하기 -->
+        <p>{{message.value.length}}</p>
+        <!-- 3.리스트 내부의 요소 출력하기 -->
+        <p>{{ list[2] }}</p>
+        <!-- 4.속성을 조합해서 사용하기 -->
+        <p>{{ list[num] }}</p>
+    </div>
+    <div id="app2">
+        <!-- count 속성 출력하기 -->
+        <p>{{ count }}번 클릭했습니다.</p>
+        <!-- 이 버튼을 클릭하면 increment 메서드가 호출됩니다. -->
+        <button v-on:click="increment">카운트하기</button>
+    </div>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                //객체 데이터
+                message: {
+                    value: 'Hello Vue.js'
+                },
+                //배열 데이터
+                list: ['사과','바나나','딸기'],
+                //4번을 위한 요소
+                num: 1
+            }
+        })
+        new Vue({
+            el: '#app2',
+            data: {
+                count: 0
+            },
+            methods : {
+                //버튼을 클릭할 때의 핸들러
+                increment: function(){
+                    this.count += 1 //다시 할당하는 처리만 합니다.
+                }
+            }
+        })
+    </script>
+</body>
+</html>
