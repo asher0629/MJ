@@ -18,6 +18,10 @@ section{
     width: 50%;
     margin: 0 auto;
 }
+footer{
+    width: 100%;
+    background: #44362d;
+}
 /* element */
 .section01{
     width: 100%;
@@ -83,14 +87,63 @@ section{
     padding-bottom: 1.55%;
     color: #44362d;
 }
+.section03 h1{
+    width: 100%;
+    text-align: center;
+    font-size: 3.75vw;
+    font-weight: 900;
+    letter-spacing: 1vw;
+}
+.q-text{
+    width: 100%;
+    margin-top: 4px;
+    padding-top: 3.2508vh;
+    font-size: 1.6875vw;
+    text-align: center;
+    letter-spacing: .14vw;
+    background: url(../image/bg-flower.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+.q-text-box{
+    margin: 0 auto;
+    margin-top: 2.322vh;
+    margin-bottom: 4.64395vh;
+    padding: 1.75vh 0;
+    width: 62%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background : #44362d;
+    font-size: 1.3125vw;
+    color: #fff;
+}
 /* section03 */
 .section04{
     width: 100%;
     padding: 5.2% 0;
 }
+.q-box{
+    width: 100%;
+    padding: 6.6873vh 0;
+    box-sizing: border-box;
+    border: 1px solid #44362d;
+    font-size: 1.6875vw;
+}
+.q-box span{
+    width: 5.5vw;
+    display: inline-block;
+    border: 1px solid #44362d;
+    box-sizing: border-box;
+}
 /* section04 */
 .section05{
-    width: 100%;
-    background: #44362d;
-    padding: 9.45% 0 10% 0;
+    width: 50%;
+    margin: 0 auto;
+    padding: 9% 0 10% 0;
+    color: #fff;
+}
+.section05 li{
+    list-style: none;
+
 }
