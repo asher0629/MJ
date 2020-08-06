@@ -88,7 +88,6 @@ footer{
     color: #44362d;
 }
 .section03 h1{
-    width: 100%;
     text-align: center;
     font-size: 3.75vw;
     font-weight: 900;
@@ -96,8 +95,7 @@ footer{
 }
 .q-text{
     width: 100%;
-    margin-top: 4px;
-    padding-top: 3.2508vh;
+    padding-top: 3vw;
     font-size: 1.6875vw;
     text-align: center;
     letter-spacing: .14vw;
@@ -107,10 +105,10 @@ footer{
 }
 .q-text-box{
     margin: 0 auto;
-    margin-top: 2.322vh;
+    /* margin-top: 2.322vh;
     margin-bottom: 4.64395vh;
-    padding: 1.75vh 0;
-    width: 62%;
+    padding: 1.75vh 0; */
+    width: 31vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -122,6 +120,7 @@ footer{
 .section04{
     width: 100%;
     padding: 5.2% 0;
+    color: #44362d;
 }
 .q-box{
     width: 100%;
@@ -136,14 +135,61 @@ footer{
     border: 1px solid #44362d;
     box-sizing: border-box;
 }
+.tip{
+    display: flex;
+}
+.btn{
+    margin: 0 auto;
+    width: 13vw;
+    background:#44362d;
+    color: #ffffff;
+    border-radius: 10% 10% 10% 10% / 50% 50% 50% 50%;
+    font-size: 1.5625vw;
+    line-height: 3vw;
+    text-align:center;
+    cursor: pointer;
+}
 /* section04 */
 .section05{
     width: 50%;
     margin: 0 auto;
-    padding: 9% 0 10% 0;
+    padding: 2% 0 5% 0;
     color: #fff;
 }
+.section05 h3{
+    font-size:1.6875vw;
+    letter-spacing: .09vw;
+    padding: 5.20835vw 0 ;
+}
+.section05 ul{
+    width: 100%;
+    text-align:justify;
+}
 .section05 li{
-    list-style: none;
-
+    list-style-position: inside;
+    font-size: 1.40625vw;
+    font-weight: lighter;
+    margin-bottom: 2.60419vw;
+    line-height:2.5vw;
+}
+.section05 li:nth-child(1){
+    letter-spacing: .0979vw;
+}
+.section05 li:nth-child(2){
+    letter-spacing: .078vw;
+}
+.section05 li:nth-child(3){
+    letter-spacing: .01vw;
+}
+.section05 li:nth-child(3)>span{
+    letter-spacing: .049vw;
+}
+.section05 li:nth-child(4){
+    letter-spacing: .119vw;
+}
+.section05 li:nth-child(5){
+    letter-spacing: .04vw;
+}
+.section05 li:nth-child(5)>span{
+    letter-spacing: .11vw;
 }
