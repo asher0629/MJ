@@ -164,15 +164,29 @@ footer{
     text-align:center;
     cursor: pointer;
 }
+.btn:hover{
+    background-color: #635146;
+}
 .eventinfo{
-    width: 100%;
     height: 15vw;
-    padding: 3.75vw 8.33335vw;
+    margin-top: 2.1875vw;
+    padding: 2.5vw 8.33335vw;
+    display:flex;
+    align-items: center;
     background: rgba(255, 255, 255, 0.6);
+    letter-spacing: .07106vw;
     border-radius: .5vw;
     list-style-position: inside;
     font-size: 1.458335vw;
-    text-align: justify;
+}
+.eventinfo>ul>li:first-child{
+    margin-bottom: 2vw;
+}
+.eventinfo>ul>li:nth-child(2){
+    margin-bottom: 2vw;
+}
+.eventinfo span{
+    font-weight: 900;
 }
 /* section04 */
 .section05{
