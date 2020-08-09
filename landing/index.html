@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:image" content="image/mainimg.jpg"/>
-    <meta property="og:description" content="동백꽃필무렵!! 지금 바로 참여 해 보세요"/> 
+    <meta property="og:description" content="9/18 첫방송이벤트! 지금 바로 참여 해 보세요"/> 
     <meta property="og:title" content="동백꽃필무렵"/>
     <title>동백꽃필무렵</title>
     <link rel="icon" href="image/favicon.ico">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css" />
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="sweetalert.min.js"></script>    
 </head>
 <body>
     <section>
@@ -54,23 +57,21 @@
         <!-- section03 -->
         <div class="section04">
             <div class="q-box">
-                <div>
-                    <p>
-                        영상에서	 동백이가	 용식이에게<br>
-                        ＇<span>　</span>먹고갈래요?＇라고하는데요<br>
-                          <span>　</span>에 들어갈 단어는 무엇일까요?  
-                    </p>
-                </div>
+                <ul>
+                    <li> 영상에서	 동백이가	 용식이에게</li>
+                    <li>＇<fieldset type="none" id="box"></fieldset>먹고갈래요?＇라고하는데요</li>
+                    <li><input type="text" form="btn">에 들어갈 단어는 무엇일까요? </li>
+                </ul>
             </div>
             <!-- quiz box -->
             <div class="tip">
                 <img src="image/tip.png" alt="팁">
-                <p>〈 동백꽃 필 무렵 〉 영상을  SNS에 공유하고 URL을 함께남기면 당첨확률이 UP !  </p>
+                <p>〈 동백꽃 필 무렵 〉 영상을  SNS에 공유하고 태그를 달면 당첨확률이 UP !  </p>
             </div>
             <!-- tip -->
-            <div class="btn">
-                <p>응모하기</p>
-            </div>
+            <form id="btn">
+                <input type="submit" value="응모하기" class="btn">
+            </form>
             <!-- 응모btn -->
             <div class="eventinfo">
                 <ul>
@@ -98,5 +99,36 @@
         <!-- section05 -->
     </footer>
     <!-- footer -->
+    <script type="text/javascript">
+        var video = $("video"); 
+        $.each(video, function(){
+            this.controls = false; 
+        }); 
+        $("video").click(function() {
+            this.controls = true;
+        });
+        // 비디오 컨트롤러 숨기기
+        
+    $(document).ready(function(){
+        $('.btn').click(function(){
+                    swal('등록하시겠습니까 ?',{
+                    icon : 'info',
+                    buttons : ['등록','취소']});
+                    return false;
+        })
+        .then((value) => {
+        if (value) {
+            swal("취소되었습니다.", {
+            icon: 'warning',
+            timer : 1500,
+            });
+        } else {
+            swal("Your imaginary file is safe!");
+        }
+        });
+        });
+    </script>
+
+
 </body>
 </html>
