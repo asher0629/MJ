@@ -167,9 +167,12 @@ footer{
 .eventinfo{
     width: 100%;
     height: 15vw;
+    padding: 3.75vw 8.33335vw;
     background: rgba(255, 255, 255, 0.6);
     border-radius: .5vw;
     list-style-position: inside;
+    font-size: 1.458335vw;
+    text-align: justify;
 }
 /* section04 */
 .section05{
