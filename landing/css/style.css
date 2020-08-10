@@ -365,6 +365,12 @@ footer{
 .section05 li:nth-child(5)>span{
     letter-spacing: .11vw;
 }
+.section05 li:nth-child(6){
+    display: none;
+}
+.section05 li:nth-child(7){
+    display: none;
+}
 /* event caution text */
 @media screen and (max-width:767px){
     .section05{
