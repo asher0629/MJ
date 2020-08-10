@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -60,7 +60,7 @@
                 <ul>
                     <li> 영상에서	 동백이가	 용식이에게</li>
                     <li>＇<fieldset type="none" id="box"></fieldset>먹고갈래요?＇라고하는데요</li>
-                    <li><input type="text" form="btn">에 들어갈 단어는 무엇일까요? </li>
+                    <li><input type="text" form="btn" id="answer">에 들어갈 단어는 무엇일까요? </li>
                 </ul>
             </div>
             <!-- quiz box -->
@@ -70,7 +70,7 @@
             </div>
             <!-- tip -->
             <form id="btn">
-                <input type="submit" value="응모하기" class="btn" onclick="Confirm();">
+                <input type="submit" value="응모하기" class="btn">
             </form>
             <!-- 응모btn -->
             <div class="eventinfo">
@@ -113,39 +113,32 @@
         });
         // 비디오 컨트롤러 숨기기
         
-    $(document).ready(function(){
-        $('.btn').click(function(){
-                    swal('등록하시겠습니까 ?',{
-                    icon : 'info',
-                    buttons : ['등록','취소']});
+        $(function(){
+            $('.btn').click(function(){
+                if($('#answer').val().replace(/\s/g,"").length == 0){
+                        swal("다시 입력해주세요",
+                     {
+                        icon: "warning",
+                        buttons: false,
+                        timer: 1500
+                     }                       
+                    );
                     return false;
-        })
-    //     .then((value) => {
-    //     if (value) {
-    //         swal("취소되었습니다.", {
-    //         icon: 'warning',
-    //         timer : 1500,
-    //         });
-    //     } else {
-    //         swal("Your imaginary file is safe!");
-    //     }
-    //     });
+                }
+                else{
+                    $('#answer').val("");
+                        swal("응모가 완료되었습니다",
+                    {
+                        icon: "success",
+                        buttons: false,
+                        timer: 1500 
+                    });
+                    return false;
+                    
+                }
+            });
         });
-    // var Test = {};
- 
-    // Test.alert = function(title, icon, button, okFn){
-    // swal({
-    //     title : title,
-    //     icon : icon,
-    //     button: button,
-    //     closeOnClickOutside: false,
-    //   })
-    //   .then(function(){
-    //     okFn();
-    //     });
-    //     }
+        // 응모하기 버튼 이벤트
     </script>
-
-
 </body>
 </html>
