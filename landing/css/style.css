@@ -148,6 +148,9 @@ footer{
     font-size: 1.3125vw;
     color: #fff;
 }
+.teaser video {
+    cursor: pointer;
+}
 /* section03 text box */
 @media screen and (max-width: 767px){
     .section03{
@@ -384,6 +387,18 @@ footer{
         font-size: 2.4vw;
         line-height: 3.2vw;
         letter-spacing: unset !important;
+    }
+    .section05 li:nth-child(4){
+        display: none;
+    }
+    .section05 li:nth-child(5){
+        display: none;
+    }
+    .section05 li:nth-child(6){
+        display: list-item;
+    }
+    .section05 li:nth-child(7){
+        display: list-item;
     }
 }
 /* section05 end  */
