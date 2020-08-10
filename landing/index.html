@@ -59,8 +59,8 @@
             <div class="q-box">
                 <ul>
                     <li> 영상에서	 동백이가	 용식이에게</li>
-                    <li>＇<fieldset type="none" id="box"></fieldset>먹고갈래요?＇라고하는데요</li>
-                    <li><input type="text" form="btn" id="answer">에 들어갈 단어는 무엇일까요? </li>
+                    <li>＇<span type="none" id="box"></span>먹고갈래요?＇라고하는데요</li>
+                    <li><!--<input type="text" form="btn" id="answer">-->빈 칸에 들어갈 단어는 무엇일까요? </li>
                 </ul>
             </div>
             <!-- quiz box -->
@@ -69,11 +69,7 @@
                 <p>〈 동백꽃 필 무렵 〉 영상을  SNS에 공유하고 태그를 달면 당첨확률이 UP !  </p>
             </div>
             <!-- tip -->
-            <div class="input">
-                <input type="text" form="btn" id="sm-answer">
-            </div>
-            <!-- 작은화면용 정답칸 -->
-            <form id="btn">
+            <form id="btn" onsubmit="return false;">
                 <input type="submit" value="응모하기" class="btn">
             </form>
             <!-- 응모btn -->
@@ -99,14 +95,17 @@
                 진행되며, 개인정보의 문제로 인한 상품 반송 시 재발송은 되지 않습니다.</li>
                 <li>이벤트에 참여하시는분들은 참여와 동시에 개인정보 수집 및 취급에 동의 하신
                     　<span> 것으로 판단되며 관련 문의사항은 고객센터를 통해 연락 주시기 바랍니다.</span> </li>
+                    <!-- 전체화면 이벤트 주의사항은 여기까지 (4,5)-->
                 <li>이벤트 상품 발송은 당첨자 정보 취합 후 응모 당시 개인정보 기준으로 진행되며, 개인정보의 문제로 인한 상품 반송 시 재발송은 되지 않습니다.</li>
                 <li>이벤트에 참여하시는분들은 참여와 동시에 개인정보 수집 및 취급에 동의 하신 것으로 판단되며 관련 문의사항은 고객센터를 통해 연락 주시기 바랍니다.</li>
+                <!-- 작은화면용(4,5) 주의사항 -->
             </ul>
         </div>
         <!-- 이벤트 주의사항 안내 -->
         <!-- section05 -->
     </footer>
     <!-- footer -->
+    <!-- 스크립트시작 -->
     <script type="text/javascript">
         var video = $("video"); 
         $.each(video, function(){
@@ -116,35 +115,9 @@
             this.controls = true;
         });
         // 비디오 컨트롤러 숨기기
-        
+
         $(function(){
-            $('.btn').click(function(){
-                if($('#answer').val().replace(/\s/g,"").length == 0){
-                        swal("다시 입력해주세요",
-                     {
-                        icon: "warning",
-                        buttons: false,
-                        timer: 1500
-                     }                       
-                    );
-                    return false;
-                }
-                else{
-                    $('#answer').val("");
-                        swal("응모가 완료되었습니다",
-                    {
-                        icon: "success",
-                        buttons: false,
-                        timer: 1500 
-                    });
-                    return false;
-                    
-                }
-            });
-        });
-        // 응모하기 버튼 이벤트
-        $(function(answer){
-            $('#sm-answer').click(function(){
+            $('.btn').click(function(alr){
                 swal("이 곳에 정답을 입력해 주세요:", {
                 content: {
                     element: "input",
@@ -153,16 +126,17 @@
                     }
                 }
                 });
-                $(function(){
+                // return false;
+                $(function(){                 
                 $('.swal-button-container>button').click(function(){
                     if($('.swal-content>input').val().replace(/\s/g,"").length == 0){
-                     swal("다시 입력해주세요",
-                     {
-                        icon: "warning",
-                        buttons: false,
-                        timer: 1500
-                     }                       
-                    );
+                        swal("다시 입력해주세요",
+                            {
+                                icon: "warning",
+                                buttons: false,
+                                timer: 1500,
+                            }                      
+                            );
                  }
                  else{
                     $('.swal-content>input').val("");
@@ -177,6 +151,7 @@
             });
             });
         });
+        // 응모하기 버튼 클릭 이벤트
     </script>
 </body>
 </html>

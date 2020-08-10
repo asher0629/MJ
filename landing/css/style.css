@@ -192,7 +192,7 @@ footer{
     border: 1px solid #44362d;
     font-size: 1.6875vw;
     text-align: center;
-    line-height: 3vw;
+    line-height: 2.5vw;
 }
 .q-box li{
     list-style: none;
@@ -200,15 +200,16 @@ footer{
 .q-box li:first-child{
     letter-spacing: .45vw;
 }
+.q-box li:last-child{
+    letter-spacing: .2vw;
+}
 #box{
     width: 5.5vw;
-    height: 2.188vw;
     margin-right: 1vw;
     display: inline-block;
-    border: 1px solid #44362d;
-    box-sizing: border-box;
+    border-bottom: 1px solid #44362d;
 }
-.q-box input{
+/* .q-box input{
     width: 5.5vw;
     height: 2.188vw;
     margin-right: 1vw;
@@ -217,7 +218,7 @@ footer{
     background: transparent;
     box-sizing: border-box;
     font-size: 1.3vw;
-}
+} */
 /* question-box */
 .tip{
     display: flex;
@@ -237,19 +238,6 @@ footer{
     letter-spacing: .06vw;
 }
 /* tip  */
-.input{
-    width: 100%;
-}
-#sm-answer{
-    display: none;
-    width: 100%;
-    font-size: 3.5vw;
-    line-height:4.5vw;
-    background: transparent;
-    border: 1px solid #44362d;
-    background: transparent;
-}
-/* sm-input */
 #btn{
     display: flex;
     justify-content:center;
@@ -308,11 +296,6 @@ footer{
     }
     #box{
         width: 8.7vw;
-        height: 3.2vw;
-    }
-    .q-box input{
-        width: 8.7vw;
-        height: 3.2vw;
     }
     .tip{
         margin-bottom: 2vw;
@@ -321,9 +304,9 @@ footer{
         letter-spacing: -.3px;
         font-size: 2vw;
     }
-    #sm-answer{
+    /* #sm-answer{
         display: inline-block;
-    }
+    } */
     .btn{
         margin: 2vw 0;
         width: 20vw;
