@@ -69,6 +69,10 @@
                 <p>〈 동백꽃 필 무렵 〉 영상을  SNS에 공유하고 태그를 달면 당첨확률이 UP !  </p>
             </div>
             <!-- tip -->
+            <div class="input">
+                <input type="text" form="btn" id="sm-answer">
+            </div>
+            <!-- 작은화면용 정답칸 -->
             <form id="btn">
                 <input type="submit" value="응모하기" class="btn">
             </form>
@@ -139,6 +143,40 @@
             });
         });
         // 응모하기 버튼 이벤트
+        $(function(answer){
+            $('#sm-answer').click(function(){
+                swal("이 곳에 정답을 입력해 주세요:", {
+                content: {
+                    element: "input",
+                    attributes: {
+                        type: "text",
+                    }
+                }
+                });
+                $(function(){
+                $('.swal-button-container>button').click(function(){
+                    if($('.swal-content>input').val().replace(/\s/g,"").length == 0){
+                     swal("다시 입력해주세요",
+                     {
+                        icon: "warning",
+                        buttons: false,
+                        timer: 1500
+                     }                       
+                    );
+                 }
+                 else{
+                    $('.swal-content>input').val("");
+                        swal("응모가 완료되었습니다",
+                    {
+                        icon: "success",
+                        buttons: false,
+                        timer: 1500 
+                    });
+                }
+                });
+            });
+            });
+        });
     </script>
 </body>
 </html>
