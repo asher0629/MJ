@@ -25,21 +25,31 @@
 					<header id="header" class="alt">
 						<h1><a href="index.html">
 							<img src="images/mainlogo.png" alt="메인타이틀로고이미지">
-						</a></h1>
+						</a>
+						<div id="Menu">
+						<ul>
+							<li><a href="index.html">HOME</a></li>
+							<li><a href="generic.html">ABOUT US</a></li>
+							<li><a href="elements.html">BRAND</a></li>
+							<li><a href="#">PRODUCT</a></li>
+							<li><a href="#">CS CENTER</a></li>
+						</ul>
+						</div>
+					</h1>
 						<nav id="nav">
 							<ul>
 								<li class="special">
 									<a href="#menu" class="menuToggle"><span>Menu</span></a>
-									<div id="menu">
-										<ul>
-											<li><a href="index.html">Home</a></li>
-											<li><a href="generic.html">ABOUT US</a></li>
-											<li><a href="elements.html">BRAND</a></li>
-											<li><a href="#">PRODUCT</a></li>
-											<li><a href="#">CS CENTER</a></li>
-										</ul>
-									</div>
 								</li>
+								<div id="menu">
+									<ul>
+										<li><a href="index.html">HOME</a></li>
+										<li><a href="generic.html">ABOUT US</a></li>
+										<li><a href="elements.html">BRAND</a></li>
+										<li><a href="#">PRODUCT</a></li>
+										<li><a href="#">CS CENTER</a></li>
+									</ul>
+									</div>
 							</ul>
 						</nav>
 					</header>
@@ -51,7 +61,7 @@
 							<p>
 								<h3>Healthy pet food with nature for your dog</h3>
 								반려견을 위해 자연을 담은 건강한 펫푸드<br />
-								DEN은 반려견에게 최적화된 필수성분들을<br />
+								<span class="name">DEN</span>은 반려견에게 최적화된 필수성분들을<br />
 								최고의 재료만을 선별하여 담았습니다<br /></p>
 						</div>
 					</section>
@@ -92,28 +102,28 @@
 									<div class="row">
 										<div class="col-lg-3">
 											<div><div class="can-1"></div></div>
-											<p>「 DEN NORMAL CAN 」</p>
+											<p>「 <span class="name">DEN</span> NORMAL CAN 」</p>
 											<div class="line"></div>
 											<p>CHICKEN FORMULA<br>
 												120g</p>
 										</div>
 										<div class="col-lg-3">
 											<div><div class="can-2"></div></div>
-											<p>「 DEN NORMAL CAN 」</p>
+											<p>「 <span class="name">DEN</span> NORMAL CAN 」</p>
 											<div class="line"></div>
 											<p>BEEF FORMULA<br>
 												120g</p>
 										</div>
 										<div class="col-lg-3">
 											<div><div class="can-3"></div></div>
-											<p>「 DEN NORMAL CAN 」</p>
+											<p>「 <span class="name">DEN</span> NORMAL CAN 」</p>
 											<div class="line"></div>
 											<p>PORK FORMULA<br>
 												120g</p>
 										</div>
 										<div class="col-lg-3">
 											<div><div class="can-4"></div></div>
-											<p>「 DEN NORMAL CAN 」</p>
+											<p>「 <span class="name">DEN</span> NORMAL CAN 」</p>
 											<div class="line"></div>
 											<p>DUCK FORMULA<br>
 												120g</p>
@@ -125,28 +135,28 @@
 									<div class="row">
 										<div class="col-lg-3">
 											<div><div class="can-5"></div></div>
-											<p>「 DEN SPECIAL CAN 」</p>
+											<p>「 <span class="name">DEN</span> SPECIAL CAN 」</p>
 											<div class="line"></div>
 											<p>TERKEY  FORMULA<br>
 												120g</p>
 										</div>
 										<div class="col-lg-3">
 											<div><div class="can-6"></div></div>
-											<p>「 DEN SPECIAL CAN 」</p>
+											<p>「 <span class="name">DEN</span> SPECIAL CAN 」</p>
 											<div class="line"></div>
 											<p>LAMB  FORMULA<br>
 												120g</p>
 										</div>
 										<div class="col-lg-3">
 											<div><div class="can-7"></div></div>
-											<p>「 DEN SPECIAL CAN 」</p>
+											<p>「 <span class="name">DEN</span> SPECIAL CAN 」</p>
 											<div class="line"></div>
 											<p>RABBIT  FORMULA<br>
 												120g</p>
 										</div>
 										<div class="col-lg-3">
 											<div><div class="can-8"></div></div>
-											<p>「 DEN SPECIAL CAN 」</p>
+											<p>「 <span class="name">DEN</span> SPECIAL CAN 」</p>
 											<div class="line"></div>
 											<p>KANGAROO  FORMULA<br>
 												120g</p>
@@ -166,7 +176,7 @@
 								<h2>맛있는 간식 하루에 얼마나 먹을수 있어요?</h2>
 								<p>좋은 성분들도 너무 과한 급여는 좋지 않을 수 있습니다.<br>
 									내 반려견에게 더 맞춤으로 하루정량을 계산해보세요. </p>
-									<button style="background: #104061">
+									<button style="background: #104061;box-shadow: unset;">
 										계산해보기
 									</button>
 							</header>
@@ -175,15 +185,16 @@
 
 				<!-- Footer -->
 					<footer id="footer">
-						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						<ul class="copyright">
+							<li>사업자 <span class="name">DEN</span> ㈜ <br>
+								대표 윤미진 <br>
+								사업자등록번호 123-00-45678 <br>
+								경기도 김포시 사우1로 22번길 77</li>
 						</ul>
 						<ul class="copyright">
-							<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							<!-- <li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li> -->
+							<!-- template copyright -->
+							<li>ⓒ Copyright  2020 .  <span class="name">DEN</span> [ Dog Eat Nature ]  Corp . All rights reserved.</li>
 						</ul>
 					</footer>
 
