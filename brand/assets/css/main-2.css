@@ -1,5 +1,4 @@
-@import url(//fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
-
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
 .nanummyeongjo * {
  font-family: 'Nanum Myeongjo', serif;
 }
@@ -24,8 +23,8 @@
 	margin: 0;
 	padding-bottom: 7.1vw;
 }
-#three>.inner>div>.container{
-	padding: 1.5vw 0;
+#three>.inner>div>.container:first-child{
+	padding-bottom: 9.375vw;
 }
 #three>.inner>div>.container p{
 	margin: 0;
@@ -37,17 +36,18 @@
 #three>.inner>div>.container>.row>.col-lg-3>div:first-child{
 	padding: 0 0 1.5vw;
 }
+#three>.inner>div>.container>.row>.col-lg-3>p:last-of-type{
+	font-size: 16px;
+	font-weight: 300;
+	letter-spacing: .1vw;
+}
 #three>.inner>div>.container>.row>.col-lg-3>p:first-of-type{
 	font-size: 18px;
 	font-weight: 500;
 }
-#three>.inner>div>.container>.row>.col-lg-3>p:last-of-type{
-	font-size: 16px;
-	font-weight: 300;
-}
 .name{
 	font-family: 'Nanum Myeongjo', serif;
-	font-weight: bold !important;
+	font-weight: 800;
 }
 .line{
 	margin: 0 auto;
