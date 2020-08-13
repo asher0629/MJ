@@ -12,27 +12,36 @@
 <body>
     <section>
         <div class="maincontain">
-            <div id="nowTimes"></div>
             <div id="main_weather">
                 <p class="date"></p>
+                <!-- 오늘 날짜 -->
                 <p class="city"></p>
-                <p class="description"></p>
+                <!-- 도시명 -->
+                <div id="nowTimes"></div>
+                <!-- 현재시각 -->
                 <i class="icon"></i>
+                <!-- 날씨 아이콘 -->
                 <p class="pop"></p>
+                <!-- 강수확률 -->
                 <div class="temperature">
                     <div>
                         <p class="temp"></p>
                     </div>
+                    <!-- 현재온도 -->
                     <div>
                         <p class="temp_min"></p>
                         <p class="temp_max"></p>
                     </div>
+                    <!-- 오늘의 최고온도 최저온도 -->
                 </div>
+                <!-- 오늘의 온도 영역 -->
             </div>
         </div>
+        <!-- main-contain -->
         <div class="secondcontain">
             <p class="weekly-title">WEEKLY</p>
             <div class="title-line"></div>
+            <!-- weekly title -->
             <div id="week_weather">
                 <ul class="today">
                     <li class="today-date"></li>
@@ -70,8 +79,9 @@
                     <li class="seventhday-temp"></li>
                 </ul>
             </div>
+            <!-- weekly weather -->
         </div>
-        <!-- <img class="load_img" src="loading.gif" width="50"> -->
+        <!-- second-contain -->
     </section>
 
     <script>
@@ -167,18 +177,7 @@
                             //10d
                             $('body').css('background','linear-gradient(to top, #91EAE4, #86A8E7, #7F7FD5)');
                             $('.icon').css('text-shadow','0 10px 20px rgba(0,0,0,.2)');
-
-
-                            //     // 10n
-                            // $('body').css('background','linear-gradient(to top, #3A6073 0%, #16222A 100%)');
-                            // $('.icon').css('text-shadow','0 10px 20px rgba(0,0,0,.5)');
-                            //     //11d
-                            // $('body').css('background','linear-gradient(to bottom, #000C40, #F0F2F0)');
-                            // $('.icon').css('text-shadow','0 10px 20px rgba(0,0,0,.2)');
-                            //     //11n
-                            // $('body').css('background','linear-gradient(to bottom, #434343, #000000)');
-                            // $('.icon').css('text-shadow','0 10px 20px rgba(255,255,255,.5)');
-
+                            // 배경 그라디언트
             })
 
 

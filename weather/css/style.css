@@ -1,5 +1,6 @@
 @font-face { font-family: 'BMJUA'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff'); font-weight: normal; font-style: normal; }
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+/* 사용폰트 */
 *{
     margin: 0;
     padding: 0;
@@ -22,40 +23,40 @@ body{
 section{
     padding-top: 24px;
 }
-#nowTimes{
-    text-align: right;
-    margin-right: -70px;
-}
+/* element */
 #main_weather{
-    padding-top: 30px;
+    padding-top: 40px;
 }
 .date{
+    width: 100%;
     font-size: 16px;
-    font-weight: 100;
+    font-weight: 200;
     text-align: center;
-    letter-spacing:2px;
+    letter-spacing: 3px;
     line-height: 20px;
 }
 .city{
     font-size: 50px;
-    font-weight: 100;
+    font-weight: 400;
     text-align: center;
-    letter-spacing: 5px;
+    letter-spacing: 7px;
     line-height: 100px;
 }
-.description{
-    font-size:16px;
-    font-weight: 100;
+#nowTimes{
     text-align: center;
+    font-size: 16px;
+    letter-spacing: 3px;
 }
+/* 현재시간 */
 .icon{
     width: 100%;
-    font-size: 150px;
+    font-size: 145px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 30px;
     line-height: unset !important;
     text-shadow: 0 10px 20px rgba(0, 0, 0,.2);
 }
+
 .pop{
     text-align: center;
     line-height: 32px;

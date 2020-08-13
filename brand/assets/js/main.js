@@ -81,9 +81,3 @@
 		}
 
 })(jQuery);
-
-$(function(){
-	$('.name').css('font-family','"Nanum Myeongjo", ser');
-	$('.name').css('font-weight','900');
-
-	});
