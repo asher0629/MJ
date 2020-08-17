@@ -1,8 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
-.nanummyeongjo * {
- font-family: 'Nanum Myeongjo', serif;
-}
-            
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&display=swap');
 
 #banner>.inner>p{
 	letter-spacing: -1vw !important;
@@ -16,6 +12,25 @@
 	margin: 1.3021vw;
 }
 /* 설명페이지 페이지01 */
+@media screen and (max-width: 980px){
+	body.is-mobile.landing .wrapper.style4 {
+		background-color: rgba(255, 255, 255,0.5);
+		background-blend-mode: overlay;
+		background-image: url(../../images/main-2.jpg);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}
+@media screen and (max-width: 736px) {
+	body.is-mobile.landing #banner{
+		background: url(../../images/main-2.jpg);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}
+/* 메인페이지 */
 #three{
 	padding: 6em 0 9em;
 }
@@ -29,31 +44,40 @@
 #three>.inner>div>.container p{
 	margin: 0;
 }
-/* #three>.inner>div>.container>.row>.col-lg-3:hover{
+#three>.inner>div>.container>.row>.col-lg-3:hover{
 	cursor: pointer;
-	background-color: rgba(0, 0, 0, 0.5);
-} */
+}
 #three>.inner>div>.container>.row>.col-lg-3>div:first-child{
 	padding: 0 0 1.5vw;
 }
 #three>.inner>div>.container>.row>.col-lg-3>p:last-of-type{
-	font-size: 16px;
+	font-size: 0.8em;
 	font-weight: 300;
-	letter-spacing: .1vw;
 }
 #three>.inner>div>.container>.row>.col-lg-3>p:first-of-type{
-	font-size: 18px;
-	font-weight: 500;
+	font-size: 0.9em;
+	font-weight: 550;
+}
+#three>.inner>div>.container>.row>.col-lg-3 .name{
+	font-size: 0.95em;
+	font-weight: 600;
 }
 .name{
-	font-family: 'Nanum Myeongjo', serif;
-	font-weight: 800;
+	font-family: 'Merriweather', serif;
+	font-weight: 500;
+	letter-spacing: 2px;
 }
 .line{
 	margin: 0 auto;
 	margin-top: 1.5em;
 	margin-bottom: 1.5em;
 }
+/*  */
+/* @media screen and (max-width: 980px){
+	#three>.inner>div>.container>.row {
+		width: 100%;
+		margin: 0 auto !important;
+} */
 /*  */
 
 #cta>.inner>header>h2{
@@ -62,5 +86,9 @@
 #cta>.inner>header>p{
 	margin:0;
 	padding: 4em 0;
-	letter-spacing: .1vw;
+	letter-spacing: 1px;
+}
+
+#footer .copyright li{
+	line-height: 1.5em;
 }

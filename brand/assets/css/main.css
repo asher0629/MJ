@@ -130,7 +130,7 @@ input, select, textarea {
 
 			body, input, select, textarea {
 				font-size: 11pt;
-				letter-spacing: 0.0375em;
+				/* letter-spacing: 0.0375em; */
 			}
 
 		}
