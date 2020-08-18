@@ -92,3 +92,27 @@
 #footer .copyright li{
 	line-height: 1.5em;
 }
+
+
+
+
+/* about us */
+
+body.aboutus #page-wrapper{
+	/* padding: 12em 0 10em 0; */
+    background: url(../../images/about-main.jpg);
+    background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position-x: right ;
+    background-size: cover;
+    text-align: center;
+}
+#about_main>header{
+	padding: 12em 0 10em 0;
+    background: url(../../images/about-main.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+	background-size: cover;
+	background-position-x: right;
+    text-align: center;
+}
