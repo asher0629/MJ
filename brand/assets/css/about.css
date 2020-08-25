@@ -1,0 +1,98 @@
+.facts {
+    padding: 100px 0 50px 0;
+    background-color: #ffeedb;
+    border-top: 15px double #ffffff
+}
+
+@media only screen and (max-width : 480px) {
+.facts {
+    padding: 50px 0 100px 0;
+}
+}
+
+
+#facts .bottom-separator {
+border-color: #f7f7f7 transparent transparent transparent;
+}
+
+.bottom-right-separator {
+width: 0;
+z-index: 3;
+position: absolute;
+bottom: -180px;
+right: 0;
+height: 0;
+border-style: solid;
+border-width: 180px 0 0 100vw;
+border-color: #fff transparent transparent transparent;
+}
+
+.numscroller{
+  font-size: 45px;
+  color: #000;
+  margin-top: -125px;
+}
+
+.count-name-intro{
+    font-size: 20px;
+    color: #000;
+    letter-spacing: 2px;
+}
+
+.count-item i{
+    font-size: 110px;
+    color: #fff;
+}
+
+@media only screen and (max-width : 992px){
+
+.count-item{
+    margin-top: 20px;
+}
+}
+
+
+/* --------------------------------
+
+04.FEATURES
+
+-------------------------------- */
+.features {
+padding: 100px 0 100px 0;
+background-color: #ffeedb;
+border-top: 15px double #fff;
+}
+
+@media only screen and (max-width : 480px) {
+.features {
+    padding: 50px 0 100px 0;
+}
+}
+
+.features .feature-item .item-head {
+position: relative;
+display: block;
+}
+
+.features .feature-item .item-head i {
+font-size: 50px;
+    color:#000;
+}
+
+.features .feature-item h6 {
+    text-transform: uppercase;
+    margin-top: 15px;
+    margin-bottom: 0;
+    padding: 0;
+    color: #000;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.features .feature-item p {
+margin-top: 20px;
+margin-bottom: 0;
+padding: 0;
+}
+
+/* --------------------------------
