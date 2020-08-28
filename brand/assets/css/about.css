@@ -1,18 +1,20 @@
 body.aboutus #page-wrapper{
 	/* padding: 12em 0 10em 0; */
-    background: url('../../images/infobg.jpg');
+    background: url('../../images/infobg2.jpg');
     background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-position-x: right ;
-    background-size: cover;
+    background-size: contain;
     text-align: center;
 }
 #about_main>header{
 	padding: 12em 0 10em 0;
-    background: url('../../images/infobg.jpg');
+    background-image: url('../../images/infobg2.jpg');
+    background-color: rgba(255, 255, 255,0.5);
+    background-blend-mode: overlay;
     background-attachment: fixed;
     background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
 	background-position-x: right;
     text-align: center;
 }
