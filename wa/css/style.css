@@ -1,0 +1,118 @@
+@font-face { font-family: 'BMJUA'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff'); font-weight: normal; font-style: normal; }
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+/* 사용폰트 */
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+body{
+    height: 100vh;
+    background: steelblue;
+    color: #fff;
+    font-family: 'Noto Sans KR', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+section{
+    padding-top: 24px;
+}
+/* element */
+#main_weather{
+    padding-top: 40px;
+}
+.date{
+    width: 100%;
+    font-size: 16px;
+    font-weight: 200;
+    text-align: center;
+    letter-spacing: 3px;
+    line-height: 20px;
+}
+.city{
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 7px;
+    line-height: 100px;
+}
+#nowTimes{
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+/* 현재시간 */
+.icon{
+    width: 100%;
+    font-size: 145px;
+    text-align: center;
+    margin-top: 30px;
+    line-height: unset !important;
+    text-shadow: 0 10px 20px rgba(0, 0, 0,.2);
+}
+
+.pop{
+    text-align: center;
+    line-height: 32px;
+}
+.temperature{
+    display:flex;
+    padding-top: 18px;
+}
+.temp{
+    font-size: 52px;
+    font-weight: 100;
+    letter-spacing: 10px;
+    margin-left: 10px;
+}
+.temperature>div:last-child{
+    margin-top: 12px;
+    margin-left: 10px;
+    letter-spacing: 2px;
+}
+.temp_max{
+    margin-top: 10px;
+}
+.secondcontain{
+    text-align: center;
+    padding-top: 18%;
+}
+.weekly-title{
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    margin-bottom: 3%;
+}
+.title-line{
+    width: 40px;
+    height: 1.5px;
+    background: #fff;
+    margin: 0 auto;
+}
+#week_weather{
+    display:flex;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 30px;
+}
+#week_weather>ul{
+    margin-left: 12%;
+    font-size: 14px;
+}
+#week_weather>ul:first-child{
+    margin-left:0;
+}
+#week_weather li{
+    margin-bottom: 5px;
+}
+#week_weather>ul>li:nth-child(2){
+    font-size: 24px;
+    margin: 10px 0;
+}
+
