@@ -1,0 +1,37 @@
+#section1{
+    display:flex;
+}
+.center-round-wrap{
+    z-index: 1;
+}
+
+.round-img {
+    /* -moz-animation: arrow 2.5s ;
+    -ms-zoom-animation: arrow 2.5s ;
+    -o-animation: arrow 2.5s ;
+    -webkit-animation: arrow 2.5s ; */
+    animation-name: arrow;
+    animation-delay: 2.5s ;
+    transition: all 2s ease-in-out;
+  }
+  
+  @keyframes arrow {
+    from {
+      opacity: 0;
+    }
+    to {
+      transform: opacity(1);
+    }
+  }
+
+  #myProgress {
+    width: 80%;
+    height: unset;
+    background-color: rgba(255, 255, 255, 0.63);
+  }
+  
+  #myBar {
+    width: 1%;
+    height: 30px;
+    background-color: rgb(218, 80, 80);
+  }

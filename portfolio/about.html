@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width
+    , initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favi.ico" type="image/x-icon">
+    <title>ABOUT YOONMIJIN</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/fullpage.min.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="bootstrap/popper.min.js"></script>
+    <script src="bootstrap/jquery.min.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <script src="js/fullpage.min.js"></script>
+    <script src="js/scrolloverflow.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body id="aboutpage">
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4" style="background:#1c1c1e;height:100vh; display:flex; align-items: center; justify-content: center;">
+                    <div class="round-img" style="opacity:0;width:480px;height: 480px;">
+                        <div style="width:480px;height: 480px; border-radius: 100%; background-color: #f0c3b8; display:flex;align-items: center; justify-content: center;">
+                            <img src="images/profile.png" alt="" style="height: 50%;">
+                        </div>
+                    </div>
+                </div>
+                <div id="fullpage" class="section-wrap col-sm-8">
+                    <div class="section" id="section0" style="background:#ff967d">
+                        <div style="display:flex; align-items: center;justify-content: center;">
+                            <h1 style="font-size: 2.5rem;line-height:4rem; text-align: center;margin-top: 20px">좀 더 다양한 시각에서 바라보려고 시도하는
+                            <br>webdesigner&PUBLISHER 윤미진입니다.</h1>
+                        </div>
+                        <!-- <div style="width: 62%; height: 20px; background:#fff;margin: 0 auto;">
+    
+                        </div> -->
+                    </div>
+                    <div class="section" id="section1" style="background:#ff967d; display:flex; align-items: center; justify-content: center;">
+                        <div id="myProgress">
+                            <div id="myBar">
+                                0%
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        var myFullpage = new fullpage('#fullpage', {
+        loopTop: true,
+        loopBottom: true,
+    });
+    </script>
+    <!-- fullpage option -->
+
+    <script type="text/javascript">
+    window.onscroll = function() {scrollFunction()};
+        var i = 0;
+        function move() {
+        if (i == 0) {
+            i = 1;
+            var elem = document.getElementById("myBar");
+            var width = 10;
+            var id = setInterval(frame, 10);
+            function frame() {
+            if (document.body.scrollTop > 50) {
+                width++;
+                elem.style.width = width + "%";
+                elem.innerHTML = width  + "%";
+            } else {
+                clearInterval(id);
+                i = 0;
+            }
+            }
+        }
+        }
+    </script>
+</body>
+</html>
