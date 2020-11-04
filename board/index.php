@@ -1,7 +1,9 @@
 <?php include  $_SERVER['DOCUMENT_ROOT']."/db.php"; ?>
-<!doctype html>
+<!DOCTYPE html>
+<html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>게시판</title>
 <link rel="stylesheet" type="text/css" href="css/css.css">
 </head>
@@ -44,7 +46,7 @@
       <?php } ?>
     </table>
     <div id="write_btn">
-      <a href=""><button>글쓰기</button></a>
+      <a href="/page/write.php"><button>글쓰기</button></a>
     </div>
   </div>
   </body>

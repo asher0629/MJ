@@ -12,3 +12,4 @@
 		return $db->query($sql);
 	}
 ?>
+<?php '<!DOCTYPE html>' ?>
